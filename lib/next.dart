@@ -5,18 +5,18 @@ class Nextpage extends StatelessWidget{
   @override
   Widget build(BuildContext context){
     return MaterialApp(
-      home: Homepage(),
+      home: new HomePage(),
     );
   }
 
 }
-class Homepage extends StatefulWidget{
+class HomePage extends StatefulWidget{
 
  @override
   State createState() => new HomePageState();
 }
 
-class HomePageState extends State<Homepage>{
+class HomePageState extends State<HomePage>{
    @override
   Widget build(BuildContext context) {
     return Scaffold(
