@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\saugatpc\\Desktop\\sagut\\Officeprj\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
-                    "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "source": "C:\\Users\\saugatpc\\Desktop\\sagut\\Officeprj\\android\\app\\src\\main\\res\\values\\styles.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

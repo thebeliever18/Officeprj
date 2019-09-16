@@ -1,6 +1,7 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:login_page/next.dart';
 
 void main() => runApp(new MyApp());
 
@@ -23,6 +24,8 @@ class LoginPage extends StatefulWidget {
 
 class LoginPageState extends State<LoginPage> {
 
+ 
+
 
   
   String Countrycode = "";
@@ -34,8 +37,7 @@ class LoginPageState extends State<LoginPage> {
     '+376',
   ];
   var _currentItemSelected = '+977';
-  // var defaultWidth;
-  // var defaultHeight;
+
   @override
   Widget build(BuildContext context) {
     return new Scaffold(
@@ -88,7 +90,7 @@ class LoginPageState extends State<LoginPage> {
                           Layout(),
                         ]),
                         sizeheight(15),
-                        password(),
+                        Password(),
                         sizeheight(10),
                         loginButton(),
                         sizeheight(10),
@@ -104,6 +106,10 @@ class LoginPageState extends State<LoginPage> {
       ),
     );
   }
+
+
+  
+
 
   down() {
     return Container(
@@ -188,7 +194,12 @@ class LoginPageState extends State<LoginPage> {
       width: double.infinity,
       height: 50,
       child: RaisedButton(
-        onPressed: () {},
+        onPressed: (){
+          Navigator.push(context, MaterialPageRoute(builder: (context){
+          return Nextpage();
+          }),);
+        
+        },
         shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(30.0),
         ),
@@ -201,29 +212,6 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
-  password() {
-  return Container(
-    width: 230,
-    height: 50,
-    child: TextFormField(
-      decoration: new InputDecoration(
-        border: OutlineInputBorder(),
-        hintText: "Password",
-        labelText: "Enter your password",
-       icon: const Padding(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      child: const Icon(Icons.lock)),
-        filled: true,
-        fillColor: Colors.white10,
-      ),
-      
-      obscureText: true,
-      
-    ),
-    
-    
-  );
-}
 
   facebookicon() {
     return FloatingActionButton(
@@ -273,11 +261,12 @@ class Layout extends StatefulWidget {
 }
 
 class LayoutState extends State<Layout> {
+  
   @override
   Widget build(BuildContext context) {
     return layoutDetails(context);
   }
-}
+
 
 phoneNo(defaultWidth, defaultHeight, context) {
   return Container(
@@ -296,6 +285,7 @@ phoneNo(defaultWidth, defaultHeight, context) {
   );
 }
 
+
 layoutDetails(context) {
   Orientation orientation = MediaQuery.of(context).orientation;
   if (orientation == Orientation.portrait) {
@@ -308,3 +298,60 @@ layoutDetails(context) {
     return phoneNo(defaultWidth, defaultHeight, context);
   }
 }
+}
+
+class Password extends StatefulWidget {
+  @override
+  State<StatefulWidget> createState() {
+    return PasswordState();
+  }
+}
+
+class PasswordState extends State<Password> {
+
+   bool _isHidden = true;
+  void _toogleVisibility(){
+    setState(() {
+     _isHidden = !_isHidden;
+    });
+
+  }
+  
+  @override
+  Widget build(BuildContext context) {
+  return Container(
+    width: 240,
+    height: 50,
+    child: TextFormField(
+      decoration: new InputDecoration(
+        border: OutlineInputBorder(),
+        hintText: "Password",
+        hintStyle: TextStyle(
+          
+          color: Colors.grey,
+          fontSize:  16.0,
+        ),
+       suffixIcon:  IconButton(
+         onPressed: _toogleVisibility,
+         icon: _isHidden ? Icon(Icons.visibility_off): Icon(Icons.visibility),
+       ),
+       icon: const Padding(
+                      padding: const EdgeInsets.only(top: 5.0),
+                      ),
+        filled: true,
+        fillColor: Colors.white10,
+      ),
+      
+      obscureText: _isHidden,
+      
+    ),
+    
+    
+  );
+}
+
+
+ 
+}
+
+
