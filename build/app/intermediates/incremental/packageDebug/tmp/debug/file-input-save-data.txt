@@ -1,5 +1,5 @@
 #Internal package file, do not edit.
-#Mon Sep 16 15:05:39 NPT 2019
+#Mon Sep 16 17:19:37 NPT 2019
 17.baseType=DIRECTORY
 4.path=flutter_assets/packages/material_design_icons_flutter/lib/fonts/materialdesignicons-webfont.ttf
 8.set=ASSET

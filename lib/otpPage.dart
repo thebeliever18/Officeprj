@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:office_prj/pageAfterCont.dart';
 
 class OtpPage extends StatefulWidget {
   @override
@@ -88,7 +89,11 @@ class _OtpPageState extends State<OtpPage> {
                                       fontSize: 30),
                                 ),
                                 onPressed: () {
-                                  showMessage(context, _otp);
+                                  Navigator.push(context, MaterialPageRoute(builder: (context){
+                                  return PageAfterCont(context);
+                                   }));
+                                  //showMessage(context, _otp);
+
                                 },
                               ),
                             ),
