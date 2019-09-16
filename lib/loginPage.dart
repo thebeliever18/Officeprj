@@ -3,19 +3,19 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:office_prj/homePage.dart';
 
-void main() => runApp(new MyApp());
+// void main() => runApp(new MyApp());
 
-class MyApp extends StatelessWidget {
-  @override
-  Widget build(BuildContext context) {
-    return new MaterialApp(
-        debugShowCheckedModeBanner: false,
-        home: new LoginPage(),
-        theme: new ThemeData(
-          primarySwatch: Colors.green,
-        ));
-  }
-}
+// class MyApp extends StatelessWidget {
+//   @override
+//   Widget build(BuildContext context) {
+//     return new MaterialApp(
+//         debugShowCheckedModeBanner: false,
+//         home: new LoginPage(),
+//         theme: new ThemeData(
+//           primarySwatch: Colors.green,
+//         ));
+//   }
+// }
 
 class LoginPage extends StatefulWidget {
   @override
@@ -40,7 +40,9 @@ class LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
-    return new Scaffold(
+    return MaterialApp(
+      home:
+    Scaffold(
       resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Container(
@@ -104,7 +106,7 @@ class LoginPageState extends State<LoginPage> {
           ],
         ),
       ),
-    );
+    ));
   }
 
 
@@ -194,12 +196,12 @@ class LoginPageState extends State<LoginPage> {
       width: double.infinity,
       height: 50,
       child: RaisedButton(
-        onPressed: (){
-          Navigator.push(context, MaterialPageRoute(builder: (context){
-          return Nextpage();
-          }),);
+        // onPressed: (){
+        //   Navigator.push(context, MaterialPageRoute(builder: (context){
+        //   return Nextpage();
+        //   }),);
         
-        },
+        // },
         shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(30.0),
         ),
@@ -215,6 +217,10 @@ class LoginPageState extends State<LoginPage> {
 
   facebookicon() {
     return FloatingActionButton(
+      heroTag: 'btn1',
+      onPressed: (){
+        
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         alignment: Alignment.center,
@@ -230,6 +236,10 @@ class LoginPageState extends State<LoginPage> {
 
   instagramicon() {
     return FloatingActionButton(
+      heroTag: 'btn2',
+      onPressed: (){
+
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
@@ -244,6 +254,10 @@ class LoginPageState extends State<LoginPage> {
 
   twittericon() {
     return FloatingActionButton(
+      heroTag: 'btn3',
+      onPressed: (){
+
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
