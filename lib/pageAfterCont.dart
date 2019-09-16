@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
-import 'package:office_prj/main.dart';
+import 'package:office_prj/phoneRegistrationPage.dart';
 import 'package:office_prj/orientation.dart';
 
 import 'dropDownDecoration.dart';
