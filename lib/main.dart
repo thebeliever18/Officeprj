@@ -92,13 +92,10 @@ class FormsState extends State<Forms> {
           Center(
               child: Padding(
             padding: EdgeInsets.only(top: heightPadding+5.0),
-             child: ,
-             isForm
-                ? form(context)
-                : form(context, child: PageAfterCont(context), color: Colors.white),
+             child: form(context),
+   
           )),
-
-
+          
           Center(
             child: Padding(
                 padding: EdgeInsets.only(top: heightPadding+20.0),
@@ -168,21 +165,21 @@ Widget dsewaLogo(context) {
 }
 
 
-// Widget form(context, {color = Colors.white, child}) {
-//   return Container(
-//     child: child ?? TextForms(),
-//     height:managing(context),
-//     width: (MediaQuery.of(context).size.width / 3) * 2.5,
-//     decoration:
-//         BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: color),
-//   );
-// }
+Widget form(context, {color = Colors.white, child}) {
+  return Container(
+    child: child ?? TextForms(),
+    height:managing(context),
+    width: (MediaQuery.of(context).size.width / 3) * 2.5,
+    decoration:
+        BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: color),
+  );
+}
 
-// managing(context) {
-//   if (isForm) {
-//     return MediaQuery.of(context).size.height /6.5;
-//   } else {
-//     return MediaQuery.of(context).size.height-260;
-//   }
-// }
+managing(context) {
+  if (isForm) {
+    return MediaQuery.of(context).size.height /6.5;
+  } else {
+    return MediaQuery.of(context).size.height-260;
+  }
+}
 
