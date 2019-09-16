@@ -1,6 +1,6 @@
 
 import 'package:flutter/material.dart';
-import 'package:office_prj/main.dart';
+import 'package:office_prj/phoneRegistrationPage.dart';
 
 
 /*
