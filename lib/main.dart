@@ -8,6 +8,8 @@ import 'package:grouped_buttons/grouped_buttons.dart';
 
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 
+import 'otpPage.dart';
+
 /*
  * Flutter has built-in function 
  * SystemChrome.setPreferredOrientations 
@@ -86,13 +88,17 @@ class FormsState extends State<Forms> {
             padding: EdgeInsets.only(top: heightPadding),
             child: dsewaLogo(context),
           )),
+
           Center(
               child: Padding(
             padding: EdgeInsets.only(top: heightPadding+5.0),
-            child: isForm
+             child: ,
+             isForm
                 ? form(context)
                 : form(context, child: PageAfterCont(context), color: Colors.white),
           )),
+
+
           Center(
             child: Padding(
                 padding: EdgeInsets.only(top: heightPadding+20.0),
@@ -119,9 +125,9 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
-              setState(() {
-                isForm = !isForm;
-              });
+              Navigator.push(context, MaterialPageRoute(builder: (context){
+                return OtpPage();
+              }));
             },
             color: Color.fromARGB(255, 0, 56, 147),
           ),
@@ -162,21 +168,21 @@ Widget dsewaLogo(context) {
 }
 
 
-Widget form(context, {color = Colors.white, child}) {
-  return Container(
-    child: child ?? TextForms(),
-    height:managing(context),
-    width: (MediaQuery.of(context).size.width / 3) * 2.5,
-    decoration:
-        BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: color),
-  );
-}
+// Widget form(context, {color = Colors.white, child}) {
+//   return Container(
+//     child: child ?? TextForms(),
+//     height:managing(context),
+//     width: (MediaQuery.of(context).size.width / 3) * 2.5,
+//     decoration:
+//         BoxDecoration(borderRadius: BorderRadius.circular(20.0), color: color),
+//   );
+// }
 
-managing(context) {
-  if (isForm) {
-    return MediaQuery.of(context).size.height /6.5;
-  } else {
-    return MediaQuery.of(context).size.height-260;
-  }
-}
+// managing(context) {
+//   if (isForm) {
+//     return MediaQuery.of(context).size.height /6.5;
+//   } else {
+//     return MediaQuery.of(context).size.height-260;
+//   }
+// }
 
