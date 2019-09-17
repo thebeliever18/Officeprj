@@ -34,7 +34,7 @@ void main() {
 
 
 bool isForm = true;
-
+bool signup=true;
 class RegistrationPage extends StatelessWidget {
   /*
    * This widget is the root of your application.
@@ -127,6 +127,7 @@ class FormsState extends State<Forms> {
             ),
             onPressed: () {
               a++;
+              
               /**
                * Importing otpPage
                */
@@ -138,6 +139,7 @@ class FormsState extends State<Forms> {
                * Importing Login Page
                */
               }else if(a==2){
+                a=0;
                 Navigator.push(context, MaterialPageRoute(builder: (context){
                 return LoginPage();
               }));
