@@ -92,7 +92,9 @@ class FormsState extends State<Forms> {
           Center(
               child: Padding(
             padding: EdgeInsets.only(top: heightPadding+5.0),
-             child: form(context),
+             child: isForm
+                ? form(context)
+                : form(context, child: PageAfterCont(context), color: Colors.white),
    
           )),
           
@@ -122,6 +124,9 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
+              setState(() {
+                
+              });
               Navigator.push(context, MaterialPageRoute(builder: (context){
                 return OtpPage();
               }));
