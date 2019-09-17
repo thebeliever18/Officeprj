@@ -164,6 +164,7 @@ txtfld() {
     width: 60,
     height: 60,
     child: TextField(
+      autofocus: true,
       textAlign: TextAlign.center,
       style: TextStyle(
         fontSize: 23,
