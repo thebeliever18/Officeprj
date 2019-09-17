@@ -14,6 +14,7 @@ class _OtpPageState extends State<OtpPage> {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         home: Scaffold(
+          backgroundColor: Colors.white,
           body: ListView(
             children: <Widget>[
               Stack(
@@ -122,10 +123,11 @@ class _OtpPageState extends State<OtpPage> {
                               content: Text("Code is sent to your phone"),
                               actions: <Widget>[
                                 RaisedButton(
+                                    color: Color.fromARGB(255, 0, 56, 147),
                                     child: Text(
                                       "OK",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 20),
+                                          color: Colors.white, fontSize: 20,backgroundColor: Color.fromARGB(255, 0, 56, 147)),
                                     ),
                                     onPressed: () {
                                       Navigator.of(context).pop();
