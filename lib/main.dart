@@ -8,6 +8,7 @@ import 'package:grouped_buttons/grouped_buttons.dart';
 
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 
+import 'loginPage.dart';
 import 'otpPage.dart';
 
 /*
@@ -71,7 +72,7 @@ class Forms extends StatefulWidget {
  * @autofoucs-> To auto-scroll to a focused widget such as a TextFieldd, set the autoScroll property to true. 
  * If child is not a ScrollView, it is automatically embedded in a SingleChildScrollView to make it scrollable.
  */
-
+int a=0;
 class FormsState extends State<Forms> {
   int i = 3;
   final ScrollController _scrollController = ScrollController();
@@ -112,6 +113,7 @@ class FormsState extends State<Forms> {
  * Code for button
  */
   Widget btn(context) {
+    
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -124,12 +126,23 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
-              // setState(() {
-              //   isForm=!isForm;
-              // });
-              Navigator.push(context, MaterialPageRoute(builder: (context){
+              a++;
+              /**
+               * Importing otpPage
+               */
+              if(a==1){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
                 return OtpPage();
               }));
+              /**
+               * Importing Login Page
+               */
+              }else if(a==2){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                return LoginPage();
+              }));
+              }
+              
             },
             color: Color.fromARGB(255, 0, 56, 147),
           ),
