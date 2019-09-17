@@ -80,12 +80,12 @@ class _OtpPageState extends State<OtpPage> {
                               child: RaisedButton(
                                 shape: RoundedRectangleBorder(
                                     borderRadius: BorderRadius.circular(15)),
-                                color: Colors.blue,
+                                color: Color.fromARGB(255, 0, 56, 147),
                                 child: Text(
                                   "Next",
                                   style: TextStyle(
                                       color: Colors.white,
-                                      backgroundColor: Colors.blue,
+                                      backgroundColor: Color.fromARGB(255, 0, 56, 147),
                                       fontSize: 30),
                                 ),
                                 onPressed: () {
@@ -114,10 +114,10 @@ class _OtpPageState extends State<OtpPage> {
                               style: TextStyle(
                                   fontSize: 16,
                                   fontWeight: FontWeight.bold,
-                                  color: Colors.blue[300])),
+                                  color: Color.fromARGB(255, 0, 56, 147))),
                           onPressed: () {
                             var dialog = AlertDialog(
-                              backgroundColor: Colors.lightGreen[200],
+                              backgroundColor: Colors.grey[200],
                               title: Text("Succesfull"),
                               content: Text("Code is sent to your phone"),
                               actions: <Widget>[
@@ -171,8 +171,8 @@ txtfld() {
       maxLengthEnforced: true,
       keyboardType: TextInputType.number,
       decoration: new InputDecoration(
-          counterText: '',
-          fillColor: Colors.lightGreen[200],
+         counterText: '',
+          fillColor: Colors.grey[200],
           filled: true,
           border: OutlineInputBorder(
               borderSide: BorderSide(color: Colors.red, width: 5.0),
@@ -183,7 +183,7 @@ txtfld() {
 
 showMessage(BuildContext context, var message) {
   var dialog = AlertDialog(
-    backgroundColor: Colors.lightGreen[200],
+    backgroundColor: Colors.grey[200],
     title: message.toString().length == 2 && message != null
         ? Text("Succesfull")
         : Text("Invalid"),
