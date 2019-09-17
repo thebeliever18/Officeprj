@@ -124,9 +124,9 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
-              setState(() {
-                
-              });
+              // setState(() {
+              //   isForm=!isForm;
+              // });
               Navigator.push(context, MaterialPageRoute(builder: (context){
                 return OtpPage();
               }));

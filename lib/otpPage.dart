@@ -1,6 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:office_prj/pageAfterCont.dart';
 
+import 'main.dart';
+
 class OtpPage extends StatefulWidget {
   @override
   _OtpPageState createState() => _OtpPageState();
@@ -89,9 +91,13 @@ class _OtpPageState extends State<OtpPage> {
                                       fontSize: 30),
                                 ),
                                 onPressed: () {
-                                  Navigator.push(context, MaterialPageRoute(builder: (context){
-                                  return PageAfterCont(context);
-                                   }));
+                                  setState(() {
+                                    isForm = !isForm;
+                                  });
+                                  Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return RegistrationPage();
+                                  }));
                                   //showMessage(context, _otp);
                                 },
                               ),
