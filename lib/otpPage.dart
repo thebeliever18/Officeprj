@@ -132,7 +132,7 @@ class _OtpPageState extends State<OtpPage> {
                                     child: Text(
                                       "OK",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 20,backgroundColor: .),
+                                          color: Colors.white, fontSize: 20,backgroundColor: Colors.white),
                                     ),
                                     onPressed: () {
                                       Navigator.of(context).pop();
