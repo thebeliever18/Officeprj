@@ -1,6 +1,5 @@
 import 'package:flutter/material.dart';
-
-
+import 'package:office_prj/otpPage.dart';
 
 class ForgotPasswordPage extends StatelessWidget {
   @override
@@ -21,7 +20,7 @@ class MyButton extends StatefulWidget {
 
   _MyButtonState createState() => _MyButtonState();
 }
-
+bool forOtpPage = true;
 class _MyButtonState extends State<MyButton> {
   TextEditingController _textFieldController = TextEditingController();
   @override
@@ -50,21 +49,20 @@ class _MyButtonState extends State<MyButton> {
           ),
           Container(
             margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
-            width: MediaQuery.of(context).size.width/2,
-            height: MediaQuery.of(context).size.height-600,
-            
-                
-
+            width: MediaQuery.of(context).size.width / 2,
+            height: MediaQuery.of(context).size.height - 600,
             child: RaisedButton(
                 color: Colors.blueAccent,
                 child: Text(
                   "Continue",
                   style: TextStyle(color: Colors.white),
                 ),
-                
                 elevation: 6.0,
-                onPressed: () => (context)),
-                
+                onPressed: () {
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return OtpPage();
+                  }));
+                }),
           )
         ],
       ),
