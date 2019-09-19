@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-void main() => runApp(App());
+
 
 class App extends StatelessWidget{
   @override
@@ -33,7 +33,7 @@ class _LoginPageState extends State<LoginPage>{
   }
   void _another(){
     setState(() {
-      _second=!_second;
+      _second = !_second;
     });
   }
 
@@ -92,7 +92,7 @@ class _LoginPageState extends State<LoginPage>{
           icon: _isHidden ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
         ) : null,
       ),
-      obscureText: !_isHidden,
+      obscureText: _isHidden,
     );
   }
  
@@ -114,7 +114,7 @@ class _LoginPageState extends State<LoginPage>{
           icon: _second ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
         ) : null,
       ),
-      obscureText: !_second,
+      obscureText: _second,
     );
   }
 

@@ -3,7 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:office_prj/homePage.dart';
 
+import 'forgotPasswordPage.dart';
 import 'main.dart';
+import 'resetPasswordPage.dart';
 
 // void main() => runApp(new MyApp());
 
@@ -91,6 +93,14 @@ class LoginPageState extends State<LoginPage> {
                         Password(),
                         sizeheight(10),
                         loginButton(),
+                        RaisedButton(
+                          onPressed: (){
+                            Navigator.push(context, MaterialPageRoute(builder: (context) {
+                            return ForgotPasswordPage();
+                            }));
+                          },
+                          child: Text("Forgot password"),
+                        ),
                         sizeheight(10),
                         down(),
                       ],
