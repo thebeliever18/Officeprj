@@ -127,7 +127,7 @@ class _OtpPageState extends State<OtpPage> {
                                     child: Text(
                                       "OK",
                                       style: TextStyle(
-                                          color: Colors.white, fontSize: 20,backgroundColor: Color.fromARGB(255, 0, 56, 147)),
+                                          color: Colors.white, fontSize: 20,backgroundColor: .),
                                     ),
                                     onPressed: () {
                                       Navigator.of(context).pop();
@@ -160,6 +160,7 @@ SizedBox sizewidth(double a) {
 
 txtfld() {
   return Container(
+  
     padding: EdgeInsets.only(top: 5),
     width: 60,
     height: 60,
@@ -209,3 +210,4 @@ showMessage(BuildContext context, var message) {
         return dialog;
       });
 }
+
