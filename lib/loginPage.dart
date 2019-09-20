@@ -3,30 +3,13 @@ import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
 import 'package:office_prj/homePage.dart';
 
-import 'forgotPasswordPage.dart';
-import 'main.dart';
-import 'resetPasswordPage.dart';
-
-// void main() => runApp(new MyApp());
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return new MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//         home: new LoginPage(),
-//         theme: new ThemeData(
-//           primarySwatch: Colors.green,
-//         ));
-//   }
-// }
-
 class LoginPage extends StatefulWidget {
   @override
   State createState() => new LoginPageState();
 }
 
 class LoginPageState extends State<LoginPage> {
+
   String Countrycode = "";
   var _Ccode = [
     '+977',
@@ -40,7 +23,8 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
+      home:
+    Scaffold(
       resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Container(
@@ -93,15 +77,16 @@ class LoginPageState extends State<LoginPage> {
                         Password(),
                         sizeheight(10),
                         loginButton(),
-                        RaisedButton(
-                          onPressed: (){
-                            Navigator.push(context, MaterialPageRoute(builder: (context) {
-                            return ForgotPasswordPage();
-                            }));
-                          },
-                          child: Text("Forgot password"),
-                        ),
                         sizeheight(10),
+                        MaterialButton(
+                onPressed: () {},
+                child: Text(
+                  "forget password?",
+                  style: TextStyle(
+                      color: Colors.blue, decoration: TextDecoration.underline),
+                  textDirection: TextDirection.ltr,
+                ),
+              ),
                         down(),
                       ],
                     ),
@@ -114,6 +99,10 @@ class LoginPageState extends State<LoginPage> {
       ),
     ));
   }
+
+
+  
+
 
   down() {
     return Container(
@@ -130,14 +119,7 @@ class LoginPageState extends State<LoginPage> {
                 textDirection: TextDirection.ltr,
               ),
               MaterialButton(
-                onPressed: () {
-                  setState(() {
-                     isForm=true;
-                  });
-                  Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return RegistrationPage();
-                  }));
-                },
+                onPressed: () {},
                 child: Text(
                   "signup",
                   style: TextStyle(
@@ -147,7 +129,7 @@ class LoginPageState extends State<LoginPage> {
               ),
             ],
           ),
-          sizeheight(170),
+          sizeheight(60),
           Text("Link with social network",
               style: TextStyle(color: Colors.black, fontFamily: 'GothamBold')),
           sizeheight(30),
@@ -174,6 +156,7 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+  
   dsewalogo() {
     return Stack(
       children: <Widget>[
@@ -204,12 +187,12 @@ class LoginPageState extends State<LoginPage> {
       width: double.infinity,
       height: 50,
       child: RaisedButton(
-        // onPressed: (){
-        //   Navigator.push(context, MaterialPageRoute(builder: (context){
-        //   return Nextpage();
-        //   }),);
-
-        // },
+        onPressed: (){
+        Navigator.push(context, MaterialPageRoute(builder: (context){
+        return Nextpage();
+        }),);
+        
+        },
         shape: new RoundedRectangleBorder(
           borderRadius: new BorderRadius.circular(30.0),
         ),
@@ -222,10 +205,13 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+
   facebookicon() {
     return FloatingActionButton(
       heroTag: 'btn1',
-      onPressed: () {},
+      onPressed: (){
+        
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         alignment: Alignment.center,
@@ -239,10 +225,15 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+
+  
+
   instagramicon() {
     return FloatingActionButton(
       heroTag: 'btn2',
-      onPressed: () {},
+      onPressed: (){
+
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
@@ -258,7 +249,9 @@ class LoginPageState extends State<LoginPage> {
   twittericon() {
     return FloatingActionButton(
       heroTag: 'btn3',
-      onPressed: () {},
+      onPressed: (){
+
+      },
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
@@ -276,40 +269,43 @@ class Layout extends StatefulWidget {
 }
 
 class LayoutState extends State<Layout> {
+  
   @override
   Widget build(BuildContext context) {
     return layoutDetails(context);
   }
 
-  phoneNo(defaultWidth, defaultHeight, context) {
-    return Container(
-      width: defaultWidth,
-      height: defaultHeight,
-      child: TextFormField(
-        decoration: new InputDecoration(
-          border: OutlineInputBorder(),
-          hintText: "Mobile number",
-          labelText: "Enter your number",
-          filled: true,
-          fillColor: Colors.white10,
-        ),
-        keyboardType: TextInputType.number,
-      ),
-    );
-  }
 
-  layoutDetails(context) {
-    Orientation orientation = MediaQuery.of(context).orientation;
-    if (orientation == Orientation.portrait) {
-      double defaultWidth = MediaQuery.of(context).size.width / 2.1;
-      double defaultHeight = MediaQuery.of(context).size.height / 16;
-      return phoneNo(defaultWidth, defaultHeight, context);
-    } else {
-      double defaultWidth = MediaQuery.of(context).size.width / 2;
-      double defaultHeight = MediaQuery.of(context).size.height / 10;
-      return phoneNo(defaultWidth, defaultHeight, context);
-    }
+phoneNo(defaultWidth, defaultHeight, context) {
+  return Container(
+    width: defaultWidth,
+    height: defaultHeight,
+    child: TextFormField(
+      decoration: new InputDecoration(
+        border: OutlineInputBorder(),
+        hintText: "Mobile number",
+        labelText: "Enter your number",
+        filled: true,
+        fillColor: Colors.white10,
+      ),
+      keyboardType: TextInputType.number,
+    ),
+  );
+}
+
+
+layoutDetails(context) {
+  Orientation orientation = MediaQuery.of(context).orientation;
+  if (orientation == Orientation.portrait) {
+    double defaultWidth = MediaQuery.of(context).size.width / 2.1;
+    double defaultHeight = MediaQuery.of(context).size.height / 16;
+    return phoneNo(defaultWidth, defaultHeight, context);
+  } else {
+    double defaultWidth = MediaQuery.of(context).size.width / 2;
+    double defaultHeight = MediaQuery.of(context).size.height / 10;
+    return phoneNo(defaultWidth, defaultHeight, context);
   }
+}
 }
 
 class Password extends StatefulWidget {
@@ -320,40 +316,45 @@ class Password extends StatefulWidget {
 }
 
 class PasswordState extends State<Password> {
-  bool _isHidden = true;
-  void _toogleVisibility() {
-    setState(() {
-      _isHidden = !_isHidden;
-      signup=!signup;
-    });
-  }
 
+   bool _isHidden = true;
+  void _toogleVisibility(){
+    setState(() {
+     _isHidden = !_isHidden;
+    });
+
+  }
+  
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 240,
-      height: 50,
-      child: TextFormField(
-        decoration: new InputDecoration(
-          border: OutlineInputBorder(),
-          hintText: "Password",
-          hintStyle: TextStyle(
-            color: Colors.grey,
-            fontSize: 16.0,
-          ),
-          suffixIcon: IconButton(
-            onPressed: _toogleVisibility,
-            icon:
-                _isHidden ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
-          ),
-          icon: const Padding(
-            padding: const EdgeInsets.only(top: 5.0),
-          ),
-          filled: true,
-          fillColor: Colors.white10,
+  return Container(
+    width: 190,
+    height: 50,
+    child: TextFormField(
+      decoration: new InputDecoration(
+        border: OutlineInputBorder(),
+        hintText: "Password",
+        hintStyle: TextStyle(
+          
+          color: Colors.grey,
+          fontSize:  16.0,
         ),
-        obscureText: _isHidden,
+       suffixIcon:  IconButton(
+         onPressed: _toogleVisibility,
+         icon: _isHidden ? Icon(Icons.visibility_off): Icon(Icons.visibility),
+       ),
+       icon: const Padding(
+                      padding: const EdgeInsets.only(top: 5.0),
+                      ),
+        filled: true,
+        fillColor: Colors.white10,
       ),
-    );
-  }
+      
+      obscureText: _isHidden,
+      
+    ),
+    
+    
+  );
+}
 }
