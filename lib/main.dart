@@ -3,7 +3,7 @@ import 'package:flutter/semantics.dart';
 import 'package:office_prj/orientation.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-//import 'package:flutter/services.dart';
+import 'package:flutter/services.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 import 'package:keyboard_avoider/keyboard_avoider.dart';
@@ -29,6 +29,10 @@ import 'otpPage.dart';
  * Method from where code executes 
  */
 void main() {
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    statusBarColor: Color.fromARGB(255, 0, 56, 147),
+    statusBarBrightness: Brightness.dark
+  ));
   runApp(RegistrationPage());
 }
 
@@ -41,7 +45,7 @@ class RegistrationPage extends StatelessWidget {
    */
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setEnabledSystemUIOverlays([]);
+    
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
