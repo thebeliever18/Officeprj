@@ -1,18 +1,20 @@
 import 'package:flutter/material.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:office_prj/forgotPasswordPage.dart';
+import 'package:office_prj/resetPasswordPage.dart';
 
 import 'main.dart';
 
 class OtpPage extends StatefulWidget {
-  @override
-  _OtpPageState createState() => _OtpPageState();
+  
+  bool boolValue;
+  OtpPage({this.boolValue});
+  _OtpPageState createState() => _OtpPageState(this.boolValue);
 }
 
 class _OtpPageState extends State<OtpPage> {
-  var _otp;
-
-  @override
+  bool boolValue;
+  _OtpPageState(this.boolValue);
   Widget build(BuildContext context) {
     return MaterialApp(
         debugShowCheckedModeBanner: false,
@@ -96,10 +98,24 @@ class _OtpPageState extends State<OtpPage> {
                                   setState(() {
                                     isForm = !isForm;
                                   });
-                                  Navigator.push(context,
+
+                                  /**
+                                   * If forOtpPage is true than the password resetting page is opened.
+                                   * Else Normal Registration page is opened 
+                                   */
+
+                                  if(boolValue==true){
+                                    Navigator.push(context,
+                                      MaterialPageRoute(builder: (context) {
+                                    return PasswordRestPage();
+                                  }));
+                                  }else{
+                                    Navigator.push(context,
                                       MaterialPageRoute(builder: (context) {
                                     return RegistrationPage();
                                   }));
+                                  }
+                                  
                                   //showMessage(context, _otp);
                                 },
                               ),
@@ -157,7 +173,6 @@ class _OtpPageState extends State<OtpPage> {
         ));
   }
 }
-bool forOtpPage;
 SizedBox sizewidth(double a) {
   return SizedBox(
     width: a,
