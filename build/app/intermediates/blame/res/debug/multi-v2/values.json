@@ -1,10 +1,24 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\values\\styles.xml",
+=======
+<<<<<<< HEAD
+            "outputFile": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\values\\styles.xml",
+=======
+            "outputFile": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\values\\styles.xml",
+>>>>>>> e4c87f1ee293d7c9adc4bcf54632da1c4ab18fe3
+>>>>>>> 83dae92f1784e742515166d5f5c0a09d202bd35c
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

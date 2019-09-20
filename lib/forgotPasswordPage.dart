@@ -27,16 +27,16 @@ class _MyButtonState extends State<MyButton> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Forgot Password"),
-      ),
+      
       body: ListView(
         children: <Widget>[
+          
           Center(
             child: Padding(
               padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
+              
               child: TextField(
+                keyboardType: TextInputType.number,
                 controller: _textFieldController,
                 decoration: InputDecoration(
                   labelText: " Phone Number",

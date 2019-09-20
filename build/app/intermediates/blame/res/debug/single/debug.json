@@ -1,5 +1,6 @@
 [
     {
+<<<<<<< HEAD
         "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
         "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
@@ -22,5 +23,54 @@
     {
         "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
         "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+=======
+<<<<<<< HEAD
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+=======
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+    },
+    {
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+    },
+    {
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+>>>>>>> e4c87f1ee293d7c9adc4bcf54632da1c4ab18fe3
+>>>>>>> 83dae92f1784e742515166d5f5c0a09d202bd35c
     }
 ]
