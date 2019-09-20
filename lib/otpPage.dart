@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:office_prj/pageAfterCont.dart';
+import 'package:office_prj/forgotPasswordPage.dart';
 
 import 'main.dart';
 
@@ -156,7 +157,7 @@ class _OtpPageState extends State<OtpPage> {
         ));
   }
 }
-
+forOtpPage;
 SizedBox sizewidth(double a) {
   return SizedBox(
     width: a,

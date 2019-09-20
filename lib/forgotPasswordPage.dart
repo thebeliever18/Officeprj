@@ -20,7 +20,7 @@ class MyButton extends StatefulWidget {
 
   _MyButtonState createState() => _MyButtonState();
 }
-bool forOtpPage = true;
+
 class _MyButtonState extends State<MyButton> {
   TextEditingController _textFieldController = TextEditingController();
   @override
@@ -59,6 +59,7 @@ class _MyButtonState extends State<MyButton> {
                 ),
                 elevation: 6.0,
                 onPressed: () {
+                  bool forOtpPage = true;
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return OtpPage();
                   }));
