@@ -157,7 +157,7 @@ class _OtpPageState extends State<OtpPage> {
         ));
   }
 }
-forOtpPage;
+bool forOtpPage;
 SizedBox sizewidth(double a) {
   return SizedBox(
     width: a,
