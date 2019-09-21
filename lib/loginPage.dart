@@ -25,6 +25,7 @@ class LoginPage extends StatefulWidget {
 class LoginPageState extends State<LoginPage> {
 
  
+ 
 
 
   
@@ -61,15 +62,29 @@ class LoginPageState extends State<LoginPage> {
                       children: <Widget>[
                         Row(children: <Widget>[
                           Container(
+                            child: Icon(
+                              
+                             Icons.phone,
+                             color: Colors.grey,
+                           
+                            ) 
+                            
+                          ),
+                          sizewidth(15),
+                          Container(
                             alignment: Alignment.center,
                             width: 70.0,
-                            height: 40.0,
+                            height: 47.0,
+                            
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(7.0),
                               border: Border.all(color: Colors.grey),
+                              
                             ),
+                            
                             child: DropdownButtonHideUnderline(
                               child: DropdownButton<String>(
+                                
                                 items: _Ccode.map((String dropDownStringItem) {
                                   return DropdownMenuItem<String>(
                                     value: dropDownStringItem,
@@ -87,14 +102,16 @@ class LoginPageState extends State<LoginPage> {
                                 value: _currentItemSelected,
                               ),
                             ),
+                            
                           ),
-                          sizewidth(17),
+                          sizewidth(5),
                           Layout(),
                         ]),
                         sizeheight(15),
                         Password(),
-                        sizeheight(10),
+                        sizeheight(30),
                         loginButton(),
+
                         sizeheight(10),
                         MaterialButton(
                 onPressed: () {},
@@ -200,6 +217,7 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+
   Container loginButton() {
     return Container(
       width: double.infinity,
@@ -212,7 +230,7 @@ class LoginPageState extends State<LoginPage> {
         
         },
         shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(30.0),
+          borderRadius: new BorderRadius.circular(10.0),
         ),
         color: Colors.blue[900],
         child: Text("Login",
@@ -300,6 +318,7 @@ phoneNo(defaultWidth, defaultHeight, context) {
     height: defaultHeight,
     child: TextFormField(
       decoration: new InputDecoration(
+        
         border: OutlineInputBorder(),
         hintText: "Mobile number",
         labelText: "Enter your number",
@@ -315,7 +334,7 @@ phoneNo(defaultWidth, defaultHeight, context) {
 layoutDetails(context) {
   Orientation orientation = MediaQuery.of(context).orientation;
   if (orientation == Orientation.portrait) {
-    double defaultWidth = MediaQuery.of(context).size.width / 2.1;
+    double defaultWidth = MediaQuery.of(context).size.width / 1.9;
     double defaultHeight = MediaQuery.of(context).size.height / 16;
     return phoneNo(defaultWidth, defaultHeight, context);
   } else {
@@ -346,10 +365,12 @@ class PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
   return Container(
-    width: 190,
+    width: 350,
     height: 50,
     child: TextFormField(
       decoration: new InputDecoration(
+        
+       icon: Icon(Icons.lock), 
         border: OutlineInputBorder(),
         hintText: "Password",
         hintStyle: TextStyle(
@@ -357,13 +378,12 @@ class PasswordState extends State<Password> {
           color: Colors.grey,
           fontSize:  16.0,
         ),
+        
        suffixIcon:  IconButton(
          onPressed: _toogleVisibility,
          icon: _isHidden ? Icon(Icons.visibility_off): Icon(Icons.visibility),
        ),
-       icon: const Padding(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      ),
+       
         filled: true,
         fillColor: Colors.white10,
       ),
@@ -371,6 +391,7 @@ class PasswordState extends State<Password> {
       obscureText: _isHidden,
       
     ),
+    
     
     
   );
