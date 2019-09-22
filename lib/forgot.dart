@@ -27,13 +27,16 @@ class _MyButtonState extends State<MyButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Forgot Password"),
-      ),
+      
+      
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
+          Center(
+              child: Text("Forgot Password",
+               style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)
+              ),
+          ),
           Center(
               child: Padding(
             padding: EdgeInsets.symmetric(horizontal: 25.0),
