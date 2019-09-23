@@ -52,7 +52,7 @@ class ErrorContent extends StatelessWidget {
                         child: Icon(
                           Icons.cloud,
                           color: Colors.white,
-                          size: MediaQuery.of(context).size.width * 0.275,
+                          size: MediaQuery.of(context).size.width * 0.27,
                         ),
                       ),
                     )),
