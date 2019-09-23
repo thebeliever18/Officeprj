@@ -1,43 +1,56 @@
 import 'package:flutter/material.dart';
+//import 'package:flutter_no_internet_view/ui/error_content.dart';
+import 'package:office_prj/networkerror.dart';
 
-void main()=>runApp(MaterialApp(home: HamroApp()));
-class HamroApp extends StatefulWidget {
-  @override
-  _DsewaState createState() => _DsewaState();
-}
+void main() => runApp(MyApp());
 
-class _DsewaState extends State<HamroApp> {
- 
- 
+class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      backgroundColor: Colors.white,
-      
-      body: Container(
-        padding: EdgeInsets.only(left: 85,bottom: 10),
-        
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          
-          children: <Widget>[
-            Text("Opps!",style: TextStyle(fontSize: 24,fontWeight: FontWeight.bold,), ),
-            Text("No internet connection!\nCheck your connection",style: TextStyle(fontSize: 20),),
-          
-            Container(
-              margin: EdgeInsets.only(top: 30),
-              child: RaisedButton(onPressed: (){},child: Text("Try Again",style: TextStyle(
-                fontSize: 22,
-                fontWeight: FontWeight.w700,
-                color: Colors.white)
-              
-                ),color: Color.fromARGB(255, 0, 56, 147),),
-            )
-            
-          ],
-        ),
+    return MaterialApp(
+      title: 'Flutter Demo',
+      theme: ThemeData(
+        primarySwatch: Colors.blue,
       ),
-      
+      home: MyHomePage(),
+    );
+  }
+}
+
+class MyHomePage extends StatefulWidget {
+  @override
+  _MyHomePageState createState() => _MyHomePageState();
+}
+
+class _MyHomePageState extends State<MyHomePage> with TickerProviderStateMixin {
+
+  AnimationController animationController;
+
+  @override
+  void initState() {
+    super.initState();
+
+    animationController = new AnimationController(
+        duration: const Duration(milliseconds: 3000), vsync: this)..addStatusListener((status) {
+          if(status == AnimationStatus.completed) {
+            animationController.reverse();
+          }
+
+          if(status == AnimationStatus.dismissed) {
+            animationController.forward();
+          }
+    });
+
+    animationController.forward();
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return Scaffold(body: AnimatedBuilder(
+        animation: animationController,
+        builder: (BuildContext context, Widget child) {
+          return ErrorContent(controller: animationController,);
+        })
     );
   }
 }
