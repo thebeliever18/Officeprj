@@ -13,10 +13,6 @@ class LoginPage extends StatefulWidget {
 
 class LoginPageState extends State<LoginPage> {
 
- 
- 
-
-
   
   String Countrycode = "";
   var _Ccode = [
@@ -31,8 +27,12 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
+      
+      home: Scaffold(
+        
+        
       resizeToAvoidBottomPadding: false,
+      
       backgroundColor: Colors.white,
       body: Container(
         child: Stack(
@@ -109,10 +109,10 @@ class LoginPageState extends State<LoginPage> {
                             }));
                           },
                           child: Text(
-                            "forget password?",
+                            "Forget password?",
                             style: TextStyle(
                                 color: Colors.blue,
-                                decoration: TextDecoration.underline),
+                              ),
                             textDirection: TextDirection.ltr,
                           ),
                         ),
@@ -136,6 +136,7 @@ class LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              sizewidth(70),
               Text(
                 "Dont have an account?",
                 style: TextStyle(
@@ -155,7 +156,7 @@ class LoginPageState extends State<LoginPage> {
                 child: Text(
                   "signup",
                   style: TextStyle(
-                      color: Colors.blue, decoration: TextDecoration.underline),
+                      color: Colors.blue),
                   textDirection: TextDirection.ltr,
                 ),
               ),
@@ -247,12 +248,18 @@ class LoginPageState extends State<LoginPage> {
       child: IconButton(
         alignment: Alignment.center,
         onPressed: () {},
+      
         icon: Icon(
           FontAwesomeIcons.facebook,
           size: 33,
           color: Colors.blue,
         ),
+        
+         
       ),
+        //shape: new RoundedRectangleBorder(
+          //borderRadius: new BorderRadius.circular(90.0),
+        //),
     );
   }
 
@@ -300,7 +307,7 @@ class LayoutState extends State<Layout> {
 
 
 phoneNo(defaultWidth, defaultHeight, context) {
-  return Container(
+  return Container(ss
     width: defaultWidth,
     height: defaultHeight,
     child: TextFormField(
@@ -312,7 +319,8 @@ phoneNo(defaultWidth, defaultHeight, context) {
         filled: true,
         fillColor: Colors.white10,
       ),
-    );
+    ),
+  );
   }
 
 layoutDetails(context) {
@@ -327,6 +335,8 @@ layoutDetails(context) {
     return phoneNo(defaultWidth, defaultHeight, context);
   }
 }
+}
+
 
 class Password extends StatefulWidget {
   @override
@@ -376,4 +386,5 @@ class PasswordState extends State<Password> {
     
     
   );
+}
 }
