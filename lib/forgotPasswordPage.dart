@@ -9,7 +9,7 @@ class MyApp extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Forgot",
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primaryColor: Colors.blue[900],
       ),
       home: MyButton(),
     );
@@ -27,17 +27,30 @@ class _MyButtonState extends State<MyButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
-      
-      body: ListView(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-          
+         Center(
+            child:Padding(
+                padding: EdgeInsets.all(20),
+           
+                child: Text("Forgot Password",
+                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
+          ),
+          ),
           Center(
             child: Padding(
-              padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
-              
+              padding: const EdgeInsets.all(25.0),
+              child: Text("Enter your 10 digit  number",
+                  style:
+                      TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold)),
+            ),
+          ),
+          Center(
+            child: Padding(
+             
+              padding: EdgeInsets.symmetric(horizontal: 15.0),
               child: TextField(
-                keyboardType: TextInputType.number,
                 controller: _textFieldController,
                 decoration: InputDecoration(
                   labelText: " Phone Number",
@@ -49,23 +62,29 @@ class _MyButtonState extends State<MyButton> {
             ),
           ),
           Container(
-            margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
-            width: MediaQuery.of(context).size.width/2,
-            height: MediaQuery.of(context).size.height-600,
-            
-                
-
+            margin: EdgeInsets.only(top: 60.0),
+             height: MediaQuery.of(context).size.height / 12,
+            width: MediaQuery.of(context).size.width / 1.15,
+          
+          
+           
+           
             child: RaisedButton(
-                color: Colors.blueAccent,
+                color: Colors.blue[900],
                 child: Text(
                   "Continue",
                   style: TextStyle(color: Colors.white),
                 ),
-                
                 elevation: 6.0,
-                onPressed: () => (context)),
+                onPressed: ()  {
+
+                },
+                shape: RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0)
+                ),
                 
-          )
+          ),
+          ),
         ],
       ),
     );
