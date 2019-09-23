@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:office_prj/otpPage.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class ForgotPasswordPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -28,16 +27,14 @@ class _MyButtonState extends State<MyButton> {
   Widget build(BuildContext context) {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
-      appBar: AppBar(
-        backgroundColor: Colors.blueAccent,
-        title: Text("Forgot Password"),
-      ),
+      
       body: ListView(
         children: <Widget>[
           Center(
             child: Padding(
               padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
               child: TextField(
+                keyboardType: TextInputType.number,
                 controller: _textFieldController,
                 decoration: InputDecoration(
                   labelText: " Phone Number",
@@ -50,21 +47,21 @@ class _MyButtonState extends State<MyButton> {
           ),
           Container(
             margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
-            width: MediaQuery.of(context).size.width/2,
-            height: MediaQuery.of(context).size.height-600,
-            
-                
-
+            width: MediaQuery.of(context).size.width / 2,
+            height: MediaQuery.of(context).size.height - 600,
             child: RaisedButton(
                 color: Colors.blueAccent,
                 child: Text(
                   "Continue",
                   style: TextStyle(color: Colors.white),
                 ),
-                
                 elevation: 6.0,
-                onPressed: () => (context)),
-                
+                onPressed: () {
+                  //bool forOtpPage = true;
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return OtpPage(boolValue: true);
+                  }));
+                }),
           )
         ],
       ),

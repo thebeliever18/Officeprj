@@ -1,23 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:office_prj/forgotPasswordPage.dart';
 import 'package:office_prj/homePage.dart';
 
 import 'main.dart';
-
-// void main() => runApp(new MyApp());
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return new MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//         home: new LoginPage(),
-//         theme: new ThemeData(
-//           primarySwatch: Colors.green,
-//         ));
-//   }
-// }
 
 class LoginPage extends StatefulWidget {
   @override
@@ -25,6 +12,8 @@ class LoginPage extends StatefulWidget {
 }
 
 class LoginPageState extends State<LoginPage> {
+
+  
   String Countrycode = "";
   var _Ccode = [
     '+977',
@@ -38,8 +27,12 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-        home: Scaffold(
+      
+      home: Scaffold(
+        
+        
       resizeToAvoidBottomPadding: false,
+      
       backgroundColor: Colors.white,
       body: Container(
         child: Stack(
@@ -57,15 +50,29 @@ class LoginPageState extends State<LoginPage> {
                       children: <Widget>[
                         Row(children: <Widget>[
                           Container(
+                            child: Icon(
+                              
+                             Icons.phone,
+                             color: Colors.grey,
+                           
+                            ) 
+                            
+                          ),
+                          sizewidth(15),
+                          Container(
                             alignment: Alignment.center,
                             width: 70.0,
-                            height: 40.0,
+                            height: 47.0,
+                            
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(7.0),
                               border: Border.all(color: Colors.grey),
+                              
                             ),
+                            
                             child: DropdownButtonHideUnderline(
                               child: DropdownButton<String>(
+                                
                                 items: _Ccode.map((String dropDownStringItem) {
                                   return DropdownMenuItem<String>(
                                     value: dropDownStringItem,
@@ -83,15 +90,32 @@ class LoginPageState extends State<LoginPage> {
                                 value: _currentItemSelected,
                               ),
                             ),
+                            
                           ),
-                          sizewidth(17),
+                          sizewidth(5),
                           Layout(),
                         ]),
                         sizeheight(15),
                         Password(),
-                        sizeheight(10),
+                        sizeheight(30),
                         loginButton(),
+
                         sizeheight(10),
+                        MaterialButton(
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ForgotPasswordPage();
+                            }));
+                          },
+                          child: Text(
+                            "Forget password?",
+                            style: TextStyle(
+                                color: Colors.blue,
+                              ),
+                            textDirection: TextDirection.ltr,
+                          ),
+                        ),
                         down(),
                       ],
                     ),
@@ -112,6 +136,7 @@ class LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
+              sizewidth(70),
               Text(
                 "Dont have an account?",
                 style: TextStyle(
@@ -122,7 +147,7 @@ class LoginPageState extends State<LoginPage> {
               MaterialButton(
                 onPressed: () {
                   setState(() {
-                     isForm=true;
+                    isForm = true;
                   });
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return RegistrationPage();
@@ -131,13 +156,13 @@ class LoginPageState extends State<LoginPage> {
                 child: Text(
                   "signup",
                   style: TextStyle(
-                      color: Colors.blue, decoration: TextDecoration.underline),
+                      color: Colors.blue),
                   textDirection: TextDirection.ltr,
                 ),
               ),
             ],
           ),
-          sizeheight(170),
+          sizeheight(60),
           Text("Link with social network",
               style: TextStyle(color: Colors.black, fontFamily: 'GothamBold')),
           sizeheight(30),
@@ -189,19 +214,22 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+
   Container loginButton() {
     return Container(
       width: double.infinity,
       height: 50,
       child: RaisedButton(
-        // onPressed: (){
-        //   Navigator.push(context, MaterialPageRoute(builder: (context){
-        //   return Nextpage();
-        //   }),);
-
-        // },
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return Nextpage();
+            }),
+          );
+        },
         shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(30.0),
+          borderRadius: new BorderRadius.circular(10.0),
         ),
         color: Colors.blue[900],
         child: Text("Login",
@@ -220,12 +248,18 @@ class LoginPageState extends State<LoginPage> {
       child: IconButton(
         alignment: Alignment.center,
         onPressed: () {},
+      
         icon: Icon(
           FontAwesomeIcons.facebook,
           size: 33,
           color: Colors.blue,
         ),
+        
+         
       ),
+        //shape: new RoundedRectangleBorder(
+          //borderRadius: new BorderRadius.circular(90.0),
+        //),
     );
   }
 
@@ -271,36 +305,38 @@ class LayoutState extends State<Layout> {
     return layoutDetails(context);
   }
 
-  phoneNo(defaultWidth, defaultHeight, context) {
-    return Container(
-      width: defaultWidth,
-      height: defaultHeight,
-      child: TextFormField(
-        decoration: new InputDecoration(
-          border: OutlineInputBorder(),
-          hintText: "Mobile number",
-          labelText: "Enter your number",
-          filled: true,
-          fillColor: Colors.white10,
-        ),
-        keyboardType: TextInputType.number,
+
+phoneNo(defaultWidth, defaultHeight, context) {
+  return Container(ss
+    width: defaultWidth,
+    height: defaultHeight,
+    child: TextFormField(
+      decoration: new InputDecoration(
+        
+        border: OutlineInputBorder(),
+        hintText: "Mobile number",
+        labelText: "Enter your number",
+        filled: true,
+        fillColor: Colors.white10,
       ),
-    );
+    ),
+  );
   }
 
-  layoutDetails(context) {
-    Orientation orientation = MediaQuery.of(context).orientation;
-    if (orientation == Orientation.portrait) {
-      double defaultWidth = MediaQuery.of(context).size.width / 2.1;
-      double defaultHeight = MediaQuery.of(context).size.height / 16;
-      return phoneNo(defaultWidth, defaultHeight, context);
-    } else {
-      double defaultWidth = MediaQuery.of(context).size.width / 2;
-      double defaultHeight = MediaQuery.of(context).size.height / 10;
-      return phoneNo(defaultWidth, defaultHeight, context);
-    }
+layoutDetails(context) {
+  Orientation orientation = MediaQuery.of(context).orientation;
+  if (orientation == Orientation.portrait) {
+    double defaultWidth = MediaQuery.of(context).size.width / 1.9;
+    double defaultHeight = MediaQuery.of(context).size.height / 16;
+    return phoneNo(defaultWidth, defaultHeight, context);
+  } else {
+    double defaultWidth = MediaQuery.of(context).size.width / 2;
+    double defaultHeight = MediaQuery.of(context).size.height / 10;
+    return phoneNo(defaultWidth, defaultHeight, context);
   }
 }
+}
+
 
 class Password extends StatefulWidget {
   @override
@@ -314,36 +350,41 @@ class PasswordState extends State<Password> {
   void _toogleVisibility() {
     setState(() {
       _isHidden = !_isHidden;
-      signup=!signup;
     });
   }
 
   @override
   Widget build(BuildContext context) {
-    return Container(
-      width: 240,
-      height: 50,
-      child: TextFormField(
-        decoration: new InputDecoration(
-          border: OutlineInputBorder(),
-          hintText: "Password",
-          hintStyle: TextStyle(
-            color: Colors.grey,
-            fontSize: 16.0,
-          ),
-          suffixIcon: IconButton(
-            onPressed: _toogleVisibility,
-            icon:
-                _isHidden ? Icon(Icons.visibility_off) : Icon(Icons.visibility),
-          ),
-          icon: const Padding(
-            padding: const EdgeInsets.only(top: 5.0),
-          ),
-          filled: true,
-          fillColor: Colors.white10,
+  return Container(
+    width: 350,
+    height: 50,
+    child: TextFormField(
+      decoration: new InputDecoration(
+        
+       icon: Icon(Icons.lock), 
+        border: OutlineInputBorder(),
+        hintText: "Password",
+        hintStyle: TextStyle(
+          
+          color: Colors.grey,
+          fontSize:  16.0,
         ),
-        obscureText: _isHidden,
+        
+       suffixIcon:  IconButton(
+         onPressed: _toogleVisibility,
+         icon: _isHidden ? Icon(Icons.visibility_off): Icon(Icons.visibility),
+       ),
+       
+        filled: true,
+        fillColor: Colors.white10,
       ),
-    );
-  }
+      
+      obscureText: _isHidden,
+      
+    ),
+    
+    
+    
+  );
+}
 }
