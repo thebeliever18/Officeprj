@@ -1,21 +1,10 @@
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:font_awesome_flutter/font_awesome_flutter.dart';
+import 'package:office_prj/forgotPasswordPage.dart';
 import 'package:office_prj/homePage.dart';
 
-// void main() => runApp(new MyApp());
-
-// class MyApp extends StatelessWidget {
-//   @override
-//   Widget build(BuildContext context) {
-//     return new MaterialApp(
-//         debugShowCheckedModeBanner: false,
-//         home: new LoginPage(),
-//         theme: new ThemeData(
-//           primarySwatch: Colors.green,
-//         ));
-//   }
-// }
+import 'main.dart';
 
 class LoginPage extends StatefulWidget {
   @override
@@ -24,6 +13,7 @@ class LoginPage extends StatefulWidget {
 
 class LoginPageState extends State<LoginPage> {
 
+ 
  
 
 
@@ -41,8 +31,7 @@ class LoginPageState extends State<LoginPage> {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      home:
-    Scaffold(
+        home: Scaffold(
       resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Container(
@@ -61,15 +50,29 @@ class LoginPageState extends State<LoginPage> {
                       children: <Widget>[
                         Row(children: <Widget>[
                           Container(
+                            child: Icon(
+                              
+                             Icons.phone,
+                             color: Colors.grey,
+                           
+                            ) 
+                            
+                          ),
+                          sizewidth(15),
+                          Container(
                             alignment: Alignment.center,
                             width: 70.0,
-                            height: 40.0,
+                            height: 47.0,
+                            
                             decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(7.0),
                               border: Border.all(color: Colors.grey),
+                              
                             ),
+                            
                             child: DropdownButtonHideUnderline(
                               child: DropdownButton<String>(
+                                
                                 items: _Ccode.map((String dropDownStringItem) {
                                   return DropdownMenuItem<String>(
                                     value: dropDownStringItem,
@@ -87,24 +90,32 @@ class LoginPageState extends State<LoginPage> {
                                 value: _currentItemSelected,
                               ),
                             ),
+                            
                           ),
-                          sizewidth(17),
+                          sizewidth(5),
                           Layout(),
                         ]),
                         sizeheight(15),
                         Password(),
-                        sizeheight(10),
+                        sizeheight(30),
                         loginButton(),
+
                         sizeheight(10),
                         MaterialButton(
-                onPressed: () {},
-                child: Text(
-                  "forget password?",
-                  style: TextStyle(
-                      color: Colors.blue, decoration: TextDecoration.underline),
-                  textDirection: TextDirection.ltr,
-                ),
-              ),
+                          onPressed: () {
+                            Navigator.push(context,
+                                MaterialPageRoute(builder: (context) {
+                              return ForgotPasswordPage();
+                            }));
+                          },
+                          child: Text(
+                            "forget password?",
+                            style: TextStyle(
+                                color: Colors.blue,
+                                decoration: TextDecoration.underline),
+                            textDirection: TextDirection.ltr,
+                          ),
+                        ),
                         down(),
                       ],
                     ),
@@ -117,10 +128,6 @@ class LoginPageState extends State<LoginPage> {
       ),
     ));
   }
-
-
-  
-
 
   down() {
     return Container(
@@ -137,7 +144,14 @@ class LoginPageState extends State<LoginPage> {
                 textDirection: TextDirection.ltr,
               ),
               MaterialButton(
-                onPressed: () {},
+                onPressed: () {
+                  setState(() {
+                    isForm = true;
+                  });
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return RegistrationPage();
+                  }));
+                },
                 child: Text(
                   "signup",
                   style: TextStyle(
@@ -174,7 +188,6 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
-  
   dsewalogo() {
     return Stack(
       children: <Widget>[
@@ -200,19 +213,22 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
+
   Container loginButton() {
     return Container(
       width: double.infinity,
       height: 50,
       child: RaisedButton(
-        onPressed: (){
-        Navigator.push(context, MaterialPageRoute(builder: (context){
-        return Nextpage();
-        }),);
-        
+        onPressed: () {
+          Navigator.push(
+            context,
+            MaterialPageRoute(builder: (context) {
+              return Nextpage();
+            }),
+          );
         },
         shape: new RoundedRectangleBorder(
-          borderRadius: new BorderRadius.circular(30.0),
+          borderRadius: new BorderRadius.circular(10.0),
         ),
         color: Colors.blue[900],
         child: Text("Login",
@@ -223,13 +239,10 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
-
   facebookicon() {
     return FloatingActionButton(
       heroTag: 'btn1',
-      onPressed: (){
-        
-      },
+      onPressed: () {},
       backgroundColor: Colors.white,
       child: IconButton(
         alignment: Alignment.center,
@@ -243,15 +256,10 @@ class LoginPageState extends State<LoginPage> {
     );
   }
 
-
-  
-
   instagramicon() {
     return FloatingActionButton(
       heroTag: 'btn2',
-      onPressed: (){
-
-      },
+      onPressed: () {},
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
@@ -267,9 +275,7 @@ class LoginPageState extends State<LoginPage> {
   twittericon() {
     return FloatingActionButton(
       heroTag: 'btn3',
-      onPressed: (){
-
-      },
+      onPressed: () {},
       backgroundColor: Colors.white,
       child: IconButton(
         onPressed: () {},
@@ -287,7 +293,6 @@ class Layout extends StatefulWidget {
 }
 
 class LayoutState extends State<Layout> {
-  
   @override
   Widget build(BuildContext context) {
     return layoutDetails(context);
@@ -300,22 +305,20 @@ phoneNo(defaultWidth, defaultHeight, context) {
     height: defaultHeight,
     child: TextFormField(
       decoration: new InputDecoration(
+        
         border: OutlineInputBorder(),
         hintText: "Mobile number",
         labelText: "Enter your number",
         filled: true,
         fillColor: Colors.white10,
       ),
-      keyboardType: TextInputType.number,
-    ),
-  );
-}
-
+    );
+  }
 
 layoutDetails(context) {
   Orientation orientation = MediaQuery.of(context).orientation;
   if (orientation == Orientation.portrait) {
-    double defaultWidth = MediaQuery.of(context).size.width / 2.1;
+    double defaultWidth = MediaQuery.of(context).size.width / 1.9;
     double defaultHeight = MediaQuery.of(context).size.height / 16;
     return phoneNo(defaultWidth, defaultHeight, context);
   } else {
@@ -323,7 +326,6 @@ layoutDetails(context) {
     double defaultHeight = MediaQuery.of(context).size.height / 10;
     return phoneNo(defaultWidth, defaultHeight, context);
   }
-}
 }
 
 class Password extends StatefulWidget {
@@ -334,22 +336,22 @@ class Password extends StatefulWidget {
 }
 
 class PasswordState extends State<Password> {
-
-   bool _isHidden = true;
-  void _toogleVisibility(){
+  bool _isHidden = true;
+  void _toogleVisibility() {
     setState(() {
-     _isHidden = !_isHidden;
+      _isHidden = !_isHidden;
     });
-
   }
-  
+
   @override
   Widget build(BuildContext context) {
   return Container(
-    width: 190,
+    width: 350,
     height: 50,
     child: TextFormField(
       decoration: new InputDecoration(
+        
+       icon: Icon(Icons.lock), 
         border: OutlineInputBorder(),
         hintText: "Password",
         hintStyle: TextStyle(
@@ -357,13 +359,12 @@ class PasswordState extends State<Password> {
           color: Colors.grey,
           fontSize:  16.0,
         ),
+        
        suffixIcon:  IconButton(
          onPressed: _toogleVisibility,
          icon: _isHidden ? Icon(Icons.visibility_off): Icon(Icons.visibility),
        ),
-       icon: const Padding(
-                      padding: const EdgeInsets.only(top: 5.0),
-                      ),
+       
         filled: true,
         fillColor: Colors.white10,
       ),
@@ -373,6 +374,6 @@ class PasswordState extends State<Password> {
     ),
     
     
+    
   );
-}
 }

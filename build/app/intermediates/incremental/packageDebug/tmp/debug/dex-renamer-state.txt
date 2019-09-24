@@ -1,4 +1,16 @@
+<<<<<<< HEAD
 #Thu Sep 19 15:32:10 NPT 2019
 base.0=C\:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
+=======
+<<<<<<< HEAD
+#Sat Sep 21 17:27:31 NPT 2019
+base.0=C\:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+=======
+#Fri Sep 20 12:52:31 NPT 2019
+base.0=D\:\\practise_flutter\\office_prj\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+>>>>>>> d8e0ac229af428dbdf96e8968bed6dfcff40893f
+path.0=classes.dex
+renamed.0=classes.dex
+>>>>>>> c86b39e94deb62326ecf338a15d7ecfc12e9c152

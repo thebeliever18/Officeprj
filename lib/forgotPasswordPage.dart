@@ -1,8 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:office_prj/otpPage.dart';
 
-void main() => runApp(MyApp());
-
-class MyApp extends StatelessWidget {
+class ForgotPasswordPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -30,26 +29,9 @@ class _MyButtonState extends State<MyButton> {
       body: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
-         Center(
-            child:Padding(
-                padding: EdgeInsets.all(20),
-           
-                child: Text("Forgot Password",
-                style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold)),
-          ),
-          ),
           Center(
             child: Padding(
-              padding: const EdgeInsets.all(25.0),
-              child: Text("Enter your 10 digit  number",
-                  style:
-                      TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold)),
-            ),
-          ),
-          Center(
-            child: Padding(
-             
-              padding: EdgeInsets.symmetric(horizontal: 15.0),
+              padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
               child: TextField(
                 controller: _textFieldController,
                 decoration: InputDecoration(
@@ -61,14 +43,18 @@ class _MyButtonState extends State<MyButton> {
               ),
             ),
           ),
+           Center(
+            child: Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Text("Enter your 10 digit  number",
+                  style:
+                      TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold)),
+            ),
+          ),
           Container(
-            margin: EdgeInsets.only(top: 60.0),
-             height: MediaQuery.of(context).size.height / 12,
-            width: MediaQuery.of(context).size.width / 1.15,
-          
-          
-           
-           
+            margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
+            width: MediaQuery.of(context).size.width / 2,
+            height: MediaQuery.of(context).size.height - 600,
             child: RaisedButton(
                 color: Colors.blue[900],
                 child: Text(
@@ -76,15 +62,18 @@ class _MyButtonState extends State<MyButton> {
                   style: TextStyle(color: Colors.white),
                 ),
                 elevation: 6.0,
-                onPressed: ()  {
-
+                onPressed: () {
+                  //bool forOtpPage = true;
+                  Navigator.push(context, MaterialPageRoute(builder: (context) {
+                    return OtpPage(boolValue: true);
+                  }));
+                  
                 },
-                shape: RoundedRectangleBorder(
+                 shape: RoundedRectangleBorder(
                     borderRadius: new BorderRadius.circular(10.0)
                 ),
-                
-          ),
-          ),
+                ),
+          )
         ],
       ),
     );
