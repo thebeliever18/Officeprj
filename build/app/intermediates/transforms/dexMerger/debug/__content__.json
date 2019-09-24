@@ -1,5 +1,16 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"main","index":0,"scopes":["MAIN_SPLIT","EXTERNAL_LIBRARIES","SUB_PROJECTS","PROJECT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
 =======
 [{"name":"main","index":0,"scopes":["SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT","PROJECT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
 >>>>>>> c86b39e94deb62326ecf338a15d7ecfc12e9c152
+=======
+<<<<<<< HEAD
+[{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
+=======
+[{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","MAIN_SPLIT","EXTERNAL_LIBRARIES"],"types":["DEX"],"format":"DIRECTORY","present":true}]
+>>>>>>> 9d0b8241e5486a8a497a1ea7347875e21473aeea
+=======
+[{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
+>>>>>>> 98ed7b7f58de3811e63daa96b3414d5169105c64
+>>>>>>> 35b15c42bbcbbcc2a1ca3ea36916f41b17f25229

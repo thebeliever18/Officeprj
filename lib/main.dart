@@ -3,7 +3,7 @@ import 'package:flutter/semantics.dart';
 import 'package:office_prj/orientation.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-//import 'package:flutter/services.dart';
+import 'package:flutter/services.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 import 'package:keyboard_avoider/keyboard_avoider.dart';
@@ -29,7 +29,12 @@ import 'otpPage.dart';
  * Method from where code executes 
  */
 void main() {
+  
   runApp(RegistrationPage());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.blue[900], // navigation bar color
+    statusBarColor: Colors.blue[900], // status bar color
+  ));
 }
 
 
