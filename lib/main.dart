@@ -29,11 +29,12 @@ import 'otpPage.dart';
  * Method from where code executes 
  */
 void main() {
-  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    statusBarColor: Color.fromARGB(255, 0, 56, 147),
-    statusBarBrightness: Brightness.dark
-  ));
+  
   runApp(RegistrationPage());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.blue[900], // navigation bar color
+    statusBarColor: Colors.blue[900], // status bar color
+  ));
 }
 
 
