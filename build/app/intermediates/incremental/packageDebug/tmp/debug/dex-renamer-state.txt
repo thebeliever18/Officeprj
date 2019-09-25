@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 #Mon Sep 23 14:50:15 NPT 2019
 =======
 <<<<<<< HEAD
@@ -31,3 +32,9 @@ base.0=C\:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\tr
 path.0=classes.dex
 renamed.0=classes.dex
 >>>>>>> 98ed7b7f58de3811e63daa96b3414d5169105c64
+=======
+#Wed Sep 25 12:23:03 NPT 2019
+base.0=C\:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
+path.0=classes.dex
+renamed.0=classes.dex
+>>>>>>> 5f1698176d47201be40490e7f4bc3e08c33e9266

@@ -1,4 +1,5 @@
 <<<<<<< HEAD
+<<<<<<< HEAD
 [{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
 =======
 <<<<<<< HEAD
@@ -11,3 +12,6 @@
 [{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
 >>>>>>> 98ed7b7f58de3811e63daa96b3414d5169105c64
 >>>>>>> 35b15c42bbcbbcc2a1ca3ea36916f41b17f25229
+=======
+[{"name":"main","index":0,"scopes":["PROJECT","SUB_PROJECTS","EXTERNAL_LIBRARIES","MAIN_SPLIT"],"types":["DEX"],"format":"DIRECTORY","present":true}]
+>>>>>>> 5f1698176d47201be40490e7f4bc3e08c33e9266
