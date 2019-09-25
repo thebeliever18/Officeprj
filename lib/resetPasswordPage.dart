@@ -8,7 +8,7 @@ class PasswordRestPage extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        primaryColor: Color(0xFFFB415B),
+        primaryColor: Colors.blue[900],
       ),
       home: ResetPage(),
     );

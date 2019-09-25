@@ -8,7 +8,8 @@ class ForgotPasswordPage extends StatelessWidget {
       debugShowCheckedModeBanner: false,
       title: "Forgot",
       theme: ThemeData(
-        primarySwatch: Colors.red,
+        primaryColor: Colors.blue[900],
+      
       ),
       home: MyButton(),
     );
@@ -26,16 +27,15 @@ class _MyButtonState extends State<MyButton> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      resizeToAvoidBottomPadding: false,
-      
-      body: ListView(
+      body: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
         children: <Widget>[
           Center(
             child: Padding(
               padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
               child: TextField(
-                keyboardType: TextInputType.number,
                 controller: _textFieldController,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   labelText: " Phone Number",
                   border: OutlineInputBorder(
@@ -45,12 +45,20 @@ class _MyButtonState extends State<MyButton> {
               ),
             ),
           ),
+           Center(
+            child: Padding(
+              padding: const EdgeInsets.all(25.0),
+              child: Text("Enter your 10 digit  number",
+                  style:
+                      TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold)),
+            ),
+          ),
           Container(
             margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
             width: MediaQuery.of(context).size.width / 2,
             height: MediaQuery.of(context).size.height - 600,
             child: RaisedButton(
-                color: Colors.blueAccent,
+                color: Colors.blue[900],
                 child: Text(
                   "Continue",
                   style: TextStyle(color: Colors.white),
@@ -61,7 +69,12 @@ class _MyButtonState extends State<MyButton> {
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return OtpPage(boolValue: true);
                   }));
-                }),
+                  
+                },
+                 shape: RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0)
+                ),
+                ),
           )
         ],
       ),
