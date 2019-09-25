@@ -1,4 +1,0 @@
-#Fri Sep 20 15:11:34 NPT 2019
-base.0=D\:\\practise_flutter\\office_prj\\build\\app\\intermediates\\transforms\\r8\\release\\1
-path.0=classes.dex
-renamed.0=classes.dex

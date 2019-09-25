@@ -46,7 +46,7 @@ class RegistrationPage extends StatelessWidget {
    */
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setEnabledSystemUIOverlays([]);
+    
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
