@@ -9,6 +9,7 @@ class ForgotPasswordPage extends StatelessWidget {
       title: "Forgot",
       theme: ThemeData(
         primaryColor: Colors.blue[900],
+      
       ),
       home: MyButton(),
     );

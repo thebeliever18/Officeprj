@@ -307,7 +307,7 @@ class LayoutState extends State<Layout> {
 
 
 phoneNo(defaultWidth, defaultHeight, context) {
-  return Container(ss
+  return Container(
     width: defaultWidth,
     height: defaultHeight,
     child: TextFormField(
