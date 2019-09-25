@@ -1,47 +1,4 @@
-<<<<<<< HEAD
-#Wed Sep 25 15:26:47 NPT 2019
+#Wed Sep 25 16:01:51 NPT 2019
 base.0=C\:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
 path.0=classes.dex
 renamed.0=classes.dex
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Mon Sep 23 14:50:15 NPT 2019
-=======
-<<<<<<< HEAD
-<<<<<<< HEAD
-#Thu Sep 19 13:26:35 NPT 2019
-base.0=C\:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
-=======
-<<<<<<< HEAD
-#Thu Sep 19 11:00:46 NPT 2019
-=======
-<<<<<<< HEAD
-#Wed Sep 18 13:33:54 NPT 2019
-base.0=C\:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
-=======
-#Tue Sep 17 16:32:27 NPT 2019
->>>>>>> b0d828607231e4f020b885d508824b6d3b0cfe9e
->>>>>>> 35b15c42bbcbbcc2a1ca3ea36916f41b17f25229
-base.0=D\:\\practise_flutter\\office_prj\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
->>>>>>> dc76c1666e9df37280bf946a1a2aaed55c913519
->>>>>>> 9d0b8241e5486a8a497a1ea7347875e21473aeea
-=======
-#Mon Sep 23 14:23:03 NPT 2019
-base.0=C\:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
->>>>>>> 98ed7b7f58de3811e63daa96b3414d5169105c64
-=======
-#Wed Sep 25 12:23:03 NPT 2019
-base.0=C\:\\Users\\Acer\\Desktop\\gitclone\\Officeprj-1\\build\\app\\intermediates\\transforms\\dexMerger\\debug\\0
-path.0=classes.dex
-renamed.0=classes.dex
->>>>>>> 5f1698176d47201be40490e7f4bc3e08c33e9266
->>>>>>> 9fb2a16cb8cb1ad2b36a7d5d25cda56e0e0cb1ce

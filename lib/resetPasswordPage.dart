@@ -47,6 +47,7 @@ class ResetPageState extends State<ResetPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            top(),
             SizedBox(
               height: 40.0,
             ),
@@ -76,6 +77,7 @@ class ResetPageState extends State<ResetPage> {
 
   Widget buildTextField(String labelText) {
     return TextField(
+      maxLength: 8,
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -100,6 +102,7 @@ class ResetPageState extends State<ResetPage> {
 
   Widget buildTextFieldtwo(String labelText) {
     return TextField(
+      maxLength: 8,
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -129,6 +132,7 @@ class ResetPageState extends State<ResetPage> {
         Text(
           "Reset Password",
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          
         ),
         Center(
           child: Padding(
@@ -156,9 +160,7 @@ class ResetPageState extends State<ResetPage> {
         child: RaisedButton(
           child: Text(
             "Save",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18.0,
+            style: TextStyle(fontSize: 25.0, color: Colors.white
             ),
           ),
           onPressed: () {
@@ -179,7 +181,8 @@ class ResetPageState extends State<ResetPage> {
           
           
             ),
-        ),
+      ),
+        
       );
     
   }

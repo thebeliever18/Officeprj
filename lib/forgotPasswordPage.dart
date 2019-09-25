@@ -101,7 +101,7 @@ class _MyButtonState extends State<MyButton> {
                 color: Colors.blue[900],
                 child: Text(
                   "Continue",
-                  style: TextStyle(color: Colors.white),
+                   style: TextStyle(fontSize: 25.0, color: Colors.white),
                 ),
                 elevation: 6.0,
                 onPressed: () {
