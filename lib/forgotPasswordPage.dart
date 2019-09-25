@@ -35,6 +35,7 @@ class _MyButtonState extends State<MyButton> {
               padding: EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0),
               child: TextField(
                 controller: _textFieldController,
+                keyboardType: TextInputType.number,
                 decoration: InputDecoration(
                   labelText: " Phone Number",
                   border: OutlineInputBorder(
