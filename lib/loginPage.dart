@@ -26,13 +26,15 @@ class LoginPageState extends State<LoginPage> {
 
   @override
   Widget build(BuildContext context) {
+    Padding(
+      padding: EdgeInsets.only(top: 200),
+      
+    );
     return MaterialApp(
       
-      home: Scaffold(
-        
-        
-      resizeToAvoidBottomPadding: false,
       
+      home: Scaffold(   
+      resizeToAvoidBottomPadding: false,
       backgroundColor: Colors.white,
       body: Container(
         child: Stack(
@@ -136,7 +138,7 @@ class LoginPageState extends State<LoginPage> {
           Row(
             mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-              sizewidth(70),
+          
               Text(
                 "Dont have an account?",
                 style: TextStyle(
@@ -307,7 +309,7 @@ class LayoutState extends State<Layout> {
 
 
 phoneNo(defaultWidth, defaultHeight, context) {
-  return Container(ss
+  return Container(
     width: defaultWidth,
     height: defaultHeight,
     child: TextFormField(
@@ -326,7 +328,7 @@ phoneNo(defaultWidth, defaultHeight, context) {
 layoutDetails(context) {
   Orientation orientation = MediaQuery.of(context).orientation;
   if (orientation == Orientation.portrait) {
-    double defaultWidth = MediaQuery.of(context).size.width / 1.9;
+    double defaultWidth = MediaQuery.of(context).size.width / 2.2;
     double defaultHeight = MediaQuery.of(context).size.height / 16;
     return phoneNo(defaultWidth, defaultHeight, context);
   } else {
@@ -356,7 +358,7 @@ class PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
   return Container(
-    width: 350,
+    width: 270,
     height: 50,
     child: TextFormField(
       decoration: new InputDecoration(
