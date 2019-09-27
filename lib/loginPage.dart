@@ -312,8 +312,13 @@ phoneNo(defaultWidth, defaultHeight, context) {
   return Container(
     width: defaultWidth,
     height: defaultHeight,
+    
     child: TextFormField(
+      maxLength: 10,
+      maxLengthEnforced: true,
+      
       decoration: new InputDecoration(
+        counterText: '',        
         
         border: OutlineInputBorder(),
         hintText: "Mobile number",
@@ -361,6 +366,8 @@ class PasswordState extends State<Password> {
     width: 270,
     height: 50,
     child: TextFormField(
+      
+
       decoration: new InputDecoration(
         
        icon: Icon(Icons.lock), 

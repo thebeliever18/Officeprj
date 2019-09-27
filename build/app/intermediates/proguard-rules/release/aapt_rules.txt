@@ -1,4 +1,0 @@
-# Referenced at D:\practise_flutter\office_prj\build\app\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:21
--keep class com.example.office_prj.MainActivity { <init>(...); }
-# Referenced at D:\practise_flutter\office_prj\build\app\intermediates\merged_manifests\release\processReleaseManifest\merged\AndroidManifest.xml:17
--keep class io.flutter.app.FlutterApplication { <init>(...); }
