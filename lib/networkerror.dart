@@ -1,13 +1,19 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-class ErrorContent extends StatelessWidget {
+class ErrorContent extends StatefulWidget {
   NetworkErrorAnimation animation;
 
   ErrorContent({@required AnimationController controller})
       : animation = new NetworkErrorAnimation(controller);
-  
+
+  @override
+  _ErrorContentState createState() => _ErrorContentState();
+}
+
+class _ErrorContentState extends State<ErrorContent> {
    bool _value=false;
+
   void _onChangeSwitch(bool _value){
     setState(() {
       _value=!_value;
@@ -31,8 +37,8 @@ class ErrorContent extends StatelessWidget {
                   right: 0,
                   child: Transform(
                     transform: new Matrix4.diagonal3Values(
-                      1.5 - animation.sizeTranslation.value,
-                      1.5 - animation.sizeTranslation.value,
+                      1.5 - widget.animation.sizeTranslation.value,
+                      1.5 - widget.animation.sizeTranslation.value,
                       .0,
                     ),
                     alignment: Alignment.center,
@@ -51,7 +57,7 @@ class ErrorContent extends StatelessWidget {
                     right: 8.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        1 - animation.xTranslation.value,
+                        1 - widget.animation.xTranslation.value,
                         0.0,
                         0.0,
                       ),
@@ -69,7 +75,7 @@ class ErrorContent extends StatelessWidget {
                     left: 8.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        animation.xTranslation.value,
+                        widget.animation.xTranslation.value,
                         0.0,
                         0.0,
                       ),
@@ -87,7 +93,7 @@ class ErrorContent extends StatelessWidget {
                     left: 120.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        animation.xTranslation.value,
+                        widget.animation.xTranslation.value,
                         80.0,
                         20.0
                       ),
@@ -117,15 +123,15 @@ class ErrorContent extends StatelessWidget {
               ),
               Transform(
                 transform: new Matrix4.diagonal3Values(
-                  animation.sizeTranslation.value * 2,
-                  animation.sizeTranslation.value * 2,
+                  widget.animation.sizeTranslation.value * 2,
+                  widget.animation.sizeTranslation.value * 2,
                   1.0,
                 ),
                 alignment: Alignment.center,
                 child: AutoSizeText(
                   'Whoops!',
                   style: Theme.of(context).textTheme.display2.copyWith(
-                      color: animation._colorTween.value,
+                      color: widget.animation._colorTween.value,
                       fontWeight: FontWeight.w700),
                   textAlign: TextAlign.center,
                 ),
