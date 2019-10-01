@@ -1,7 +1,0 @@
-Resource Reference Graph:
-style:LaunchTheme:2130903040 => [drawable:launch_background:2130771968]
-
-The root reachable resources are:
-mipmap:ic_launcher:2130837504,
-   style:LaunchTheme:2130903040
-Resource shrinking did not work (grew from 7797 to 7806); using original instead

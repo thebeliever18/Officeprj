@@ -1,19 +1,13 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 
-class ErrorContent extends StatefulWidget {
+class ErrorContent extends StatelessWidget {
   NetworkErrorAnimation animation;
 
   ErrorContent({@required AnimationController controller})
       : animation = new NetworkErrorAnimation(controller);
-
-  @override
-  _ErrorContentState createState() => _ErrorContentState();
-}
-
-class _ErrorContentState extends State<ErrorContent> {
+  
    bool _value=false;
-
   void _onChangeSwitch(bool _value){
     setState(() {
       _value=!_value;
@@ -37,8 +31,8 @@ class _ErrorContentState extends State<ErrorContent> {
                   right: 0,
                   child: Transform(
                     transform: new Matrix4.diagonal3Values(
-                      1.5 - widget.animation.sizeTranslation.value,
-                      1.5 - widget.animation.sizeTranslation.value,
+                      1.5 - animation.sizeTranslation.value,
+                      1.5 - animation.sizeTranslation.value,
                       .0,
                     ),
                     alignment: Alignment.center,
@@ -57,7 +51,7 @@ class _ErrorContentState extends State<ErrorContent> {
                     right: 8.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        1 - widget.animation.xTranslation.value,
+                        1 - animation.xTranslation.value,
                         0.0,
                         0.0,
                       ),
@@ -75,7 +69,7 @@ class _ErrorContentState extends State<ErrorContent> {
                     left: 8.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        widget.animation.xTranslation.value,
+                        animation.xTranslation.value,
                         0.0,
                         0.0,
                       ),
@@ -93,7 +87,7 @@ class _ErrorContentState extends State<ErrorContent> {
                     left: 120.0,
                     child: Transform(
                       transform: new Matrix4.translationValues(
-                        widget.animation.xTranslation.value,
+                        animation.xTranslation.value,
                         80.0,
                         20.0
                       ),
@@ -123,15 +117,15 @@ class _ErrorContentState extends State<ErrorContent> {
               ),
               Transform(
                 transform: new Matrix4.diagonal3Values(
-                  widget.animation.sizeTranslation.value * 2,
-                  widget.animation.sizeTranslation.value * 2,
+                  animation.sizeTranslation.value * 2,
+                  animation.sizeTranslation.value * 2,
                   1.0,
                 ),
                 alignment: Alignment.center,
                 child: AutoSizeText(
                   'Whoops!',
                   style: Theme.of(context).textTheme.display2.copyWith(
-                      color: widget.animation._colorTween.value,
+                      color: animation._colorTween.value,
                       fontWeight: FontWeight.w700),
                   textAlign: TextAlign.center,
                 ),
@@ -163,16 +157,19 @@ class _ErrorContentState extends State<ErrorContent> {
                  
                 ),
               ),
-               SwitchListTile(
-                value: _value,
-                onChanged: _onChangeSwitch,
-                activeColor: Colors.blue[900],
-                title: Text(
-                  "Cellular Data",
-                  style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
-                  
+              Container(
+                padding: EdgeInsets.only(left: 120,),
+                child: SwitchListTile(
+                  value: _value,
+                  onChanged: _onChangeSwitch,
+                  activeColor: Colors.blue[900],
+                  title: Text(
+                    "Cellular Data",
+                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+                    
 
-                  ),
+                    ),
+                ),
               )
             ],
           ))
