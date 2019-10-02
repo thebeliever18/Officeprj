@@ -363,11 +363,11 @@ class PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
   return Container(
-    width: 270,
+    padding: EdgeInsets.only(right: 100),
+    width: 340,
     height: 50,
-    child: TextFormField(
-      
 
+    child: TextFormField(
       decoration: new InputDecoration(
         
        icon: Icon(Icons.lock), 
@@ -390,10 +390,7 @@ class PasswordState extends State<Password> {
       
       obscureText: _isHidden,
       
-    ),
-    
-    
-    
+    ),  
   );
 }
 }
