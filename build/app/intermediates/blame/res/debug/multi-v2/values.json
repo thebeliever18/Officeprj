@@ -1,19 +1,18 @@
 {
     "logs": [
         {
+<<<<<<< HEAD
             "outputFile": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\values\\styles.xml",
+=======
+            "outputFile": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "map": [
+                {
+                    "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\values\\styles.xml",
+>>>>>>> ff8272d5b6834f3afa9c8165456249143fa5b8c4
                     "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "57",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "353"
-                    },
-                    "to": {
                         "startLines": "2",
                         "startColumns": "4",
                         "startOffsets": "55",
