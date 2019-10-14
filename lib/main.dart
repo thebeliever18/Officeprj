@@ -3,10 +3,13 @@ import 'package:flutter/semantics.dart';
 import 'package:office_prj/orientation.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-//import 'package:flutter/services.dart';
+import 'package:flutter/services.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 import 'package:keyboard_avoider/keyboard_avoider.dart';
+
+import 'loginPage.dart';
+import 'otpPage.dart';
 
 /*
  * Flutter has built-in function 
@@ -26,19 +29,24 @@ import 'package:keyboard_avoider/keyboard_avoider.dart';
  * Method from where code executes 
  */
 void main() {
+  
   runApp(RegistrationPage());
+  SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
+    systemNavigationBarColor: Colors.blue[900], // navigation bar color
+    statusBarColor: Colors.blue[900], // status bar color
+  ));
 }
 
 
 bool isForm = true;
-
+bool signup=true;
 class RegistrationPage extends StatelessWidget {
   /*
    * This widget is the root of your application.
    */
   @override
   Widget build(BuildContext context) {
-    //SystemChrome.setEnabledSystemUIOverlays([]);
+    
     return MaterialApp(
         debugShowCheckedModeBanner: false,
         title: 'Flutter Demo',
@@ -69,7 +77,7 @@ class Forms extends StatefulWidget {
  * @autofoucs-> To auto-scroll to a focused widget such as a TextFieldd, set the autoScroll property to true. 
  * If child is not a ScrollView, it is automatically embedded in a SingleChildScrollView to make it scrollable.
  */
-
+int a=0;
 class FormsState extends State<Forms> {
   int i = 3;
   final ScrollController _scrollController = ScrollController();
@@ -86,13 +94,16 @@ class FormsState extends State<Forms> {
             padding: EdgeInsets.only(top: heightPadding),
             child: dsewaLogo(context),
           )),
+
           Center(
               child: Padding(
             padding: EdgeInsets.only(top: heightPadding+5.0),
-            child: isForm
+             child: isForm
                 ? form(context)
                 : form(context, child: PageAfterCont(context), color: Colors.white),
+   
           )),
+          
           Center(
             child: Padding(
                 padding: EdgeInsets.only(top: heightPadding+20.0),
@@ -107,6 +118,7 @@ class FormsState extends State<Forms> {
  * Code for button
  */
   Widget btn(context) {
+    
     return Row(
       mainAxisAlignment: MainAxisAlignment.center,
       children: <Widget>[
@@ -119,9 +131,25 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
-              setState(() {
-                isForm = !isForm;
-              });
+              a++;
+              
+              /**
+               * Importing otpPage
+               */
+              if(a==1){
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                return OtpPage();
+              }));
+              /**
+               * Importing Login Page
+               */
+              }else if(a==2){
+                a=0;
+                Navigator.push(context, MaterialPageRoute(builder: (context){
+                return LoginPage();
+              }));
+              }
+              
             },
             color: Color.fromARGB(255, 0, 56, 147),
           ),

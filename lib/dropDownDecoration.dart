@@ -62,18 +62,6 @@ class DropDownDecorationState extends State<DropDownDecoration> {
                   ),
                 ),
               )),
-          Positioned(
-            top: -1.5,
-            left: 40.0,
-            child: Container(
-              padding: EdgeInsets.symmetric(horizontal: 2.0),
-              width: MediaQuery.of(context).size.width-310,
-              color: Colors.white,
-              child: Text("Gender",style: TextStyle(
-                color: Colors.grey
-              ),),
-            ),
-          )
         ],
   ),
       ],
