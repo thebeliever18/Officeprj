@@ -5,6 +5,11 @@ INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\Android
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:17:1-22:12
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
@@ -24,6 +29,16 @@ INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\Androi
 		ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:11-69
 application
 ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:9:5-32:19
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-12:19
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-20:19
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:5-20:19
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:22:5-23:19
+	android:appComponentFactory
+		ADDED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:22:18-86
 	android:label
 		ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:11:9-35
 	android:icon
@@ -64,6 +79,16 @@ uses-sdk
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:20:5-44
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml
 INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml
 	android:targetSdkVersion
@@ -76,3 +101,35 @@ uses-permission#android.permission.INTERNET
 ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:6:5-66
 	android:name
 		ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:6:22-64
+activity#io.flutter.plugins.urllauncher.WebViewActivity
+ADDED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:8:9-11:74
+	android:exported
+		ADDED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:10:13-37
+	android:theme
+		ADDED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:13-71
+	android:name
+		ADDED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:9:13-74
+uses-permission#android.permission.READ_EXTERNAL_STORAGE
+ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:5-80
+	android:name
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:7:22-77
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:8:5-81
+	android:name
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:8:22-78
+provider#io.flutter.plugins.imagepicker.ImagePickerFileProvider
+ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:11:9-19:20
+	android:grantUriPermissions
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:15:13-47
+	android:authorities
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:13:13-74
+	android:exported
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:14:13-37
+	android:name
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:12:13-82
+meta-data#android.support.FILE_PROVIDER_PATHS
+ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:16:13-18:75
+	android:resource
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:18:17-72
+	android:name
+		ADDED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:17:17-67
