@@ -56,11 +56,99 @@ class UserProfileState extends State<UserProfile> {
       child: Icon(Icons.add_a_photo),
     ),),
     Container(
-      margin: EdgeInsets.only(top: 300, left: 100),
-      child: Text(
-      'saugat'
+      margin: EdgeInsets.only(top: 10, left: 50),
+      child: Column(
+        mainAxisAlignment: MainAxisAlignment.center,
+        
+      children: <Widget>[
+        Text('Name: Saugat poudel'),
+        sizeheight(10),
+        Text('Address: Bouddha, kathmandu'),
+        sizeheight(10),
+        Text('Phone: 9860401034'),
+      ],
       ),
+      
     ),
+
+    Container(
+      margin: EdgeInsets.only(top: 450),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.start,
+        children: <Widget>[
+          Container(
+            height: 100,
+            width: 100,
+             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Colors.blue
+
+            ),
+            child: Column( 
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.edit),
+              iconSize: 40,
+              onPressed: (){}
+            ),
+            Text('Edit'),
+              ],
+              
+            ) 
+
+          ),
+          sizewidth(10),
+          Container(
+           
+            height: 100,
+            width: 100,
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Colors.blue
+
+            ),
+            child: Column( 
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.update),
+              iconSize: 40,
+              onPressed: (){}
+            ),
+            Text('Update'),
+              ],
+              
+            ) 
+
+          ),
+            sizewidth(10),
+          Container(
+            height: 100,
+            width: 100,
+             decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10.0),
+              color: Colors.blue
+
+            ),
+           child: Column( 
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: <Widget>[
+            IconButton(
+              icon: Icon(Icons.help),
+              iconSize: 40,
+              onPressed: (){}
+            ),
+            Text('Help'),
+              ],
+              
+            ) 
+
+          )
+        ],
+
+      ),
+    )
 
           ],
           
