@@ -363,8 +363,8 @@ class PasswordState extends State<Password> {
   @override
   Widget build(BuildContext context) {
   return Container(
-    padding: EdgeInsets.only(right: 100),
-    width: 340,
+    padding: EdgeInsets.only(right: 30),
+    width: 400,
     height: 50,
 
     child: TextFormField(
