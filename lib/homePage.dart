@@ -81,14 +81,14 @@ class HomePageState extends State<HomePage>{
               decoration: BoxDecoration(
                 borderRadius: BorderRadius.circular(10),
                 color: Colors.blue,
-              ),
-              
-              
+              ), 
              alignment: Alignment.center,
+
+             
               child: Text('Baby cloth: 24', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20)),
               
-
              ),
+             
               
 
             Container(
