@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:office_prj/Userprofile.dart';
+import 'package:office_prj/loginPage.dart';
 
 class Nextpage extends StatelessWidget{
   @override
@@ -68,9 +69,55 @@ class HomePageState extends State<HomePage>{
       backgroundColor: Colors.white,
       body: Container(
         padding: EdgeInsets.all(40),
-        child: Stack(
+        child: Column(
           children: <Widget>[
-            Text('welcome to the homepage', textAlign: TextAlign.center,)
+           
+            
+             Container(
+              margin: EdgeInsets.only(top: 20),
+              
+              height: 100,
+              width: 500,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue,
+              ),
+              
+              
+             alignment: Alignment.center,
+              child: Text('Baby cloth: 24', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20)),
+              
+
+             ),
+              
+
+            Container(
+              margin: EdgeInsets.only(top: 20),
+              
+              height: 100,
+              width: 500,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue,
+              ),
+              alignment: Alignment.center,
+              child: Text('Mens sweater: 4', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20)),
+            ),
+            Container(
+            
+              margin: EdgeInsets.only(top: 20),
+              
+              height: 100,
+              width: 500,
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(10),
+                color: Colors.blue,
+              ),
+              alignment: Alignment.center,
+              child: Text('Sandle: 4', textAlign: TextAlign.center,style: TextStyle(color: Colors.white,fontSize: 20),)
+              
+            ),
+            
           ],
 
         )
