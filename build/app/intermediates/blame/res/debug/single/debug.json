@@ -1,51 +1,26 @@
 [
     {
-<<<<<<< HEAD
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-=======
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
-    },
-    {
-        "merged": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "C:\\Users\\Dell\\Desktop\\flutter\\Officeprj\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
->>>>>>> ff8272d5b6834f3afa9c8165456249143fa5b8c4
+        "merged": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "C:\\Users\\Acer\\Desktop\\gitclone\\Officeprj\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     }
 ]

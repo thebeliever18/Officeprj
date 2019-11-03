@@ -152,17 +152,16 @@ class ResetPageState extends State<ResetPage> {
     return Container(
       height: MediaQuery.of(context).size.height /11,
       width: MediaQuery.of(context).size.width  /1,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
-        color: Colors.blue[900],
-      ),
-      child: Center(
+     
+      
         child: RaisedButton(
+           color: Colors.blue[900],
           child: Text(
             "Save",
-            style: TextStyle(fontSize: 25.0, color: Colors.white
-            ),
+             style: TextStyle(fontSize: 30.0, color: Colors.white
+             ),
           ),
+          elevation: 6.0,
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return LoginPage();
@@ -171,17 +170,14 @@ class ResetPageState extends State<ResetPage> {
          
           
             
-          // child: Text(
-          //   "Save",
-          //   style: TextStyle(
-          //     color: Colors.white,
-          //     fontSize: 18.0,
-          //   ),
-          // ),
-          
+        
+          shape: RoundedRectangleBorder(
+                    borderRadius: new BorderRadius.circular(10.0)
+                ),
           
             ),
-      ),
+            
+      
         
       );
     
