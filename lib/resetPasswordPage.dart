@@ -39,8 +39,7 @@ class ResetPageState extends State<ResetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-          backgroundColor: Colors.blueAccent, title: Text("Reset Password")),
+      
       resizeToAvoidBottomPadding: false,
       body: Container(
         padding:
@@ -48,6 +47,7 @@ class ResetPageState extends State<ResetPage> {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: <Widget>[
+            top(),
             SizedBox(
               height: 40.0,
             ),
@@ -77,6 +77,7 @@ class ResetPageState extends State<ResetPage> {
 
   Widget buildTextField(String labelText) {
     return TextField(
+      maxLength: 8,
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -101,6 +102,7 @@ class ResetPageState extends State<ResetPage> {
 
   Widget buildTextFieldtwo(String labelText) {
     return TextField(
+      maxLength: 8,
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -122,31 +124,66 @@ class ResetPageState extends State<ResetPage> {
       obscureText: _second,
     );
   }
+  Widget top() {
+    return Container(
+        child: Column(
+         
+      children: <Widget>[
+        Text(
+          "Reset Password",
+          style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
+          
+        ),
+        Center(
+          child: Padding(
+            padding: const EdgeInsets.only(top: 30.0, left: 20.0),
+            child: Text(
+              "A minimum 8 characters password contains a combination of uppercase and lowercase letter and number are required.",
+              style: TextStyle(fontSize: 10, fontWeight: FontWeight.bold),
+            ),
+          ),
+        ),
+      ],
+    ));
+  }
+
 
   Widget buildButtonContainer() {
     return Container(
-      height: MediaQuery.of(context).size.height / 10,
-      width: MediaQuery.of(context).size.width / 2,
+      height: MediaQuery.of(context).size.height /11,
+      width: MediaQuery.of(context).size.width  /1,
       decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(20.0),
-        color: Colors.blueAccent,
+        borderRadius: BorderRadius.circular(10.0),
+        color: Colors.blue[900],
       ),
       child: Center(
         child: RaisedButton(
+          child: Text(
+            "Save",
+            style: TextStyle(fontSize: 25.0, color: Colors.white
+            ),
+          ),
           onPressed: () {
             Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return LoginPage();
                   }));
           },
-          child: Text(
-            "Save",
-            style: TextStyle(
-              color: Colors.white,
-              fontSize: 18.0,
+         
+          
+            
+          // child: Text(
+          //   "Save",
+          //   style: TextStyle(
+          //     color: Colors.white,
+          //     fontSize: 18.0,
+          //   ),
+          // ),
+          
+          
             ),
-          ),
-        ),
       ),
-    );
+        
+      );
+    
   }
 }

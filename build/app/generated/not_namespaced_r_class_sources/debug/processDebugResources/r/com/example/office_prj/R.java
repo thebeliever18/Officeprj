@@ -15,6 +15,7 @@ public final class R {
      */
     public static final int alpha=0x7f010000;
     /**
+<<<<<<< HEAD
      * <p>May be a reference to another resource, in the form
      * "<code>@[+][<i>package</i>:]<i>type</i>/<i>name</i></code>" or a theme
      * attribute in the form
@@ -22,6 +23,8 @@ public final class R {
      */
     public static final int coordinatorLayoutStyle=0x7f010001;
     /**
+=======
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
      * The reference to the font file to be used. This should be a file in the res/font folder
      * and should therefore have an R reference value. E.g. @font/myfont
      * <p>May be a reference to another resource, in the form
@@ -29,13 +32,21 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
+<<<<<<< HEAD
     public static final int font=0x7f010002;
+=======
+    public static final int font=0x7f010001;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The authority of the Font Provider to be used for the request.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
+<<<<<<< HEAD
     public static final int fontProviderAuthority=0x7f010003;
+=======
+    public static final int fontProviderAuthority=0x7f010002;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The sets of hashes for the certificates the provider should be signed with. This is
      * used to verify the identity of the provider, and is only required if the provider is not
@@ -47,7 +58,11 @@ public final class R {
      * attribute in the form
      * "<code>?[<i>package</i>:]<i>type</i>/<i>name</i></code>".
      */
+<<<<<<< HEAD
     public static final int fontProviderCerts=0x7f010004;
+=======
+    public static final int fontProviderCerts=0x7f010003;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The strategy to be used when fetching font data from a font provider in XML layouts.
      * This attribute is ignored when the resource is loaded from code, as it is equivalent to the
@@ -74,7 +89,11 @@ public final class R {
      * default typeface will be used instead.</td></tr>
      * </table>
      */
+<<<<<<< HEAD
     public static final int fontProviderFetchStrategy=0x7f010005;
+=======
+    public static final int fontProviderFetchStrategy=0x7f010004;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The length of the timeout during fetching.
      * <p>May be an integer value, such as "<code>100</code>".
@@ -88,21 +107,33 @@ public final class R {
      * timeout and wait until a reply is received from the font provider.</td></tr>
      * </table>
      */
+<<<<<<< HEAD
     public static final int fontProviderFetchTimeout=0x7f010006;
+=======
+    public static final int fontProviderFetchTimeout=0x7f010005;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The package for the Font Provider to be used for the request. This is used to verify
      * the identity of the provider.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
+<<<<<<< HEAD
     public static final int fontProviderPackage=0x7f010007;
+=======
+    public static final int fontProviderPackage=0x7f010006;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The query to be sent over to the provider. Refer to your font provider's documentation
      * on the format of this string.
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
+<<<<<<< HEAD
     public static final int fontProviderQuery=0x7f010008;
+=======
+    public static final int fontProviderQuery=0x7f010007;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The style of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any style information in the font's header tables. If
@@ -117,7 +148,11 @@ public final class R {
      * <tr><td>normal</td><td>0</td><td></td></tr>
      * </table>
      */
+<<<<<<< HEAD
     public static final int fontStyle=0x7f010009;
+=======
+    public static final int fontStyle=0x7f010008;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The variation settings to be applied to the font. The string should be in the following
      * format: "'tag1' value1, 'tag2' value2, ...". If the default variation settings should be
@@ -126,7 +161,11 @@ public final class R {
      * <p>May be a string value, using '\\;' to escape characters such as
      * '\\n' or '\\uxxxx' for a unicode character;
      */
+<<<<<<< HEAD
     public static final int fontVariationSettings=0x7f01000a;
+=======
+    public static final int fontVariationSettings=0x7f010009;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The weight of the given font file. This will be used when the font is being loaded into
      * the font stack and will override any weight information in the font's header tables. Must
@@ -135,6 +174,7 @@ public final class R {
      * in the font's header tables will be used.
      * <p>May be an integer value, such as "<code>100</code>".
      */
+<<<<<<< HEAD
     public static final int fontWeight=0x7f01000b;
     /**
      * A reference to an array of integers representing the
@@ -251,12 +291,19 @@ public final class R {
      * "<code>#<i>aarrggbb</i></code>".
      */
     public static final int statusBarBackground=0x7f010013;
+=======
+    public static final int fontWeight=0x7f01000a;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     /**
      * The index of the font in the tcc font file. If the font file referenced is not in the
      * tcc format, this attribute needs not be specified.
      * <p>May be an integer value, such as "<code>100</code>".
      */
+<<<<<<< HEAD
     public static final int ttcIndex=0x7f010014;
+=======
+    public static final int ttcIndex=0x7f01000b;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
   }
   public static final class color {
     public static final int notification_action_color_filter=0x7f020000;
@@ -309,6 +356,7 @@ public final class R {
     public static final int action_image=0x7f050002;
     public static final int action_text=0x7f050003;
     public static final int actions=0x7f050004;
+<<<<<<< HEAD
     public static final int all=0x7f050005;
     public static final int async=0x7f050006;
     public static final int blocking=0x7f050007;
@@ -348,6 +396,31 @@ public final class R {
     public static final int time=0x7f050029;
     public static final int title=0x7f05002a;
     public static final int top=0x7f05002b;
+=======
+    public static final int async=0x7f050005;
+    public static final int blocking=0x7f050006;
+    public static final int chronometer=0x7f050007;
+    public static final int forever=0x7f050008;
+    public static final int icon=0x7f050009;
+    public static final int icon_group=0x7f05000a;
+    public static final int info=0x7f05000b;
+    public static final int italic=0x7f05000c;
+    public static final int line1=0x7f05000d;
+    public static final int line3=0x7f05000e;
+    public static final int normal=0x7f05000f;
+    public static final int notification_background=0x7f050010;
+    public static final int notification_main_column=0x7f050011;
+    public static final int notification_main_column_container=0x7f050012;
+    public static final int right_icon=0x7f050013;
+    public static final int right_side=0x7f050014;
+    public static final int tag_transition_group=0x7f050015;
+    public static final int tag_unhandled_key_event_manager=0x7f050016;
+    public static final int tag_unhandled_key_listeners=0x7f050017;
+    public static final int text=0x7f050018;
+    public static final int text2=0x7f050019;
+    public static final int time=0x7f05001a;
+    public static final int title=0x7f05001b;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
   }
   public static final class integer {
     public static final int status_bar_notification_info_maxnum=0x7f060000;
@@ -375,7 +448,10 @@ public final class R {
     public static final int TextAppearance_Compat_Notification_Title=0x7f0a0005;
     public static final int Widget_Compat_NotificationActionContainer=0x7f0a0006;
     public static final int Widget_Compat_NotificationActionText=0x7f0a0007;
+<<<<<<< HEAD
     public static final int Widget_Support_CoordinatorLayout=0x7f0a0008;
+=======
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
   }
   public static final class styleable {
     /**
@@ -428,6 +504,7 @@ public final class R {
      */
     public static final int ColorStateListItem_alpha=2;
     /**
+<<<<<<< HEAD
      * Attributes that can be used with a CoordinatorLayout.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -659,6 +736,8 @@ public final class R {
      */
     public static final int CoordinatorLayout_Layout_layout_keyline=6;
     /**
+=======
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
      * Attributes that can be used with a FontFamily.
      * <p>Includes the following attributes:</p>
      * <table>
@@ -680,8 +759,13 @@ public final class R {
      * @see #FontFamily_fontProviderQuery
      */
     public static final int[] FontFamily={
+<<<<<<< HEAD
       0x7f010003, 0x7f010004, 0x7f010005, 0x7f010006, 
       0x7f010007, 0x7f010008
+=======
+      0x7f010002, 0x7f010003, 0x7f010004, 0x7f010005, 
+      0x7f010006, 0x7f010007
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     };
     /**
      * <p>
@@ -817,8 +901,13 @@ public final class R {
      */
     public static final int[] FontFamilyFont={
       0x01010532, 0x01010533, 0x0101053f, 0x0101056f, 
+<<<<<<< HEAD
       0x01010570, 0x7f010002, 0x7f010009, 0x7f01000a, 
       0x7f01000b, 0x7f010014
+=======
+      0x01010570, 0x7f010001, 0x7f010008, 0x7f010009, 
+      0x7f01000a, 0x7f01000b
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
     };
     /**
      * <p>This symbol is the offset where the {@link android.R.attr#font}
@@ -1194,5 +1283,11 @@ public final class R {
      * @attr name android:offset
      */
     public static final int GradientColorItem_android_offset=1;
+<<<<<<< HEAD
+=======
+  }
+  public static final class xml {
+    public static final int flutter_image_picker_file_paths=0x7f0c0000;
+>>>>>>> 8cc6a75fb658861024da838a429ba501317d1550
   }
 }
