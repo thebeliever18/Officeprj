@@ -32,8 +32,8 @@ void main() {
   
   runApp(RegistrationPage());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-    systemNavigationBarColor: Colors.blue[900], // navigation bar color
-    statusBarColor: Colors.blue[900], // status bar color
+    systemNavigationBarColor: Color.fromARGB(255, 0, 56, 147), // navigation bar color
+    statusBarColor: Color.fromARGB(255, 0, 56, 147), // status bar color
   ));
 }
 

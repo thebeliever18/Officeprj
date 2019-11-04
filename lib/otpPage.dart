@@ -5,6 +5,15 @@ import 'package:office_prj/resetPasswordPage.dart';
 
 import 'main.dart';
 
+var firstFieldController = TextEditingController();
+var secondFieldController = TextEditingController();
+var thirdFieldController = TextEditingController();
+var fourthFieldController = TextEditingController();
+
+final FocusNode firstFocus = FocusNode();  
+final FocusNode secondFocus = FocusNode();  
+final FocusNode thirdFocus = FocusNode();
+final FocusNode fourthFocus = FocusNode();
 class OtpPage extends StatefulWidget {
   
   bool boolValue;
@@ -63,13 +72,13 @@ class _OtpPageState extends State<OtpPage> {
                             child: Row(
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
-                            txtfld(),
+                            txtfld(false,firstFieldController,firstFocus,context,TextInputAction.next,secondFocus),
                             sizewidth(4),
-                            txtfld(),
+                            txtfld(false,secondFieldController,secondFocus,context,TextInputAction.next,thirdFocus),
                             sizewidth(4),
-                            txtfld(),
+                            txtfld(false,thirdFieldController,thirdFocus,context,TextInputAction.next,fourthFocus),
                             sizewidth(4),
-                            txtfld(),
+                            txtfld(true,fourthFieldController,fourthFocus,context,TextInputAction.done,fourthFocus),
                           ],
                         )),
                         Center(
@@ -179,15 +188,27 @@ SizedBox sizewidth(double a) {
   );
 }
 
-txtfld() {
+
+txtfld(boolVal,getController,getFocus,context,nextordone,nextFocus) {
   return Container(
   
     padding: EdgeInsets.only(top: 5),
     width: 60,
     height: 60,
-    child: TextField(
-      autofocus: true,
+    child: TextFormField(
+      controller: getController,
+      textInputAction: nextordone,
+      focusNode: getFocus,
       textAlign: TextAlign.center,
+      onFieldSubmitted: (value){
+        if (!boolVal) {
+          fieldFocusChange(context, getFocus, nextFocus);
+        } else {
+          getFocus.unfocus();
+        }
+          
+          
+        },
       style: TextStyle(
         fontSize: 23,
         fontWeight: FontWeight.bold,
@@ -204,6 +225,11 @@ txtfld() {
               borderRadius: BorderRadius.circular(0))),
     ),
   );
+}
+
+fieldFocusChange(BuildContext context, FocusNode currentFocus,FocusNode nextFocus) {
+    currentFocus.unfocus();
+    FocusScope.of(context).requestFocus(nextFocus);  
 }
 
 showMessage(BuildContext context, var message) {
