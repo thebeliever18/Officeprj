@@ -60,6 +60,7 @@ class _MyButtonState extends State<MyButton> {
             ),
           ),
           Center(
+           
             child: Padding(
               padding: EdgeInsets.all(25.0),
               child: Text("Enter your 10 digit  number",
@@ -67,7 +68,8 @@ class _MyButtonState extends State<MyButton> {
                       TextStyle(fontSize: 10.0, fontWeight: FontWeight.bold)),
             ),
           ),
-          Center(
+          Center( 
+            
             child: Padding(
               padding: EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
               child: TextFormField(
@@ -78,10 +80,12 @@ class _MyButtonState extends State<MyButton> {
                   mobile = val;
                 },
                 decoration: InputDecoration(
+                 
                   labelText: " Phone Number",
                   border: OutlineInputBorder(
                     borderRadius: BorderRadius.circular(10.0),
                   ),
+                  
                 ),
               ),
             ),
