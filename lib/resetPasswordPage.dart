@@ -23,6 +23,13 @@ class ResetPage extends StatefulWidget {
 class ResetPageState extends State<ResetPage> {
   bool _isHidden = true;
   bool _second = true;
+  GlobalKey<FormState> _key = new GlobalKey();
+
+  final _passwordController = TextEditingController();
+  final _confirmpasswordController = TextEditingController();
+  bool _validate = false;
+  String password, confirmpassword;
+  // String password;
 
   void _toggleVisibility() {
     setState(() {
@@ -39,45 +46,52 @@ class ResetPageState extends State<ResetPage> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      
-      resizeToAvoidBottomPadding: false,
-      body: Container(
-        padding:
-            EdgeInsets.only(top: 100.0, right: 20.0, left: 20.0, bottom: 20.0),
-        child: Column(
-          crossAxisAlignment: CrossAxisAlignment.center,
-          children: <Widget>[
-            top(),
-            SizedBox(
-              height: 40.0,
-            ),
-            buildTextField("New Password"),
-            SizedBox(
-              height: 20.0,
-            ),
-            buildTextFieldtwo("Confirm Password"),
-            SizedBox(
-              height: 20.0,
-            ),
-            Container(
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.end,
+        resizeToAvoidBottomPadding: false,
+        body: Form(
+          autovalidate: _validate,
+          key: _key,
+          child: Column(
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: <Widget>[
+              Padding(
+                padding: EdgeInsets.only(
+                    top: 100.0, right: 20.0, left: 20.0, bottom: 20.0),
               ),
-            ),
-            SizedBox(height: 50.0),
-            buildButtonContainer(),
-            SizedBox(
-              height: 10.0,
-            ),
-          ],
-        ),
-      ),
-    );
+              top(),
+              SizedBox(
+                height: 40.0,
+              ),
+              buildTextField("New Password"),
+              SizedBox(
+                height: 20.0,
+              ),
+              buildTextFieldtwo("Confirm Password"),
+              SizedBox(
+                height: 20.0,
+              ),
+              // Container(
+              //   child: Row(
+              //     mainAxisAlignment: MainAxisAlignment.end,
+
+              //   ),
+              // ),
+              SizedBox(height: 50.0),
+              buildButtonContainer(),
+              SizedBox(
+                height: 20.0,
+              ),
+            ],
+          ),
+        ));
   }
 
   Widget buildTextField(String labelText) {
-    return TextField(
-      maxLength: 8,
+    return TextFormField(
+      validator: validatePassword,
+      controller: _passwordController,
+      onSaved: (String val) {
+        password = val;
+      },
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -101,8 +115,12 @@ class ResetPageState extends State<ResetPage> {
   }
 
   Widget buildTextFieldtwo(String labelText) {
-    return TextField(
-      maxLength: 8,
+    return TextFormField(
+      controller: _confirmpasswordController,
+      validator: validatePasswordMatching,
+      onSaved: (String val) {
+        confirmpassword = val;
+      },
       decoration: InputDecoration(
         labelText: labelText,
         hintStyle: TextStyle(
@@ -124,15 +142,14 @@ class ResetPageState extends State<ResetPage> {
       obscureText: _second,
     );
   }
+
   Widget top() {
     return Container(
         child: Column(
-         
       children: <Widget>[
         Text(
           "Reset Password",
           style: TextStyle(fontSize: 30, fontWeight: FontWeight.bold),
-          
         ),
         Center(
           child: Padding(
@@ -147,43 +164,56 @@ class ResetPageState extends State<ResetPage> {
     ));
   }
 
-
   Widget buildButtonContainer() {
     return Container(
-      height: MediaQuery.of(context).size.height /11,
-      width: MediaQuery.of(context).size.width  /1,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.0),
+      margin: EdgeInsets.only(top: 50.0, right: 20.0, left: 20.0),
+      width: MediaQuery.of(context).size.width / 1,
+      height: MediaQuery.of(context).size.height / 11,
+      child: RaisedButton(
         color: Colors.blue[900],
-      ),
-      child: Center(
-        child: RaisedButton(
-          child: Text(
-            "Save",
-            style: TextStyle(fontSize: 25.0, color: Colors.white
-            ),
-          ),
-          onPressed: () {
+        child: Text(
+          "Save",
+          style: TextStyle(fontSize: 25.0, color: Colors.white),
+        ),
+        shape: RoundedRectangleBorder(
+            borderRadius: new BorderRadius.circular(10.0)),
+        elevation: 6.0,
+        onPressed: () {
+          if (_key.currentState.validate()) {
+            // No any error in validation
+            _key.currentState.save();
             Navigator.push(context, MaterialPageRoute(builder: (context) {
-                    return LoginPage();
-                  }));
-          },
-         
-          
-            
-          // child: Text(
-          //   "Save",
-          //   style: TextStyle(
-          //     color: Colors.white,
-          //     fontSize: 18.0,
-          //   ),
-          // ),
-          
-          
-            ),
+              return LoginPage();
+            }));
+          } else {
+            // validation error
+            setState(() {
+              _validate = true;
+            });
+          }
+        },
       ),
-        
-      );
-    
+    );
+  }
+
+  String validatePassword(String value) {
+    if (value.length == 0) {
+      return "Password is Required";
+    } else if (value.length != 8) {
+      return "Password Should be  8.";
+    }
+    return null;
+  }
+
+  String validatePasswordMatching(String value) {
+    if (value.length == 0) {
+      return "Password is Required";
+    } else if (value != _passwordController.text) {
+      return 'Password is not matching';
+    } else if (value.length != 8) {
+      return "Password Should be 8 digits.";
+    }
+
+    return null;
   }
 }
