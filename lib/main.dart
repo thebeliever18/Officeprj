@@ -1,11 +1,14 @@
+import 'package:connectivity/connectivity.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/semantics.dart';
+import 'package:office_prj/errorPage.dart';
+import 'package:office_prj/networkerror.dart';
 import 'package:office_prj/orientation.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:flutter/services.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
-
+import 'package:office_prj/checknetconnection.dart';
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 
 import 'loginPage.dart';
@@ -131,24 +134,33 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
+              print("hello");
               a++;
-              
-              /**
-               * Importing otpPage
-               */
-              if(a==1){
-                Navigator.push(context, MaterialPageRoute(builder: (context){
-                return OtpPage();
-              }));
-              /**
-               * Importing Login Page
-               */
-              }else if(a==2){
+              if(a==2){
                 a=0;
-                Navigator.push(context, MaterialPageRoute(builder: (context){
-                return LoginPage();
-              }));
+                checkInternetConnectivity(a,context);
+              }else{
+                checkInternetConnectivity(a,context);
               }
+          
+              // /**
+              //  * Importing otpPage
+              //  */
+              // if(a==1){
+              //   checkInternetConnectivity(1);
+              //   Navigator.push(context, MaterialPageRoute(builder: (context){
+              //   return OtpPage();
+              // }));
+              // /**
+              //  * Importing Login Page
+              //  */
+              // }else if(a==2){
+              //   checkInternetConnectivity(2);
+              //   a=0;
+              //   Navigator.push(context, MaterialPageRoute(builder: (context){
+              //   return LoginPage();
+              // }));
+              //}
               
             },
             color: Color.fromARGB(255, 0, 56, 147),

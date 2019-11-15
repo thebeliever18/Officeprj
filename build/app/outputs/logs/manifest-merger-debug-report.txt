@@ -7,6 +7,7 @@ INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\Andr
 MERGED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
 MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
 MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
 MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c94ef0f054ce91a92f7f64def7aad324\AndroidManifest.xml:17:1-25:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d66e080e58b282c957ef91b99d19c519\AndroidManifest.xml:17:1-22:12
@@ -83,6 +84,8 @@ MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_l
 MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:20:5-44
 MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:20:5-44
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c94ef0f054ce91a92f7f64def7aad324\AndroidManifest.xml:20:5-44
@@ -133,3 +136,11 @@ ADDED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_
 		ADDED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:18:17-72
 	android:name
 		ADDED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:17:17-67
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-79
+	android:name
+		ADDED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:7:22-76
+uses-permission#android.permission.ACCESS_WIFI_STATE
+ADDED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:5-76
+	android:name
+		ADDED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:8:22-73
