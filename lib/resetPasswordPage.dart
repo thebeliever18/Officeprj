@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-import 'loginPage.dart';
+import 'main.dart';
 
 class PasswordRestPage extends StatelessWidget {
   @override
@@ -199,8 +199,9 @@ class ResetPageState extends State<ResetPage> {
   String validatePassword(String value) {
     if (value.length == 0) {
       return "Password is Required";
-    } else if (value.length != 8) {
-      return "Password Should be  8.";
+    // } else if (value.length != 8) {
+    //   return "Password Should be  8.";
+    // }
     }
     return null;
   }
@@ -210,10 +211,10 @@ class ResetPageState extends State<ResetPage> {
       return "Password is Required";
     } else if (value != _passwordController.text) {
       return 'Password is not matching';
-    } else if (value.length != 8) {
-      return "Password Should be 8 digits.";
+    // } else if (value.length != 8) {
+    //   return "Password Should be 8 digits.";
+    // }
     }
-
     return null;
   }
 }

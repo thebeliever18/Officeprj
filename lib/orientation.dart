@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:office_prj/main.dart';
 
-import 'loginPage.dart';
+import 'main.dart';
 
 /*
  * Creating Stateful Widget
@@ -14,7 +14,7 @@ class TextForms extends StatefulWidget {
 
 class TextFormsState extends State<TextForms> {
   TextFormsState();
-
+  static final  otpPhonenumber=TextEditingController();
   @override
   Widget build(BuildContext context) => layoutDetails(context);
 
@@ -23,7 +23,7 @@ class TextFormsState extends State<TextForms> {
       crossAxisAlignment: CrossAxisAlignment.start,
       children: <Widget>[
         textField(context, defaultWidth, 'Phone Number', Icon(Icons.phone),
-            TextInputType.number),
+            TextInputType.number,otpPhonenumber),
         Padding(
           padding: EdgeInsets.only(top: 10.0, left: 10.0),
           child: Center(
@@ -34,7 +34,7 @@ class TextFormsState extends State<TextForms> {
                     'Already a user?',
                     style: TextStyle(color: Colors.black, fontSize: 16.0),
                   ),
-                  Text(' '),
+                  Text(''),
                   Material(
                     color: Colors.white,
                       child: InkWell(
@@ -73,15 +73,17 @@ class TextFormsState extends State<TextForms> {
   }
 }
 
-Widget textField(context, defaultWidth, labelText, iconn, inputType) {
+Widget textField(context, defaultWidth, labelText, iconn, inputType,getController,[hintText]) {
   return Padding(
     padding: EdgeInsets.all(3.5),
-    child: TextField(
+    child: TextFormField(
+      controller: getController,
       decoration: InputDecoration(
         filled: true,
         fillColor: Colors.white,
         border: OutlineInputBorder(borderRadius: BorderRadius.circular(10.0)),
         labelText: '$labelText',
+        hintText: hintText,
         icon: iconn,
         contentPadding: EdgeInsets.all(defaultWidth),
       ),

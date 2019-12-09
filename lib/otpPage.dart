@@ -1,9 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:office_prj/pageAfterCont.dart';
-import 'package:office_prj/forgotPasswordPage.dart';
+import 'package:office_prj/registrationPage.dart';
 import 'package:office_prj/resetPasswordPage.dart';
 
-import 'main.dart';
+
 
 var firstFieldController = TextEditingController();
 var secondFieldController = TextEditingController();
