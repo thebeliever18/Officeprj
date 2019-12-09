@@ -28,7 +28,7 @@ dependencies:
   auto_size_text: ^0.2.2
   image_picker:
   url_launcher:
-  image: 
+  image:
   http:
   shared_preferences:
 
