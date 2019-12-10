@@ -30,7 +30,9 @@ import 'otpPage.dart';
 
 bool isForm = true;
 bool signup = true;
-
+/**
+ * Registration page
+ */
 class RegistrationPage extends StatelessWidget {
   /*
    * This widget is the root of your application.
@@ -84,6 +86,9 @@ class FormsState extends State<Forms> {
           Center(
               child: Padding(
             padding: EdgeInsets.only(top: heightPadding),
+                    /**
+                     * Calling dSewa logo
+                     */
             child: dsewaLogo(context),
           )),
           Center(
@@ -105,7 +110,7 @@ class FormsState extends State<Forms> {
   }
 
 /*
- * Code for button
+ * Code for continue button
  */
   Widget btn(context) {
     return Row(
@@ -136,17 +141,28 @@ class FormsState extends State<Forms> {
                */
               // } else if (a == 2) {
                 // a = 1;
+
+                /**
+                 * Checking if any field is null or not in registration page
+                 */
                 if (PageAfterContState.nameController.text.isEmpty ||
                     PageAfterContState.emailController.text.isEmpty ||
                     PageAfterContState.passwordController.text.isEmpty ||
                     PageAfterContState.phoneController.text.isEmpty) {
                   a = 2;
                   setState(() {
+                    /**
+                     * Display error message if any field is null except for phone 2
+                     */
                     PageAfterContState.errorMesg = true;
                     PageAfterContState.errorMessage =
                         "All the feilds are required. Phone 2 is optional";
                   });
-                }else if(PageAfterContState.phoneTwoController.text.isNotEmpty 
+                }
+                /**
+                 * Validation for phone 2
+                 */
+                else if(PageAfterContState.phoneTwoController.text.isNotEmpty 
                           && PageAfterContState.phoneTwoController.text.length != 10){
                             setState(() {
                               PageAfterContState.errorMesg = true;

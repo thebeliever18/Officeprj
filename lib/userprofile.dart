@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:office_prj/homePage.dart';
 import 'dart:async';
 import 'dart:io';
 import 'main.dart';
@@ -11,6 +12,7 @@ class Userprofile extends StatelessWidget {
   // Userprofile(this.name);
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new UserProfile(),
     );
   }
@@ -53,14 +55,27 @@ class UserProfileState extends State<UserProfile> {
     return Scaffold(
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
+        leading: IconButton(
+          onPressed: (){
+            /**
+             * Navigating back to homepage after pressing back arrow button
+             */
+             Navigator.push(
+                  context,
+                  MaterialPageRoute(builder: (context) {
+                    return Nextpage(LoginPageState.accessToken);
+                  }),
+                );
+          },
+          icon:Icon(Icons.arrow_back)),
         backgroundColor: Colors.blue[900],
-        title: const Text("My Profile"),
-        actions: <Widget>[
-          IconButton(
-            icon: Icon(Icons.list),
-            onPressed: () {},
-          ),
-        ],
+        title: Text("My Profile"),
+        // actions: <Widget>[
+        //   IconButton(
+        //     icon: Icon(Icons.list),
+        //     onPressed: () {},
+        //   ),
+        // ],
       ),
       body: Center(
         child: Padding(
