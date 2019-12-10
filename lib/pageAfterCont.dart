@@ -53,7 +53,7 @@ class PageAfterContState extends State<PageAfterCont> {
           textField(context, defaultWidth, 'Middle Name', icn, inputType),
           textField(context, defaultWidth, 'Last Name', icn, inputType),
           textField(context, defaultWidth, 'Email', iconForEmail, inputType),
-          /**
+      /*
        * For password textfield
        */
           Padding(
