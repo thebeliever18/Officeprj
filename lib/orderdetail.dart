@@ -22,6 +22,9 @@ import 'dart:async';
 // ];
 final String phone = 'tel:+9779851225639'; 
 
+/*
+ * After pressing call button in orderDetail page then in the call log keypad of the phone the @phone is displayed
+ */
 _callPhone() async {
   if (await canLaunch(phone)) {
     await launch(phone);

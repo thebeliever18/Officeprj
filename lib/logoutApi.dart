@@ -3,6 +3,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'main.dart';
 
+/*
+ * After pressing logout button logout api is called
+ */
 class LogoutApi extends StatefulWidget {
   var getAccessToken;
   BuildContext context;
@@ -35,6 +38,9 @@ class LogoutApiState extends State<LogoutApi> {
   }
 }
 
+/*
+ * Calling logout api 
+ */
 Future fetchLogoutApi(getAccessToken, context) async {
   try {
     String logOutUrl = "http://test.dsewa.com.np/api/logout";
@@ -46,11 +52,12 @@ Future fetchLogoutApi(getAccessToken, context) async {
         MaterialPageRoute(
             builder: (context) => LoginPage()),
       );
-      print("sucessfull");
-    } else {
-      print("unsucess");
     }
   } catch (e) {
+    /**
+     * If no internet connection then socketException is thrown
+     * Catch caughts the socket exception and a alert dialog box is popped up.
+     */
     Navigator.of(context).pop();
     print("no net");
     showDialog(

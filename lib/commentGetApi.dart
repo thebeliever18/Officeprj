@@ -5,6 +5,9 @@ import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 import 'package:office_prj/commentPostApi.dart';
 
+/*
+ * Getting comment from api
+ */
 class CommentApi extends StatefulWidget {
   String getOrderId, getAccessToken;
   bool triggerAgain;
@@ -19,10 +22,19 @@ class CommentApi extends StatefulWidget {
 
 class CommentApiState extends State<CommentApi> {
   String getOrderId, getAccessToken;
+  /*
+   * @triggerAgain if send button is pressed
+   */
   bool triggerAgain;
   CommentApiState([this.getOrderId, this.getAccessToken, this.triggerAgain]);
+
   List getChatData;
+
+  /* 
+   * @indicator for displaying either circular progress indicator or comment
+   */
   bool indicator;
+
   Future gett;
 
   var comment = TextEditingController();
@@ -43,23 +55,30 @@ class CommentApiState extends State<CommentApi> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        title: Text("Comments"),
-        backgroundColor: Colors.blue[900],
-        actions: <Widget>[
+        appBar: AppBar(
+          title: Text("Comments"),
+          backgroundColor: Colors.blue[900],
+          actions: <Widget>[
             Container(
-              margin: EdgeInsets.only(top:23,right: 20),
-              child: Text("Order id: $getOrderId",
-              textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 15.0, height: 1.0),
-                  ),
+              margin: EdgeInsets.only(top: 23, right: 20),
+              child: Text(
+                "Order id: $getOrderId",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15.0, height: 1.0),
+              ),
             ),
           ],
-      ),
+        ),
+        /**
+       * If indicator is true circular progress indicator is displayed
+       */
         body: indicator
             ? Center(
                 child: CircularProgressIndicator(),
               )
+            /**
+                * If indicator is false comment UI is displayed
+                */
             : Stack(
                 children: <Widget>[
                   Padding(
@@ -72,8 +91,8 @@ class CommentApiState extends State<CommentApi> {
                             child: Card(
                               color: Color.fromRGBO(
                                 1,
-                              171,
-                              255,
+                                171,
+                                255,
                                 1,
                               ),
                               child: Column(
@@ -85,6 +104,9 @@ class CommentApiState extends State<CommentApi> {
                                         width: 5,
                                       ),
                                       Text(
+                                        /**
+                                         * Extracting username from api
+                                         */
                                         "${getChatData[index]['user_name']} :",
                                         style: TextStyle(
                                           fontSize: 15,
@@ -100,6 +122,9 @@ class CommentApiState extends State<CommentApi> {
                                     children: <Widget>[
                                       SizedBox(width: 5),
                                       Text(
+                                        /**
+                                         * Extracting comment from api
+                                         */
                                         getChatData[index]['comment'],
                                         style: TextStyle(
                                           color: Colors.white,
@@ -131,13 +156,6 @@ class CommentApiState extends State<CommentApi> {
                               ),
                             ),
                           );
-                          //Column(
-                          //   children: <Widget>[
-                          //     Text(getChatData[index]['user_name']),
-                          //     Text(getChatData[index]['comment']),
-                          //     Text(getChatData[index]['date']),
-                          //   ],
-                          // );
                         },
                         itemCount:
                             getChatData == null ? 0 : getChatData.length),
@@ -175,6 +193,9 @@ class CommentApiState extends State<CommentApi> {
                                     size: 28,
                                   ),
                                   onPressed: () {
+                                    /**
+                                     * Calling method for Api of comment section
+                                     */
                                     postApiComment(getAccessToken, comment,
                                         getOrderId, context);
                                   },
@@ -207,6 +228,9 @@ class CommentApiState extends State<CommentApi> {
               ));
   }
 
+  /*
+   * Extracting data by calling comment api
+   */
   Future getCommentApi(getAccessToken, getOrderId) async {
     var data;
     Map<String, String> headers = {"Authorization": "Bearer $getAccessToken"};

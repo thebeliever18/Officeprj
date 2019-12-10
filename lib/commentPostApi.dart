@@ -1,24 +1,30 @@
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
-import 'package:office_prj/commentGetApi.dart';  
-Future postApiComment(getAccessToken,comment,getOrderId,context) async{
-  String sendComment=comment.text;
-  Map<String,String> postComment = {'comment': sendComment};
+import 'package:office_prj/commentGetApi.dart';
+
+/*
+ * Api for posting/storing comment
+ */
+Future postApiComment(getAccessToken, comment, getOrderId, context) async {
+  String sendComment = comment.text;
+  Map<String, String> postComment = {'comment': sendComment};
   Map<String, String> headers = {"Authorization": "Bearer $getAccessToken"};
-  String postApiUrl="http://test.dsewa.com.np/api/android/order-comment-store/$getOrderId";
-  http.Response response = await http.post(
-        postApiUrl,
-        body: postComment,
-        headers: headers);
+  String postApiUrl =
+      "http://test.dsewa.com.np/api/android/order-comment-store/$getOrderId";
+  http.Response response =
+      await http.post(postApiUrl, body: postComment, headers: headers);
   print(response.body);
-  if(response.statusCode==200){
+  if (response.statusCode == 200) {
+    /**
+     * If calling api success then Navigate to CommentApi page
+     */
     Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) {
-                    return CommentApi(getOrderId,getAccessToken,true);
-                  }),
-                );
-  }else{
+      context,
+      MaterialPageRoute(builder: (context) {
+        return CommentApi(getOrderId, getAccessToken, true);
+      }),
+    );
+  } else {
     print("notsuccess");
   }
 }
@@ -29,7 +35,7 @@ Future postApiComment(getAccessToken,comment,getOrderId,context) async{
 //   var comment;
 //   CommentPostApi(this.getAccessToken,
 //                  this.comment,
-//                  this.getOrderId);      
+//                  this.getOrderId);
 //   @override
 //   State<StatefulWidget> createState() {
 //     return CommentPostApiSate(this.getAccessToken,
@@ -44,7 +50,7 @@ Future postApiComment(getAccessToken,comment,getOrderId,context) async{
 //    var comment;
 //   CommentPostApiSate(this.getAccessToken,
 //                      this.comment,
-//                      this.getOrderId);     
+//                      this.getOrderId);
 //   @override
 //   void initState() {
 //     super.initState();
@@ -54,7 +60,7 @@ Future postApiComment(getAccessToken,comment,getOrderId,context) async{
 //   @override
 //   Widget build(BuildContext context) {
 //     return Scaffold(
-      
+
 //     );
 //   }
 // }

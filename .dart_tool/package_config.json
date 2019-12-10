@@ -183,7 +183,7 @@
     },
     {
       "name": "shared_preferences",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.4+6",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/shared_preferences-0.5.4+5",
       "packageUri": "lib/",
       "languageVersion": "2.0"
     },
@@ -266,7 +266,7 @@
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2019-12-10T07:39:32.646928Z",
+  "generated": "2019-12-10T10:00:07.564081Z",
   "generator": "pub",
   "generatorVersion": "2.6.0-dev.8.2.flutter-bbe2ac28c9"
 }
