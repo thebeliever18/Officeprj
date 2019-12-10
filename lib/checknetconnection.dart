@@ -9,8 +9,8 @@
 //   var connectivityResult = await (Connectivity().checkConnectivity());
 
 //   /**
-//                * Importing otpPage
-//                */
+//    * Importing otpPage
+//    */
 //   if (a == 1 &&
 //       ((connectivityResult == ConnectivityResult.mobile) ||
 //           (connectivityResult == ConnectivityResult.wifi))) {
