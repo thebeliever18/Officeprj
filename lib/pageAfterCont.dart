@@ -7,6 +7,9 @@ import 'package:office_prj/orientation.dart';
 import 'dropDownDecoration.dart';
 import 'orientation.dart';
 
+/*
+ * Registration page textfield UI
+ */
 class PageAfterCont extends StatefulWidget {
   final context;
   PageAfterCont(this.context);
@@ -23,11 +26,17 @@ class PageAfterContState extends State<PageAfterCont> {
   final phoneInputType = TextInputType.phone;
   final iconForPhone = Icon(Icons.phone);
 
+  /*
+   * @obscureText to hide/show password
+   */
   final obscureText = false;
+
   bool checkBoxState = false;
   PageAfterContState(context);
-  
 
+  /*
+   * Controller for all the feilds for registration page
+   */
   static final nameController = TextEditingController();
   static final emailController = TextEditingController();
   static final passwordController = TextEditingController();
@@ -43,7 +52,7 @@ class PageAfterContState extends State<PageAfterCont> {
   bool _hidden = true;
   void _visibility() {
     errorMesg = false;
-    errorMessage="";
+    errorMessage = "";
     setState(() {
       _hidden = !_hidden;
     });
@@ -93,9 +102,9 @@ class PageAfterContState extends State<PageAfterCont> {
           ),
 
           textField(context, defaultWidth, 'Phone 1*', iconForPhone,
-              phoneInputType, phoneController,'Required'),
+              phoneInputType, phoneController, 'Required'),
           textField(context, defaultWidth, 'Phone 2', iconForPhone,
-              phoneInputType, phoneTwoController,'Optional'),
+              phoneInputType, phoneTwoController, 'Optional'),
           /**
        * Displaying error message if any of the text field is empty in registration page except for phone 2.
        */
@@ -120,29 +129,33 @@ class PageAfterContState extends State<PageAfterCont> {
     });
   }
 
+  /*
+   * Displaying error messege in red color for only 5 seconds in registration page
+   * if any of the field is not validate
+   */
   displayErrorMessage() {
     Future.delayed(
-        Duration(seconds: 5),
-        () {
-          setState(() {
-            errorMesg = false;
-          });
-        }, 
+      Duration(seconds: 5),
+      () {
+        setState(() {
+          errorMesg = false;
+        });
+      },
     );
-    return 
-      Row(
-        mainAxisAlignment: MainAxisAlignment.center,
-        children: <Widget>[
-          SizedBox(width: 35,),
-          Container(
-                    //color: Colors.grey,
-                    child: Text(
-                      errorMessage,
-                      style: TextStyle(color: Colors.red),
-                    ),
-                  ),
-        ],
-      );
-    
-    }
+    return Row(
+      mainAxisAlignment: MainAxisAlignment.center,
+      children: <Widget>[
+        SizedBox(
+          width: 35,
+        ),
+        Container(
+          //color: Colors.grey,
+          child: Text(
+            errorMessage,
+            style: TextStyle(color: Colors.red),
+          ),
+        ),
+      ],
+    );
+  }
 }

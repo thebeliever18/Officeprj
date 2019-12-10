@@ -33,7 +33,6 @@ class UserProfileState extends State<UserProfile> {
   List<String> item = List();
   String temp;
 
-
   Future getImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
@@ -42,13 +41,12 @@ class UserProfileState extends State<UserProfile> {
     });
   }
 
-    @override
+  @override
   void dispose() {
     // Clean up the controller when the widget is disposed.
     myController.dispose();
     super.dispose();
   }
- 
 
   @override
   Widget build(BuildContext context) {
@@ -56,18 +54,18 @@ class UserProfileState extends State<UserProfile> {
       resizeToAvoidBottomPadding: false,
       appBar: AppBar(
         leading: IconButton(
-          onPressed: (){
-            /**
+            onPressed: () {
+              /**
              * Navigating back to homepage after pressing back arrow button
              */
-             Navigator.push(
-                  context,
-                  MaterialPageRoute(builder: (context) {
-                    return Nextpage(LoginPageState.accessToken);
-                  }),
-                );
-          },
-          icon:Icon(Icons.arrow_back)),
+              Navigator.push(
+                context,
+                MaterialPageRoute(builder: (context) {
+                  return Nextpage(LoginPageState.accessToken);
+                }),
+              );
+            },
+            icon: Icon(Icons.arrow_back)),
         backgroundColor: Colors.blue[900],
         title: Text("My Profile"),
         // actions: <Widget>[
@@ -79,177 +77,162 @@ class UserProfileState extends State<UserProfile> {
       ),
       body: Center(
         child: Padding(
-          padding: const EdgeInsets.only(top:8.0),
+          padding: const EdgeInsets.only(top: 8.0),
           child: Column(
             crossAxisAlignment: CrossAxisAlignment.center,
             //mainAxisAlignment: MainAxisAlignment.center,
             children: <Widget>[
-                //padding: EdgeInsets.all(40),
-                Stack(
-                  children: <Widget>[
-                    userimg(),
-                    // sizeheight(200),
-                    Positioned(
+              //padding: EdgeInsets.all(40),
+              Stack(
+                children: <Widget>[
+                  userimg(),
+                  // sizeheight(200),
+                  Positioned(
                       top: 10,
                       right: 90,
-                      child:
-                      Container(
-                      //margin: EdgeInsets.only(top: 60, left: 200, right: 100),
-                      child: FloatingActionButton(
-                        onPressed: getImage,
-                        tooltip: 'Pick Image',
-                        child: Icon(Icons.add_a_photo),
-                      ),))
-                    // ),
-                    // )
-                    
-                    // Container(
-                    //   margin: EdgeInsets.only(top: 10, left: 50),
-                    //   child: Column(
-                    //     mainAxisAlignment: MainAxisAlignment.center,
-                    //     children: <Widget>[
-                    //       Text(LoginPageState.customerName),
-                    //       //sizeheight(10),
-                    //       //Text('Address: Bouddha, kathmandu'),
-                    //       //sizeheight(10),
-                    //       //Text('Phone: 9860401034'),
-                    //     ],
-                    //   ),
-                    // ),
-                    // Container(
-                    //   margin: EdgeInsets.only(top: 450),
-                    //   child: Row(
-                    //     mainAxisAlignment: MainAxisAlignment.start,
-                    //     children: <Widget>[
-                    //       // Container(
-                    //       //   height: 100,
-                    //       //   width: 100,
-                    //       //   decoration: BoxDecoration(
-                    //       //       borderRadius: BorderRadius.circular(10.0),
-                    //       //       color: Colors.blue),
-                    //       //   // child: Column(
-                    //       //   //   mainAxisAlignment: MainAxisAlignment.center,
-                    //       //   //   children: <Widget>[
-                    //       //   // IconButton(
-                    //       //   //   icon: Icon(Icons.edit),
-                    //       //   //   iconSize: 40,
-                    //       //   //   onPressed: (){}
-                    //       //   // ),
-                    //       //   // Text('Edit'),
-                    //       //   //   ],
+                      child: Container(
+                        //margin: EdgeInsets.only(top: 60, left: 200, right: 100),
+                        child: FloatingActionButton(
+                          onPressed: getImage,
+                          tooltip: 'Pick Image',
+                          child: Icon(Icons.add_a_photo),
+                        ),
+                      ))
+                  // ),
+                  // )
 
-                    //       //   // )
-                    //       // ),
-                    //       sizewidth(10),
-                    //       // Container(
-                    //       //     height: 100,
-                    //       //     width: 100,
-                    //       //     decoration: BoxDecoration(
-                    //       //         borderRadius: BorderRadius.circular(10.0),
-                    //       //         color: Colors.blue),
-                    //       //     child: Column(
-                    //       //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       //       children: <Widget>[
-                    //       //         IconButton(
-                    //       //             icon: Icon(Icons.update),
-                    //       //             iconSize: 40,
-                    //       //             onPressed: () {}),
-                    //       //         Text('Update'),
-                    //       //       ],
-                    //       //     )
-                    //       //     ),
-                    //       sizewidth(10),
-                    //       // Container(
-                    //       //     height: 100,
-                    //       //     width: 100,
-                    //       //     decoration: BoxDecoration(
-                    //       //         borderRadius: BorderRadius.circular(10.0),
-                    //       //         color: Colors.blue),
-                    //       //     child: Column(
-                    //       //       mainAxisAlignment: MainAxisAlignment.center,
-                    //       //       children: <Widget>[
-                    //       //         IconButton(
-                    //       //             icon: Icon(Icons.help),
-                    //       //             iconSize: 40,
-                    //       //             onPressed: () {}),
-                    //       //         Text('Help'),
-                    //       //       ],
-                    //       //     ))
-                    //     ],
-                    //   ),
-                    // )
-                  
-                
-                  ],
-                ),
-                SizedBox(
-                  height: 20,
-                ),
-                Text("Name: ${LoginPageState.customerName}"),
-                SizedBox(
-                  height: 10,
-                ),
-          Container(
-          width: 300,
-          child: TextField(
-          
-            
-            onChanged: (str){
-              temp = str;
-            },
-            maxLength: 50,
-            controller: myController,
-            decoration: InputDecoration(
-              hintText: 'Add your address...',
+                  // Container(
+                  //   margin: EdgeInsets.only(top: 10, left: 50),
+                  //   child: Column(
+                  //     mainAxisAlignment: MainAxisAlignment.center,
+                  //     children: <Widget>[
+                  //       Text(LoginPageState.customerName),
+                  //       //sizeheight(10),
+                  //       //Text('Address: Bouddha, kathmandu'),
+                  //       //sizeheight(10),
+                  //       //Text('Phone: 9860401034'),
+                  //     ],
+                  //   ),
+                  // ),
+                  // Container(
+                  //   margin: EdgeInsets.only(top: 450),
+                  //   child: Row(
+                  //     mainAxisAlignment: MainAxisAlignment.start,
+                  //     children: <Widget>[
+                  //       // Container(
+                  //       //   height: 100,
+                  //       //   width: 100,
+                  //       //   decoration: BoxDecoration(
+                  //       //       borderRadius: BorderRadius.circular(10.0),
+                  //       //       color: Colors.blue),
+                  //       //   // child: Column(
+                  //       //   //   mainAxisAlignment: MainAxisAlignment.center,
+                  //       //   //   children: <Widget>[
+                  //       //   // IconButton(
+                  //       //   //   icon: Icon(Icons.edit),
+                  //       //   //   iconSize: 40,
+                  //       //   //   onPressed: (){}
+                  //       //   // ),
+                  //       //   // Text('Edit'),
+                  //       //   //   ],
 
-              prefixIcon: Icon(Icons.location_on,size: 30,),
-              suffixIcon: IconButton(
-                icon: Icon(Icons.add),
-                
-            onPressed: (){
-              setState(() {
-                item.add(temp);
-              });
-              
-
-            },
-             
-
-          ),
-        
-            ),
-          
-
-          ),
-           
-          
-          ),
-          Text('Your Stored Addresses:'),
-         
-            Container(
-              height: 100,
-              width: 300,
-              padding: EdgeInsets.only(top: 5,),
-              child: Center(
-                child: Card(
-                  child: ListView(
-                    shrinkWrap: true,
-                    children: item.map((element)=> Text(element)).toList(),
+                  //       //   // )
+                  //       // ),
+                  //       sizewidth(10),
+                  //       // Container(
+                  //       //     height: 100,
+                  //       //     width: 100,
+                  //       //     decoration: BoxDecoration(
+                  //       //         borderRadius: BorderRadius.circular(10.0),
+                  //       //         color: Colors.blue),
+                  //       //     child: Column(
+                  //       //       mainAxisAlignment: MainAxisAlignment.center,
+                  //       //       children: <Widget>[
+                  //       //         IconButton(
+                  //       //             icon: Icon(Icons.update),
+                  //       //             iconSize: 40,
+                  //       //             onPressed: () {}),
+                  //       //         Text('Update'),
+                  //       //       ],
+                  //       //     )
+                  //       //     ),
+                  //       sizewidth(10),
+                  //       // Container(
+                  //       //     height: 100,
+                  //       //     width: 100,
+                  //       //     decoration: BoxDecoration(
+                  //       //         borderRadius: BorderRadius.circular(10.0),
+                  //       //         color: Colors.blue),
+                  //       //     child: Column(
+                  //       //       mainAxisAlignment: MainAxisAlignment.center,
+                  //       //       children: <Widget>[
+                  //       //         IconButton(
+                  //       //             icon: Icon(Icons.help),
+                  //       //             iconSize: 40,
+                  //       //             onPressed: () {}),
+                  //       //         Text('Help'),
+                  //       //       ],
+                  //       //     ))
+                  //     ],
+                  //   ),
+                  // )
+                ],
+              ),
+              SizedBox(
+                height: 20,
+              ),
+              Text("Name: ${LoginPageState.customerName}"),
+              SizedBox(
+                height: 10,
+              ),
+              Container(
+                width: 300,
+                child: TextField(
+                  onChanged: (str) {
+                    temp = str;
+                  },
+                  maxLength: 50,
+                  controller: myController,
+                  decoration: InputDecoration(
+                    hintText: 'Add your address...',
+                    prefixIcon: Icon(
+                      Icons.location_on,
+                      size: 30,
+                    ),
+                    suffixIcon: IconButton(
+                      icon: Icon(Icons.add),
+                      onPressed: () {
+                        setState(() {
+                          item.add(temp);
+                        });
+                      },
+                    ),
                   ),
                 ),
               ),
-            )
+              Text('Your Stored Addresses:'),
+
+              Container(
+                height: 100,
+                width: 300,
+                padding: EdgeInsets.only(
+                  top: 5,
+                ),
+                child: Center(
+                  child: Card(
+                    child: ListView(
+                      shrinkWrap: true,
+                      children: item.map((element) => Text(element)).toList(),
+                    ),
+                  ),
+                ),
+              )
             ],
-            
-            
           ),
         ),
       ),
     );
   }
-
-  
-
 
   userimg() {
     return Center(

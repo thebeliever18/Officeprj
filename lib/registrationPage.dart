@@ -170,7 +170,11 @@ class FormsState extends State<Forms> {
                             "Please enter 10 digit number for Phone 2";
                             });
                             
-                }else if (PageAfterContState.emailController.text.isNotEmpty ||
+                }
+                /**
+                 * Validation for email and phone 1
+                 */
+                else if (PageAfterContState.emailController.text.isNotEmpty ||
                     PageAfterContState.phoneController.text.isNotEmpty) {
                   checkEmailPattern(PageAfterContState.emailController.text);
                   if (((PageAfterContState.phoneController.text.length == 10) &&
@@ -272,6 +276,10 @@ Widget dsewaLogo(context) {
   );
 }
 
+/*
+ * Old version of registration page
+ * The UI of conatiner will get increased after pressing continue button
+ */
 Widget form(context, {color = Colors.white, child}) {
   return Container(
     child: child ?? TextForms(),

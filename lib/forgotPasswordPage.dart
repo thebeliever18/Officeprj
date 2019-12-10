@@ -115,6 +115,9 @@ class _MyButtonState extends State<MyButton> {
                 if (_key.currentState.validate()) {
                   // No any error in validation
                   _key.currentState.save();
+                  /**
+                   * If the given field is validated then navigate to Otp page
+                   */
                   Navigator.push(context, MaterialPageRoute(builder: (context) {
                     return OtpPage(boolValue: true);
                   }));

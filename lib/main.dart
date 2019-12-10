@@ -428,6 +428,10 @@ import 'main.dart';
 //     );
 //   }
 // }
+
+/*
+ * Starting of flutter application
+ */
 void main() {
   runApp(Load());
   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(

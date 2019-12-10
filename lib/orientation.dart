@@ -12,6 +12,10 @@ class TextForms extends StatefulWidget {
   State<StatefulWidget> createState() => TextFormsState();
 }
 
+/*
+ * UI design for registration form old version
+ * If user is already registered then in the registration UI user can click the button for already a user.
+ */
 class TextFormsState extends State<TextForms> {
   TextFormsState();
   static final  otpPhonenumber=TextEditingController();
@@ -73,6 +77,9 @@ class TextFormsState extends State<TextForms> {
   }
 }
 
+/*
+ * Textfield for all of the fields of registration page
+ */
 Widget textField(context, defaultWidth, labelText, iconn, inputType,getController,[hintText]) {
   return Padding(
     padding: EdgeInsets.all(3.5),
