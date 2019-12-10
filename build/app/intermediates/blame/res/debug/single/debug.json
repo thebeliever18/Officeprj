@@ -1,194 +1,194 @@
 [
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout\\notification_action_tombstone.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout\\notification_action.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout\\notification_template_part_chronometer.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout-v16\\notification_template_custom_big.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-hdpi_ic_launcher.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-hdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_part_chronometer.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout\\notification_template_part_chronometer.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-mdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout-v16_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout-v16\\notification_template_custom_big.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-hdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout-v21\\notification_action_tombstone.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout-v21\\notification_template_icon_group.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout-v21\\notification_template_icon_group.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout\\notification_template_icon_group.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-hdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout\\notification_template_part_time.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-mdpi_ic_launcher.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-mdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-hdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\xml_flutter_image_picker_file_paths.xml.flat",
-        "source": "D:\\practise_flutter\\office_prj\\build\\image_picker\\intermediates\\packaged_res\\debug\\xml\\flutter_image_picker_file_paths.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable\\notification_icon_background.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_icon_background.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable\\notification_icon_background.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-hdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout-v21\\notification_template_custom_big.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_template_custom_big.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout-v21\\notification_template_custom_big.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-mdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout-v21\\notification_action.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_part_time.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout\\notification_template_part_time.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-hdpi-v4\\notification_bg_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_normal_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout\\notification_action.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\xml_flutter_image_picker_file_paths.xml.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\image_picker\\intermediates\\packaged_res\\debug\\xml\\flutter_image_picker_file_paths.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_low_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-mdpi-v4\\notification_bg_low_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable\\notification_tile_bg.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable\\notification_bg.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_background.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable-v21\\notification_action_background.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-v21_notification_action_background.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-v21\\notification_action_background.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_launch_background.xml.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable\\launch_background.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxxhdpi_ic_launcher.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\mipmap-xxxhdpi\\ic_launcher.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable\\notification_bg_low.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout-v21\\notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notify_panel_notification_icon_bg.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-mdpi-v4\\notify_panel_notification_icon_bg.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_action_tombstone.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout\\notification_action_tombstone.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\layout_notification_template_icon_group.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\layout\\notification_template_icon_group.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_tile_bg.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable\\notification_tile_bg.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi-v4_notification_bg_low_pressed.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xxxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi-v4_notification_bg_normal.9.png.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable-mdpi-v4\\notification_bg_normal.9.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-anydpi-v26\\ic_launcher.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\layout-v21_notification_action.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\layout-v21\\notification_action.xml"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher_foreground.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-hdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-hdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg.xml.flat",
-        "source": "C:\\Users\\Spandan\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\1d27c257526775ce51c21c6b0bdf82ac\\res\\drawable\\notification_bg.xml"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-mdpi_ic_launcher_background.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-mdpi\\ic_launcher_background.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\mipmap-xxhdpi_ic_launcher.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\mipmap-xxhdpi\\ic_launcher.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xhdpi_ic_launcher_foreground.png.flat",
+        "source": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\android\\app\\src\\main\\res\\drawable-xhdpi\\ic_launcher_foreground.png"
     },
     {
-        "merged": "D:\\practise_flutter\\office_prj\\build\\app\\intermediates\\res\\merged\\debug\\drawable-xxhdpi_ic_launcher_background.png.flat",
-        "source": "D:\\practise_flutter\\office_prj\\android\\app\\src\\main\\res\\drawable-xxhdpi\\ic_launcher_background.png"
+        "merged": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\res\\merged\\debug\\drawable_notification_bg_low.xml.flat",
+        "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\drawable\\notification_bg_low.xml"
     }
 ]

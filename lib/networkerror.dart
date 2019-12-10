@@ -6,8 +6,8 @@ import 'package:office_prj/main.dart';
 import 'package:office_prj/orientation.dart';
 
 class ErrorContent extends StatefulWidget {
-  NetworkErrorAnimation animation;
-  String accessToken;
+  NetworkErrorAnimation animation; /** when no internet is connected calling the networkerror page */
+  String accessToken;/**  */
   ErrorContent({@required AnimationController controller})
       : animation = new NetworkErrorAnimation(controller);
 

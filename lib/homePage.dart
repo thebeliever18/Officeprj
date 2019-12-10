@@ -19,7 +19,7 @@ import 'package:office_prj/userprofile.dart' as prefix1;
 
 class Nextpage extends StatelessWidget {
   @override
-  String accessToken;
+  String accessToken; /** fetching accesstoken from loginpage for user data authentication */
   Nextpage(this.accessToken);
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -49,13 +49,13 @@ class HomePage extends StatefulWidget {
   State createState() => new HomePageState(this.accessToken);
 }
 
-class Constants {
+class Constants { /** this is the menu option of homepage for settings and logout */
   static const String settings = 'Settings';
   static const String more = 'More...';
   static const String logOut = 'Logout';
   static const String report = 'Report us';
 
-  static const List<String> choices = <String>[settings, more, logOut, report];
+  static const List<String> choices = <String>[settings, more, logOut, report]; /** all options are kept in list */
 }
 
 var a;
@@ -63,21 +63,21 @@ var b;
 int len;
 
 class HomePageState extends State<HomePage> {
-  Map data;
-  List userData;
-  String accessToken;
+  Map data; /** defining a variable as map to store api data because the json data in api is of map type */
+  List userData; /** this list is made to store the data in list inorder to show them in list view */
+  String accessToken; /** fetching access token to pass it to api for user authentication */
   HomePageState(this.accessToken);
 
   Future getData() async {
     try {
-      Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
+      Map<String, String> headers = {"Authorization": "Bearer $accessToken"}; /** sending access token to api */
       print("header is $headers");
       http.Response response = await http.get(
-          "http://test.dsewa.com.np/api/android/get-order/customer",
+          "http://test.dsewa.com.np/api/android/get-order/customer", /** this api contains the customer order detail which are identified by access token */
           headers: headers);
-      data = json.decode(response.body);
+      data = json.decode(response.body); /**decoding the json data format  */
       setState(() {
-        userData = data["data"];
+        userData = data["data"]; /**  */
       });
       print(userData);
     } catch (e) {
@@ -95,7 +95,7 @@ class HomePageState extends State<HomePage> {
   }
 
   @override
-  Widget build(BuildContext context) {
+  Widget build(BuildContext context) { 
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue[900],
@@ -112,12 +112,12 @@ class HomePageState extends State<HomePage> {
                 Navigator.push(
                   context,
                   MaterialPageRoute(builder: (context) {
-                    return Userprofile();
+                    return Userprofile(); /** on pressed the page will be navigated to profile page */
                   }),
                 );
               },
             ),
-            PopupMenuButton<String>(
+            PopupMenuButton<String>( 
               onSelected: choiceAction,
               itemBuilder: (BuildContext context) {
                 return Constants.choices.map((String choice) {
@@ -140,7 +140,7 @@ class HomePageState extends State<HomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => Orderdetail(
-                                userData[index]["order_id"],
+                                userData[index]["order_id"], /** sending order-id data to order page */
                                 userData[index]["product_type"][0],
                                 accessToken)),
                       );
@@ -151,7 +151,7 @@ class HomePageState extends State<HomePage> {
                         child: Container(
                             height: 120,
                             margin: EdgeInsets.only(left: 10, right: 10),
-                            decoration: BoxDecoration(
+                            decoration: BoxDecoration( /** box ui of home page */
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.black,
@@ -171,7 +171,7 @@ class HomePageState extends State<HomePage> {
                                   Row(
                                     children: <Widget>[
                                       Text(
-                                        " ${userData[index]["product_type"][0]}",
+                                        " ${userData[index]["product_type"][0]}", /** fetching data from json */
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
                                           fontSize: 35,

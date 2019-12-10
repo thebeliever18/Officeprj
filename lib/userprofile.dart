@@ -17,7 +17,11 @@ class Userprofile extends StatelessWidget {
     );
   }
 }
+/*
+ * 
+ */
 
+ /** */
 class UserProfile extends StatefulWidget {
   //String name;
   UserProfile();
@@ -30,10 +34,10 @@ class UserProfileState extends State<UserProfile> {
   // UserProfileState();
   File _image;
   final myController = TextEditingController();
-  List<String> item = List();
+  List<String> item = List(); /** list to add address */
   String temp;
 
-
+/** picking image from device gallery app */
   Future getImage() async {
     var image = await ImagePicker.pickImage(source: ImageSource.gallery);
 
@@ -185,7 +189,7 @@ class UserProfileState extends State<UserProfile> {
                 SizedBox(
                   height: 20,
                 ),
-                Text("Name: ${LoginPageState.customerName}"),
+                Text("Name: ${LoginPageState.customerName}"),/** fetching customer name from loginpage */
                 SizedBox(
                   height: 10,
                 ),
@@ -204,7 +208,7 @@ class UserProfileState extends State<UserProfile> {
 
               prefixIcon: Icon(Icons.location_on,size: 30,),
               suffixIcon: IconButton(
-                icon: Icon(Icons.add),
+                icon: Icon(Icons.add),/** on pressed new address will be added to the listtile */
                 
             onPressed: (){
               setState(() {
@@ -234,7 +238,7 @@ class UserProfileState extends State<UserProfile> {
                 child: Card(
                   child: ListView(
                     shrinkWrap: true,
-                    children: item.map((element)=> Text(element)).toList(),
+                    children: item.map((element)=> Text(element)).toList(), /** returning all the address from the list to listview */
                   ),
                 ),
               ),
@@ -272,7 +276,7 @@ class UserProfileState extends State<UserProfile> {
                 'Add your photo',
                 style: TextStyle(color: Colors.white.withOpacity(0.6)),
               )
-            : Image.file(_image),
+            : Image.file(_image), /** fetching the image from gallery and posting in container */
       ),
     );
   }

@@ -30,7 +30,6 @@ dependencies:
   http:
   url_launcher:
   image:
-  http:
   shared_preferences:
   # for adding launcher icon
   flutter_launcher_icons:

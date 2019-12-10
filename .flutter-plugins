@@ -1,9 +1,3 @@
-<<<<<<< HEAD
 image_picker=C:\\Users\\saugatpc\\Desktop\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\image_picker-0.6.1+7\\
-shared_preferences=C:\\Users\\saugatpc\\Desktop\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.4+5\\
+shared_preferences=C:\\Users\\saugatpc\\Desktop\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.4+6\\
 url_launcher=C:\\Users\\saugatpc\\Desktop\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\url_launcher-5.1.6\\
-=======
-image_picker=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\image_picker-0.6.1+7\\
-shared_preferences=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\shared_preferences-0.5.4+6\\
-url_launcher=C:\\flutter\\.pub-cache\\hosted\\pub.dartlang.org\\url_launcher-5.1.6\\
->>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3

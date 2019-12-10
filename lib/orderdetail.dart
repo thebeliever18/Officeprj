@@ -20,7 +20,7 @@ import 'dart:async';
 //   "Something long Something long Something long Something long Something long Something long",
 
 // ];
-final String phone = 'tel:+9779851225639';
+final String phone = 'tel:+9779851225639'; 
 
 _callPhone() async {
   if (await canLaunch(phone)) {
@@ -33,7 +33,7 @@ _callPhone() async {
 class Orderdetail extends StatefulWidget {
   //final List<String> notes;
 
-  Map data;
+  Map data; 
   List orderData;
   List log;
   String getOrderId;
@@ -42,7 +42,7 @@ class Orderdetail extends StatefulWidget {
   Orderdetail(this.getOrderId, this.getProduct, this.accessToken);
   @override
   State<StatefulWidget> createState() {
-    return OrderdetailState(this.getOrderId, this.getProduct, this.accessToken);
+    return OrderdetailState(this.getOrderId, this.getProduct, this.accessToken); /** fetching data from home page */
   }
 }
 
@@ -57,10 +57,10 @@ class OrderdetailState extends State<Orderdetail> {
 
   Future getOrderdetail() async {
     try {
-      Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
+      Map<String, String> headers = {"Authorization": "Bearer $accessToken"}; /** sending token of user to show order detail of the user */
       print("header is $headers");
       http.Response response = await http.get(
-          "http://test.dsewa.com.np/api/android/get-order-log/$getOrderId",
+          "http://test.dsewa.com.np/api/android/get-order-log/$getOrderId", /** this api will fetch order detail of customer */
           headers: headers);
       data = json.decode(response.body);
       setState(() {
@@ -129,7 +129,7 @@ class OrderdetailState extends State<Orderdetail> {
                         context,
                         MaterialPageRoute(
                             builder: (context) =>
-                                CommentApi(getOrderId, accessToken, false)));
+                                CommentApi(getOrderId, accessToken, false))); 
                   },
                   icon: Icon(Icons.message),
                   iconSize: 30,
@@ -140,7 +140,7 @@ class OrderdetailState extends State<Orderdetail> {
             ),
           ],
         ),
-        body: ListView.builder(
+        body: ListView.builder( /** showing orderdata in listview retrived from json */
           // itemCount: notes.length,
           itemBuilder: (BuildContext context, int index) {
             return Card(
@@ -215,7 +215,7 @@ class OrderdetailState extends State<Orderdetail> {
             //       height: 1.6,
             //     ),),
           },
-          itemCount: orderData == null ? 0 : orderData.length,
+          itemCount: orderData == null ? 0 : orderData.length, 
         ));
   }
 }
