@@ -1,5 +1,25 @@
 -- Merging decision tree log ---
 manifest
+<<<<<<< HEAD
+<<<<<<< HEAD
+ADDED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:shared_preferences] C:\Users\saugatpc\Desktop\Officeprj-1\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-7:12
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-14:12
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:2:1-22:12
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1d82394f506666a7481955d6a7b2ad67fe197b63
 ADDED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml:1:1-33:12
 INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml:1:1-33:12
@@ -34,6 +54,26 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Spandan\.gradle\caches\transfo
 INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
 INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+<<<<<<< HEAD
+=======
+ADDED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml:1:1-33:12
+MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-14:12
+MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-22:12
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-10:12
+MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:17:1-24:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c94ef0f054ce91a92f7f64def7aad324\AndroidManifest.xml:17:1-25:12
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d66e080e58b282c957ef91b99d19c519\AndroidManifest.xml:17:1-22:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\debug\AndroidManifest.xml:1:1-7:12
+>>>>>>> 8547cfc209079affdd6a910f8368f5610ddd995c
+>>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
+=======
+>>>>>>> 1d82394f506666a7481955d6a7b2ad67fe197b63
 	package
 		ADDED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml:2:5-37
 		INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml
@@ -97,6 +137,29 @@ ADDED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.x
 	android:name
 		ADDED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml:29:27-74
 uses-sdk
+<<<<<<< HEAD
+<<<<<<< HEAD
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\main\AndroidManifest.xml
+MERGED from [:shared_preferences] C:\Users\saugatpc\Desktop\Officeprj-1\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:shared_preferences] C:\Users\saugatpc\Desktop\Officeprj-1\build\shared_preferences\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\saugatpc\Desktop\Officeprj-1\build\url_launcher\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\saugatpc\Desktop\Officeprj-1\build\image_picker\intermediates\merged_manifests\debug\processDebugManifest\merged\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\19d18a306389b73b5d6e1623e1590724\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\26ae9ad7630283154197bb2eebdcf5f1\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\saugatpc\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\5c27acd049a990fc8c38f07c47dde797\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\saugatpc\Desktop\Officeprj-1\android\app\src\debug\AndroidManifest.xml
+=======
+<<<<<<< HEAD
+=======
+>>>>>>> 1d82394f506666a7481955d6a7b2ad67fe197b63
 INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml
 INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml
@@ -154,6 +217,29 @@ MERGED from [androidx.print:print:1.0.0] C:\Users\Spandan\.gradle\caches\transfo
 MERGED from [androidx.print:print:1.0.0] C:\Users\Spandan\.gradle\caches\transforms-1\files-1.1\print-1.0.0.aar\027d416aa577ddfd560c8d0baa0015f2\AndroidManifest.xml:20:5-44
 INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml
 INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml
+<<<<<<< HEAD
+=======
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\main\AndroidManifest.xml
+MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:url_launcher] C:\Users\Acer\Desktop\gitclone\Officeprj\build\url_launcher\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:image_picker] C:\Users\Acer\Desktop\gitclone\Officeprj\build\image_picker\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:connectivity] C:\Users\Acer\Desktop\gitclone\Officeprj\build\connectivity\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.2] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\core-1.0.2.aar\40724a1b15b7c77bf9d0246edfd559cd\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c94ef0f054ce91a92f7f64def7aad324\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\versionedparcelable-1.0.0.aar\c94ef0f054ce91a92f7f64def7aad324\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d66e080e58b282c957ef91b99d19c519\AndroidManifest.xml:20:5-44
+MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\Acer\.gradle\caches\transforms-1\files-1.1\lifecycle-runtime-2.0.0.aar\d66e080e58b282c957ef91b99d19c519\AndroidManifest.xml:20:5-44
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\debug\AndroidManifest.xml
+INJECTED from C:\Users\Acer\Desktop\gitclone\Officeprj\android\app\src\debug\AndroidManifest.xml
+>>>>>>> 8547cfc209079affdd6a910f8368f5610ddd995c
+>>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
+=======
+>>>>>>> 1d82394f506666a7481955d6a7b2ad67fe197b63
 	android:targetSdkVersion
 		INJECTED from D:\practise_flutter\office_prj\android\app\src\main\AndroidManifest.xml
 		INJECTED from D:\practise_flutter\office_prj\android\app\src\debug\AndroidManifest.xml

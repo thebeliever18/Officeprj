@@ -9,6 +9,8 @@ package io.flutter.plugins.sharedpreferences;
 public final class R {
     private R() {}
 
+<<<<<<< HEAD
+=======
     public static final class attr {
         private attr() {}
 
@@ -208,4 +210,5 @@ public final class R {
         public static final int GradientColorItem_android_color = 0;
         public static final int GradientColorItem_android_offset = 1;
     }
+>>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
 }
