@@ -465,6 +465,8 @@ class LoginPageState extends State<LoginPage> {
   // of the TextField.
   final phoneController = TextEditingController();
   final passwordController = TextEditingController();
+  static var customerName;
+  static var accessToken;
   bool hidden=true;
   void visibility() {
     setState(() {
@@ -626,7 +628,8 @@ class LoginPageState extends State<LoginPage> {
 
         setState(() {
           sharedPreferences.setString("token", jsonData['access_token']);
-          var accessToken = jsonData['access_token'];
+          accessToken = jsonData['access_token'];
+          customerName=jsonData['name'];
           Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(
                   builder: (BuildContext context) => Nextpage(accessToken)),

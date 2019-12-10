@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:office_prj/commentGetApi.dart';
+import 'package:office_prj/errorPage.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:office_prj/homePage.dart';
 import 'package:http/http.dart' as http;
@@ -38,40 +39,39 @@ class Orderdetail extends StatefulWidget {
   String getOrderId;
   String getProduct;
   String accessToken;
-   Orderdetail(this.getOrderId,this.getProduct, this.accessToken);
+  Orderdetail(this.getOrderId, this.getProduct, this.accessToken);
   @override
   State<StatefulWidget> createState() {
-    return OrderdetailState(this.getOrderId,this.getProduct, this.accessToken);
+    return OrderdetailState(this.getOrderId, this.getProduct, this.accessToken);
   }
 }
 
 class OrderdetailState extends State<Orderdetail> {
-   
-  
   List orderData;
   Map data;
   List log;
   String getOrderId;
   String getProduct;
   String accessToken;
-  OrderdetailState(this.getOrderId,this.getProduct, this.accessToken);
+  OrderdetailState(this.getOrderId, this.getProduct, this.accessToken);
 
   Future getOrderdetail() async {
-  Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
-  print("header is $headers");
-  http.Response response = await http.get(
-      "http://test.dsewa.com.np/api/android/get-order-log/$getOrderId",
-      headers: headers);
+    try {
+      Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
+      print("header is $headers");
+      http.Response response = await http.get(
+          "http://test.dsewa.com.np/api/android/get-order-log/$getOrderId",
+          headers: headers);
       data = json.decode(response.body);
-    
-
-     setState(() {
-      orderData = data["data"]["log"];
-      
-    });
+      setState(() {
+        orderData = data["data"]["log"];
+      });
+    } catch (e) {
+      Navigator.push(
+          context, MaterialPageRoute(builder: (context) => NetPage()));
+    }
     print(orderData);
   }
-  
 
   @override
   void initState() {
@@ -85,16 +85,19 @@ class OrderdetailState extends State<Orderdetail> {
         appBar: AppBar(
           actions: <Widget>[
             Container(
-              margin: EdgeInsets.only(top:23,right: 20),
-              child: Text("Order id: $getOrderId",
-              textAlign: TextAlign.center,
-                    style: TextStyle(fontSize: 15.0, height: 1.0),
-                  ),
+              margin: EdgeInsets.only(top: 23, right: 20),
+              child: Text(
+                "Order id: $getOrderId",
+                textAlign: TextAlign.center,
+                style: TextStyle(fontSize: 15.0, height: 1.0),
+              ),
             ),
           ],
           backgroundColor: Colors.blue[900],
-
-          title: Text("$getProduct", style: TextStyle(fontSize: 28),),
+          title: Text(
+            "$getProduct",
+            style: TextStyle(fontSize: 28),
+          ),
         ),
         bottomNavigationBar: Row(
           children: <Widget>[
@@ -125,11 +128,8 @@ class OrderdetailState extends State<Orderdetail> {
                     Navigator.push(
                         context,
                         MaterialPageRoute(
-                            builder: (context) => CommentApi(
-                                getOrderId,
-                                accessToken,
-                                false))
-                      );
+                            builder: (context) =>
+                                CommentApi(getOrderId, accessToken, false)));
                   },
                   icon: Icon(Icons.message),
                   iconSize: 30,
@@ -141,81 +141,82 @@ class OrderdetailState extends State<Orderdetail> {
           ],
         ),
         body: ListView.builder(
-            // itemCount: notes.length,
-            itemBuilder: (BuildContext context, int index) {
-          return Card(
-              child: Row(children: <Widget>[
-            Column(
-              children: <Widget>[
-                Text(
-                  '${orderData[index]["date"]} ',
-                  style: TextStyle(fontSize: 15.0, height: 1.5),
-                ),
-                Text(
-                  'day:',
-                  style: TextStyle(fontSize: 15.0, height: 1.7),
-                )
-              ],
-            ),
-            Container(
-              width: 30,
-            ),
-            
-               Column(
+          // itemCount: notes.length,
+          itemBuilder: (BuildContext context, int index) {
+            return Card(
+                child: Row(children: <Widget>[
+              Column(
+                children: <Widget>[
+                  Text(
+                    '${orderData[index]["date"]} ',
+                    style: TextStyle(fontSize: 15.0, height: 1.5),
+                  ),
+                  Text(
+                    'day:',
+                    style: TextStyle(fontSize: 15.0, height: 1.7),
+                  )
+                ],
+              ),
+              Container(
+                width: 30,
+              ),
+
+              Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
-                   '${orderData[index]["message"]}',
-                   style: TextStyle(fontSize: 20.0, height: 1.7),
-                   ),
-                  
-                     Container(
-                      margin: EdgeInsets.only(right: 50),
-                      child: Row(children: <Widget>[
-                        // SizedBox(width: 50,),
-                        Icon(
-                          Icons.location_on,
-                          color: Colors.red,
-                          size:12,
-                        ),
-                        Text('${orderData[index]["location"]}', style: TextStyle(height: 1.7),),                    ]),
-                    ),
-                  
+                    '${orderData[index]["message"]}',
+                    style: TextStyle(fontSize: 20.0, height: 1.7),
+                  ),
+                  Container(
+                    margin: EdgeInsets.only(right: 50),
+                    child: Row(children: <Widget>[
+                      // SizedBox(width: 50,),
+                      Icon(
+                        Icons.location_on,
+                        color: Colors.red,
+                        size: 12,
+                      ),
+                      Text(
+                        '${orderData[index]["location"]}',
+                        style: TextStyle(height: 1.7),
+                      ),
+                    ]),
+                  ),
                 ],
               ),
-            
-            // Column(
-            //         children: <Widget>[
-            //           Container(
 
-            //             color: Colors.blue,
-            //             child: Row(
+              // Column(
+              //         children: <Widget>[
+              //           Container(
 
-            //               children: <Widget>[
-            //                 Icon(
-            //                   Icons.location_on,
-            //                   color: Colors.red,
-            //                 ),
-            //                 Text("${orderData[index]["location"]}")
-            //               ],
-            //             ),
-            //           ),
-            //         ],
-            //       ),
-          ]));
+              //             color: Colors.blue,
+              //             child: Row(
 
-          //  child: Card(
-          //   color: Colors.white,
-          //   child: Padding(
-          //     padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 16.0),
-          //     child: Text(notes[pos], style: TextStyle(
-          //       fontSize: 18.0,
-          //       height: 1.6,
-          //     ),),
-        },
-        itemCount: orderData == null ? 0 : orderData.length,));
-   
-    
+              //               children: <Widget>[
+              //                 Icon(
+              //                   Icons.location_on,
+              //                   color: Colors.red,
+              //                 ),
+              //                 Text("${orderData[index]["location"]}")
+              //               ],
+              //             ),
+              //           ),
+              //         ],
+              //       ),
+            ]));
+
+            //  child: Card(
+            //   color: Colors.white,
+            //   child: Padding(
+            //     padding: EdgeInsets.symmetric(vertical: 24.0, horizontal: 16.0),
+            //     child: Text(notes[pos], style: TextStyle(
+            //       fontSize: 18.0,
+            //       height: 1.6,
+            //     ),),
+          },
+          itemCount: orderData == null ? 0 : orderData.length,
+        ));
   }
 }
 

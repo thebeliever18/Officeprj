@@ -1,12 +1,13 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
 import 'package:office_prj/checknetconnection.dart';
+import 'package:office_prj/homePage.dart';
 import 'package:office_prj/main.dart';
 import 'package:office_prj/orientation.dart';
 
 class ErrorContent extends StatefulWidget {
   NetworkErrorAnimation animation;
-
+  String accessToken;
   ErrorContent({@required AnimationController controller})
       : animation = new NetworkErrorAnimation(controller);
 
@@ -143,7 +144,7 @@ class _ErrorContentState extends State<ErrorContent> {
                 height: 30,
               ),
               AutoSizeText(
-                'No internet connection found!\nCheck you connection',
+                'No internet connection found!\nTurn on wifi/mobile data',
                 textAlign: TextAlign.center,
                 style: TextStyle(fontSize: 18,fontWeight: FontWeight.bold),
               ),
@@ -155,8 +156,12 @@ class _ErrorContentState extends State<ErrorContent> {
                 color: Colors.blue[900],
                 highlightColor: Colors.pink,
                 onPressed: (){
-                  
-                  Navigator.pop(context);
+                  //Navigator.of(context).pop();
+                  Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => Nextpage(LoginPageState.accessToken)),
+                      );
                   //  if(a==1){
                   //   a=0;
                   //    checkInternetConnectivity(a,context);
@@ -173,22 +178,22 @@ class _ErrorContentState extends State<ErrorContent> {
                     
                   ),
                  
-                ),
+                 ),
               ),
-              Container(
-                padding: EdgeInsets.only(left: 120,),
-                child: SwitchListTile(
-                  value: _value,
-                  onChanged: _onChangeSwitch,
-                  activeColor: Colors.blue[900],
-                  title: Text(
-                    "Cellular Data",
-                    style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
+              // Container(
+              //   padding: EdgeInsets.only(left: 120,),
+              //   child: SwitchListTile(
+              //     value: _value,
+              //     onChanged: _onChangeSwitch,
+              //     activeColor: Colors.blue[900],
+              //     // title: Text(
+              //     //   "Cellular Data",
+              //     //   style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),
                     
 
-                    ),
-                ),
-              )
+              //     //   ),
+              //   ),
+              // )
             ],
           ))
         ]);

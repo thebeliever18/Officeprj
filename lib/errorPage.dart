@@ -23,7 +23,6 @@ class NetPage extends StatefulWidget {
 }
 
 class _MyHomePageState extends State<NetPage> with TickerProviderStateMixin {
-
   AnimationController animationController;
 
   @override

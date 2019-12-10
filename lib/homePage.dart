@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:office_prj/Userprofile.dart';
 import 'package:office_prj/commentGetApi.dart';
+import 'package:office_prj/errorPage.dart';
 import 'package:office_prj/main.dart';
 import 'package:http/http.dart' as http;
 import 'package:office_prj/logoutApi.dart';
@@ -61,23 +62,30 @@ var a;
 var b;
 int len;
 
-class HomePageState extends State<HomePage>{
+class HomePageState extends State<HomePage> {
   Map data;
   List userData;
   String accessToken;
   HomePageState(this.accessToken);
 
   Future getData() async {
-    Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
-    print("header is $headers");
-    http.Response response = await http.get(
-        "http://test.dsewa.com.np/api/android/get-order/customer",
-        headers: headers);
-    data = json.decode(response.body);
-    setState(() {
-      userData = data["data"];
-    });
-    print(userData);
+    try {
+      Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
+      print("header is $headers");
+      http.Response response = await http.get(
+          "http://test.dsewa.com.np/api/android/get-order/customer",
+          headers: headers);
+      data = json.decode(response.body);
+      setState(() {
+        userData = data["data"];
+      });
+      print(userData);
+    } catch (e) {
+      Navigator.push(
+        context,
+        MaterialPageRoute(builder: (context) => NetPage()),
+      );
+    }
   }
 
   @override
@@ -306,26 +314,34 @@ class HomePageState extends State<HomePage>{
   }
 
   void choiceAction(String choice) {
+    
     if (choice == "Logout") {
+    /**
+     * Navigating to logout page after pressing logout button
+     */
       Navigator.push(
         context,
         MaterialPageRoute(
             builder: (context) => LogoutApi(accessToken, context)),
       );
-    } else if(choice=="Settings"){
+    } else if (choice == "Settings") {
+    /**
+     * Navigating to settings page after pressing setting button
+     */
       Navigator.push(
         context,
-        MaterialPageRoute(
-            builder: (context) => Setting()),
+        MaterialPageRoute(builder: (context) => Setting()),
       );
     }
-      print('working');
-    }
+    /**
+     * Print working if other buttons are clicked except for setting and logout
+     */
+    print('working');
   }
+}
 
-  // remove(index) {
-  //   userData[index]["product_type"].toString().substring(1);
-  //   userData[index]["product_type"].toString().length;
-  //   userData[index]["product_type"].toString().substring(a);
-  // }
-
+// remove(index) {
+//   userData[index]["product_type"].toString().substring(1);
+//   userData[index]["product_type"].toString().length;
+//   userData[index]["product_type"].toString().substring(a);
+// }
