@@ -1,5 +1,8 @@
 import 'package:auto_size_text/auto_size_text.dart';
 import 'package:flutter/material.dart';
+import 'package:office_prj/checknetconnection.dart';
+import 'package:office_prj/main.dart';
+import 'package:office_prj/orientation.dart';
 
 class ErrorContent extends StatefulWidget {
   NetworkErrorAnimation animation;
@@ -151,7 +154,16 @@ class _ErrorContentState extends State<ErrorContent> {
               RaisedButton(
                 color: Colors.blue[900],
                 highlightColor: Colors.pink,
-                onPressed: (){},
+                onPressed: (){
+                  
+                  Navigator.pop(context);
+                  //  if(a==1){
+                  //   a=0;
+                  //    checkInternetConnectivity(a,context);
+                  //  }else{
+                  //     checkInternetConnectivity(a,context);
+                  //    }
+                     },
                 child: AutoSizeText(
                   'Try again',
                   style: TextStyle(

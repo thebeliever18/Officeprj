@@ -213,7 +213,11 @@ packages:
       name: shared_preferences
       url: "https://pub.dartlang.org"
     source: hosted
+<<<<<<< HEAD
     version: "0.5.4+5"
+=======
+    version: "0.5.4+6"
+>>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
   sky_engine:
     dependency: transitive
     description: flutter

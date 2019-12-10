@@ -1,15 +1,19 @@
 import 'package:flutter/material.dart';
 import 'package:flutter/rendering.dart';
 import 'package:office_prj/Userprofile.dart';
-import 'package:office_prj/loginPage.dart';
+import 'package:office_prj/commentGetApi.dart';
+import 'package:office_prj/main.dart';
 import 'package:http/http.dart' as http;
-import 'package:office_prj/orderdetail.dart';
+import 'package:office_prj/logoutApi.dart';
+import 'package:office_prj/orderDetail.dart';
+//import 'package:office_prj/orderdetail.dart';
 import 'package:office_prj/otpPage.dart' as prefix0;
+import 'package:office_prj/settings.dart';
 
 import 'dart:convert';
 import 'dart:async';
 
-import 'package:office_prj/post.dart';
+//import 'package:office_prj/post.dart';
 import 'package:office_prj/userprofile.dart' as prefix1;
 
 class Nextpage extends StatelessWidget {
@@ -18,22 +22,23 @@ class Nextpage extends StatelessWidget {
   Nextpage(this.accessToken);
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       home: new HomePage(this.accessToken),
     );
   }
 }
 
-List<String> notes = [
-  "fluttermaster.com",
-  "Update Android Studio to 3.3",
-  "Implement ListView widget",
-  "Demo ListView simplenote app",
-  "Fixing app color",
-  "Create new note screen",
-  "Persist notes data",
-  "Add screen transition animation",
-  "Something long Something long Something long Something long Something long Something long",
-];
+// List<String> notes = [
+//   "fluttermaster.com",
+//   "Update Android Studio to 3.3",
+//   "Implement ListView widget",
+//   "Demo ListView simplenote app",
+//   "Fixing app color",
+//   "Create new note screen",
+//   "Persist notes data",
+//   "Add screen transition animation",
+//   "Something long Something long Something long Something long Something long Something long",
+// ];
 
 class HomePage extends StatefulWidget {
   String accessToken;
@@ -44,25 +49,23 @@ class HomePage extends StatefulWidget {
 }
 
 class Constants {
-  static const String Settings = 'Settings';
-  static const String More = 'More...';
-  static const String SignOut = 'Sign Out';
-  static const String Report = 'Report us';
+  static const String settings = 'Settings';
+  static const String more = 'More...';
+  static const String logOut = 'Logout';
+  static const String report = 'Report us';
 
-  static const List<String> choices = <String>[Settings, More, SignOut, Report];
+  static const List<String> choices = <String>[settings, more, logOut, report];
 }
 
 var a;
 var b;
 int len;
 
-class HomePageState extends State<HomePage> {
+class HomePageState extends State<HomePage>{
   Map data;
   List userData;
   String accessToken;
   HomePageState(this.accessToken);
-
-
 
   Future getData() async {
     Map<String, String> headers = {"Authorization": "Bearer $accessToken"};
@@ -71,16 +74,11 @@ class HomePageState extends State<HomePage> {
         "http://test.dsewa.com.np/api/android/get-order/customer",
         headers: headers);
     data = json.decode(response.body);
-
-    
-
     setState(() {
       userData = data["data"];
     });
     print(userData);
   }
- 
-  
 
   @override
   void initState() {
@@ -92,6 +90,7 @@ class HomePageState extends State<HomePage> {
   Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
+          backgroundColor: Colors.blue[900],
           leading: Container(
             child: Column(
               children: <Widget>[],
@@ -129,20 +128,20 @@ class HomePageState extends State<HomePage> {
             return Container(
                 child: InkWell(
                     onTap: () {
-                      String sendOrderId=userData[index]["order_id"].toString();
-                      String sendProduct= userData[index]["product_type"][0].toString();
                       Navigator.push(
                         context,
                         MaterialPageRoute(
-                            
-                            builder: (context) => Orderdetail(sendOrderId, sendProduct, accessToken)),
+                            builder: (context) => Orderdetail(
+                                userData[index]["order_id"],
+                                userData[index]["product_type"][0],
+                                accessToken)),
                       );
                     },
                     child: Padding(
                         padding: const EdgeInsets.only(
                             top: 10.0, bottom: 10, left: 16, right: 16.0),
                         child: Container(
-                          height: 120,
+                            height: 120,
                             margin: EdgeInsets.only(left: 10, right: 10),
                             decoration: BoxDecoration(
                                 boxShadow: [
@@ -156,10 +155,10 @@ class HomePageState extends State<HomePage> {
                             child: Column(
                                 crossAxisAlignment: CrossAxisAlignment.start,
                                 children: <Widget>[
-                                   SizedBox(
-                                        height: 10,
-                                        width: 10,
-                                      ),
+                                  SizedBox(
+                                    height: 10,
+                                    width: 10,
+                                  ),
 
                                   Row(
                                     children: <Widget>[
@@ -176,9 +175,8 @@ class HomePageState extends State<HomePage> {
                                         height: 50,
                                         width: 140,
                                       ),
-                                    
-                                      
-                                         
+                                      // Text("Order id: ${userData[index]["order_id"]}"),
+
                                       Row(
                                         children: <Widget>[
                                           Text(
@@ -190,7 +188,8 @@ class HomePageState extends State<HomePage> {
                                             ),
                                           ),
                                           Text(
-                                            "  ${userData[index]["cod"]}",style: TextStyle(fontSize: 13),
+                                            "  ${userData[index]["cod"]}",
+                                            style: TextStyle(fontSize: 13),
                                           ),
                                         ],
                                       )
@@ -199,45 +198,41 @@ class HomePageState extends State<HomePage> {
                                   SizedBox(
                                     height: 30,
                                   ),
-                                  Row(
-                                    children:<Widget>[
                                   Row(children: <Widget>[
-                                    Text("    From:",
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        )),
-                                        
-                                        
-                                    Text(
-                                      " ${userData[index]["vendor"]}",
-                                      style: TextStyle(fontSize: 13),
+                                    Row(children: <Widget>[
+                                      Text("    From:",
+                                          style: TextStyle(
+                                            fontSize: 13,
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                          )),
+                                      Text(
+                                        " ${userData[index]["vendor"]}",
+                                        style: TextStyle(fontSize: 13),
+                                      ),
+                                      SizedBox(
+                                        width: 3,
+                                      ),
+                                    ]),
+                                    SizedBox(
+                                      height: 10,
                                     ),
-                                     SizedBox(
-                                    width: 3,
-                                  ),
+                                    Row(children: <Widget>[
+                                      Text("    Tracking Id:",
+                                          style: TextStyle(
+                                            fontSize: 13,
+                                            color: Colors.black,
+                                            fontWeight: FontWeight.bold,
+                                          )),
+                                      Text(" ${userData[index]["tracking_id"]}",
+                                          style: TextStyle(
+                                            fontSize: 13,
+                                            color: Colors.black,
+                                            backgroundColor: Colors.grey[200],
+                                          )),
+                                    ]),
                                   ]),
 
-                                  SizedBox(
-                                    height: 10,
-                                  ),
-                                  Row(children: <Widget>[
-                                    Text("    Tracking Id:",
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          color: Colors.black,
-                                          fontWeight: FontWeight.bold,
-                                        )),
-                                    Text(" ${userData[index]["tracking_id"]}",
-                                        style: TextStyle(
-                                          fontSize: 13,
-                                          color: Colors.black,
-                                          backgroundColor: Colors.grey[200],
-                                        )),
-                                  ]),
-                                    ]),
-                                  
                                   // Row(
                                   //   crossAxisAlignment: CrossAxisAlignment.start,
                                   //   children: <Widget>[
@@ -311,7 +306,21 @@ class HomePageState extends State<HomePage> {
   }
 
   void choiceAction(String choice) {
-    print('working');
+    if (choice == "Logout") {
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => LogoutApi(accessToken, context)),
+      );
+    } else if(choice=="Settings"){
+      Navigator.push(
+        context,
+        MaterialPageRoute(
+            builder: (context) => Setting()),
+      );
+    }
+      print('working');
+    }
   }
 
   // remove(index) {
@@ -319,4 +328,4 @@ class HomePageState extends State<HomePage> {
   //   userData[index]["product_type"].toString().length;
   //   userData[index]["product_type"].toString().substring(a);
   // }
-}
+

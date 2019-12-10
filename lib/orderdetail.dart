@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:office_prj/commentGetApi.dart';
 import 'package:url_launcher/url_launcher.dart';
 import 'package:office_prj/homePage.dart';
 import 'package:http/http.dart' as http;
@@ -91,7 +92,7 @@ class OrderdetailState extends State<Orderdetail> {
                   ),
             ),
           ],
-          backgroundColor: Colors.blue,
+          backgroundColor: Colors.blue[900],
 
           title: Text("$getProduct", style: TextStyle(fontSize: 28),),
         ),
@@ -120,7 +121,16 @@ class OrderdetailState extends State<Orderdetail> {
               margin: EdgeInsets.only(left: 15.0),
               child: Row(children: <Widget>[
                 IconButton(
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(
+                            builder: (context) => CommentApi(
+                                getOrderId,
+                                accessToken,
+                                false))
+                      );
+                  },
                   icon: Icon(Icons.message),
                   iconSize: 30,
                   //  iconSize: 50,
@@ -143,7 +153,6 @@ class OrderdetailState extends State<Orderdetail> {
                 ),
                 Text(
                   'day:',
-                  
                   style: TextStyle(fontSize: 15.0, height: 1.7),
                 )
               ],
@@ -151,28 +160,30 @@ class OrderdetailState extends State<Orderdetail> {
             Container(
               width: 30,
             ),
-            Center(
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.center,
+            
+               Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
                 children: <Widget>[
                   Text(
                    '${orderData[index]["message"]}',
                    style: TextStyle(fontSize: 20.0, height: 1.7),
                    ),
-                  Center(
-                    child: Container(
+                  
+                     Container(
                       margin: EdgeInsets.only(right: 50),
                       child: Row(children: <Widget>[
+                        // SizedBox(width: 50,),
                         Icon(
                           Icons.location_on,
                           color: Colors.red,
+                          size:12,
                         ),
                         Text('${orderData[index]["location"]}', style: TextStyle(height: 1.7),),                    ]),
                     ),
-                  ),
+                  
                 ],
               ),
-            ),
+            
             // Column(
             //         children: <Widget>[
             //           Container(
@@ -216,6 +227,3 @@ class OrderdetailState extends State<Orderdetail> {
 // String getProduct;
 // String accessToken;
 // Orderdetail(this.getOrderId,this.getProduct, this.accessToken);
-
-
-

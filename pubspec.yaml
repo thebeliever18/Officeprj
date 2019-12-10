@@ -30,6 +30,10 @@ dependencies:
   http:
   url_launcher:
   image:
+<<<<<<< HEAD
+=======
+  http:
+>>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
   shared_preferences:
 
   # The following adds the Cupertino Icons font to your application.
