@@ -24,7 +24,9 @@ class ResetPageState extends State<ResetPage> {
   bool _isHidden = true;
   bool _second = true;
   GlobalKey<FormState> _key = new GlobalKey();
-
+  /**
+   * Used to provide initial value for a text field
+   */
   final _passwordController = TextEditingController();
   final _confirmpasswordController = TextEditingController();
   bool _validate = false;
@@ -195,7 +197,9 @@ class ResetPageState extends State<ResetPage> {
       ),
     );
   }
-
+  /**
+   * Condition which much be required for new password field
+   */
   String validatePassword(String value) {
     if (value.length == 0) {
       return "Password is Required";
@@ -205,7 +209,9 @@ class ResetPageState extends State<ResetPage> {
     }
     return null;
   }
-
+   /**
+   * Condition which much be required for confirm password field
+   */
   String validatePasswordMatching(String value) {
     if (value.length == 0) {
       return "Password is Required";

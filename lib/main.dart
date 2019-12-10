@@ -620,8 +620,12 @@ class LoginPageState extends State<LoginPage> {
   }
 
   void signIn(String phone, String password) async {
+    /**
+     * Compare user phone and password with api and give user authentication
+     */
     Map data = {'phone': phone, 'password': password};
     try {
+
       var jsonData = null;
       SharedPreferences sharedPreferences =
           await SharedPreferences.getInstance();
@@ -631,18 +635,25 @@ class LoginPageState extends State<LoginPage> {
         jsonData = json.decode(response.body);
 
         setState(() {
+          /**
+           * Sending access token to verify user
+           */
           sharedPreferences.setString("token", jsonData['access_token']);
           accessToken = jsonData['access_token'];
           customerName=jsonData['name'];
+
           Navigator.of(context).pushAndRemoveUntil(
               MaterialPageRoute(
-                  builder: (BuildContext context) => Nextpage(accessToken)),
+                  builder: (BuildContext context) => Nextpage(accessToken)), /**Sending access token to home page */
               (Route<dynamic> route) => false);
         });
       } else {
         print(response.body);
       }
     } catch (e) {
+      /**
+       * socketException caught if no internet
+       */
       showDialog(
         context: context,
         builder: (context) {

@@ -23,7 +23,13 @@ class MyButton extends StatefulWidget {
 
 class _MyButtonState extends State<MyButton> {
   TextEditingController _textFieldController = TextEditingController();
+  /**
+   * Used to provide an initial value for a text field
+   */
   GlobalKey<FormState> _key = new GlobalKey();
+  /**
+   * uniquely identifies the form
+   */
   bool _validate = false;
   String mobile;
 
@@ -74,6 +80,9 @@ class _MyButtonState extends State<MyButton> {
               padding: EdgeInsets.only(top: 20.0, right: 20.0, left: 20.0),
               child: TextFormField(
                 controller: _textFieldController,
+                /**
+                 * Connecting the TextEditing controller to a text field
+                 */
                 keyboardType: TextInputType.number,
                 validator: validateMobile,
                 onSaved: (String val) {
@@ -135,6 +144,9 @@ class _MyButtonState extends State<MyButton> {
     ));
   }
 
+  /**
+   * Regex expression used for validation of required pattern
+   */
   String validateMobile(String value) {
     String patttern = r'(^[0-9]*$)';
     RegExp regExp = new RegExp(patttern);

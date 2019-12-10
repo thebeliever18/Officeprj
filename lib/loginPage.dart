@@ -7,6 +7,7 @@ import 'package:office_prj/homePage.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:office_prj/otpPage.dart';
 import 'package:http/http.dart' as http;
+import 'package:office_prj/registrationPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 

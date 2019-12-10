@@ -77,7 +77,7 @@ class HomePageState extends State<HomePage> {
           headers: headers);
       data = json.decode(response.body); /**decoding the json data format  */
       setState(() {
-        userData = data["data"]; /**  */
+        userData = data["data"]; 
       });
       print(userData);
     } catch (e) {

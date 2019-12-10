@@ -9,7 +9,9 @@ class Setting extends StatefulWidget {
 
 class SettingState extends State<Setting> {
   bool _value = false;
-
+  /**
+   * When the state of the switch is changed
+   */
   void _onChanged(bool value) {
     setState(() {
       _value = value;
@@ -17,7 +19,9 @@ class SettingState extends State<Setting> {
   }
 
   bool _value2 = false;
-
+   /**
+   * When the state of the switch is changed
+   */
   void _onChanged2(bool value2) {
     setState(() {
       _value2 = value2;
@@ -49,13 +53,18 @@ class SettingState extends State<Setting> {
                   "Enable finger print authentication to  secure your account data"),
               activeColor: Colors.green,
               isThreeLine: true,
+              /**
+               * Called when the user initiates a change
+               */
               onChanged: (bool value) {
                 _onChanged(value);
               }),
           Divider(
             color: Colors.black,
           ),
-
+          /**
+           * List tile with a switch
+           */
           SwitchListTile(
               value: _value2,
               title: Text(
@@ -65,6 +74,9 @@ class SettingState extends State<Setting> {
               subtitle: Text(
                   "Enable Notification so that you will be notified when your order status changed"),
               activeColor: Colors.green,
+              /**
+               * Called when the user initiates the change
+               */
               onChanged: (bool value2) {
                 _onChanged2(value2);
               }),
