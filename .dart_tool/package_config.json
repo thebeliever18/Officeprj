@@ -56,12 +56,6 @@
       "languageVersion": "2.1"
     },
     {
-      "name": "cupertino_icons",
-      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-0.1.2",
-      "packageUri": "lib/",
-      "languageVersion": "2.0"
-    },
-    {
       "name": "dropdownfield",
       "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/dropdownfield-1.0.1",
       "packageUri": "lib/",
@@ -70,6 +64,12 @@
     {
       "name": "flutter",
       "rootUri": "file:///C:/flutter/packages/flutter",
+      "packageUri": "lib/",
+      "languageVersion": "2.2"
+    },
+    {
+      "name": "flutter_launcher_icons",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/flutter_launcher_icons-0.7.4",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     },
@@ -254,13 +254,19 @@
       "languageVersion": "2.3"
     },
     {
+      "name": "yaml",
+      "rootUri": "file:///C:/flutter/.pub-cache/hosted/pub.dartlang.org/yaml-2.2.0",
+      "packageUri": "lib/",
+      "languageVersion": "2.0"
+    },
+    {
       "name": "office_prj",
       "rootUri": "../",
       "packageUri": "lib/",
       "languageVersion": "2.2"
     }
   ],
-  "generated": "2019-12-09T09:26:15.190751Z",
+  "generated": "2019-12-10T07:39:32.646928Z",
   "generator": "pub",
   "generatorVersion": "2.6.0-dev.8.2.flutter-bbe2ac28c9"
 }
