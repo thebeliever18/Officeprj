@@ -16,10 +16,12 @@ import 'dart:async';
 
 //import 'package:office_prj/post.dart';
 import 'package:office_prj/userprofile.dart' as prefix1;
+import 'package:url_launcher/url_launcher.dart';
 
 class Nextpage extends StatelessWidget {
   @override
-  String accessToken; /** fetching accesstoken from loginpage for user data authentication */
+  String
+      accessToken; /** fetching accesstoken from loginpage for user data authentication */
   Nextpage(this.accessToken);
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -49,13 +51,19 @@ class HomePage extends StatefulWidget {
   State createState() => new HomePageState(this.accessToken);
 }
 
-class Constants { /** this is the menu option of homepage for settings and logout */
+class Constants {
+  /** this is the menu option of homepage for settings and logout */
   static const String settings = 'Settings';
   static const String more = 'More...';
   static const String logOut = 'Logout';
   static const String report = 'Report us';
 
-  static const List<String> choices = <String>[settings, more, logOut, report]; /** all options are kept in list */
+  static const List<String> choices = <String>[
+    settings,
+    more,
+    logOut,
+    report
+  ]; /** all options are kept in list */
 }
 
 var a;
@@ -64,20 +72,25 @@ int len;
 
 class HomePageState extends State<HomePage> {
   Map data; /** defining a variable as map to store api data because the json data in api is of map type */
-  List userData; /** this list is made to store the data in list inorder to show them in list view */
-  String accessToken; /** fetching access token to pass it to api for user authentication */
+  List
+      userData; /** this list is made to store the data in list inorder to show them in list view */
+  String
+      accessToken; /** fetching access token to pass it to api for user authentication */
   HomePageState(this.accessToken);
 
   Future getData() async {
     try {
-      Map<String, String> headers = {"Authorization": "Bearer $accessToken"}; /** sending access token to api */
+      Map<String, String> headers = {
+        "Authorization": "Bearer $accessToken"
+      }; /** sending access token to api */
       print("header is $headers");
       http.Response response = await http.get(
-          "http://test.dsewa.com.np/api/android/get-order/customer", /** this api contains the customer order detail which are identified by access token */
+          "http://test.dsewa.com.np/api/android/get-order/customer",
+          /** this api contains the customer order detail which are identified by access token */
           headers: headers);
       data = json.decode(response.body); /**decoding the json data format  */
       setState(() {
-        userData = data["data"]; 
+        userData = data["data"];
       });
       print(userData);
     } catch (e) {
@@ -95,7 +108,7 @@ class HomePageState extends State<HomePage> {
   }
 
   @override
-  Widget build(BuildContext context) { 
+  Widget build(BuildContext context) {
     return Scaffold(
         appBar: AppBar(
           backgroundColor: Colors.blue[900],
@@ -117,7 +130,7 @@ class HomePageState extends State<HomePage> {
                 );
               },
             ),
-            PopupMenuButton<String>( 
+            PopupMenuButton<String>(
               onSelected: choiceAction,
               itemBuilder: (BuildContext context) {
                 return Constants.choices.map((String choice) {
@@ -140,7 +153,8 @@ class HomePageState extends State<HomePage> {
                         context,
                         MaterialPageRoute(
                             builder: (context) => Orderdetail(
-                                userData[index]["order_id"], /** sending order-id data to order page */
+                                userData[index]["order_id"],
+                                /** sending order-id data to order page */
                                 userData[index]["product_type"][0],
                                 accessToken)),
                       );
@@ -151,7 +165,8 @@ class HomePageState extends State<HomePage> {
                         child: Container(
                             height: 120,
                             margin: EdgeInsets.only(left: 10, right: 10),
-                            decoration: BoxDecoration( /** box ui of home page */
+                            decoration: BoxDecoration(
+                                /** box ui of home page */
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.black,
@@ -171,17 +186,18 @@ class HomePageState extends State<HomePage> {
                                   Row(
                                     children: <Widget>[
                                       Text(
-                                        " ${userData[index]["product_type"][0]}", /** fetching data from json */
+                                        " ${userData[index]["product_type"][0]}",
+                                        /** fetching data from json */
                                         textAlign: TextAlign.center,
                                         style: TextStyle(
-                                          fontSize: 35,
+                                          fontSize: 12,
                                           color: Colors.grey,
                                           fontWeight: FontWeight.bold,
                                         ),
                                       ),
                                       SizedBox(
                                         height: 50,
-                                        width: 140,
+                                        width: 40,
                                       ),
                                       // Text("Order id: ${userData[index]["order_id"]}"),
 
@@ -190,14 +206,28 @@ class HomePageState extends State<HomePage> {
                                           Text(
                                             "Rs:",
                                             style: TextStyle(
-                                              fontSize: 13,
+                                              fontSize: 12,
                                               color: Colors.black,
                                               fontWeight: FontWeight.bold,
                                             ),
                                           ),
                                           Text(
                                             "  ${userData[index]["cod"]}",
-                                            style: TextStyle(fontSize: 13),
+                                            style: TextStyle(fontSize: 12),
+                                          ),
+                                          SizedBox(
+                                            width: 60,
+                                          ),
+                                          Container(
+                                            height: 30,
+                                            width: 30,
+                                            child: ClipOval(
+                                              child: Image(
+                                                image: AssetImage(
+                                                    'images/dsewalogo.png'),
+                                                fit: BoxFit.cover,
+                                              ),
+                                            ),
                                           ),
                                         ],
                                       )
@@ -206,17 +236,18 @@ class HomePageState extends State<HomePage> {
                                   SizedBox(
                                     height: 30,
                                   ),
+
                                   Row(children: <Widget>[
                                     Row(children: <Widget>[
                                       Text("    From:",
                                           style: TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12,
                                             color: Colors.black,
                                             fontWeight: FontWeight.bold,
                                           )),
                                       Text(
                                         " ${userData[index]["vendor"]}",
-                                        style: TextStyle(fontSize: 13),
+                                        style: TextStyle(fontSize: 12),
                                       ),
                                       SizedBox(
                                         width: 3,
@@ -228,13 +259,13 @@ class HomePageState extends State<HomePage> {
                                     Row(children: <Widget>[
                                       Text("    Tracking Id:",
                                           style: TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12,
                                             color: Colors.black,
                                             fontWeight: FontWeight.bold,
                                           )),
                                       Text(" ${userData[index]["tracking_id"]}",
                                           style: TextStyle(
-                                            fontSize: 13,
+                                            fontSize: 12,
                                             color: Colors.black,
                                             backgroundColor: Colors.grey[200],
                                           )),
@@ -314,9 +345,8 @@ class HomePageState extends State<HomePage> {
   }
 
   void choiceAction(String choice) {
-    
     if (choice == "Logout") {
-    /**
+      /**
      * Navigating to logout page after pressing logout button
      */
       Navigator.push(
@@ -325,13 +355,17 @@ class HomePageState extends State<HomePage> {
             builder: (context) => LogoutApi(accessToken, context)),
       );
     } else if (choice == "Settings") {
-    /**
+      /**
      * Navigating to settings page after pressing setting button
      */
       Navigator.push(
         context,
         MaterialPageRoute(builder: (context) => Setting()),
       );
+    } else if(choice == "Report us"){
+      
+      launch ('https://dsewa.com.np/contactus');
+
     }
     /**
      * Print working if other buttons are clicked except for setting and logout

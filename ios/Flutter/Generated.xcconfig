@@ -1,18 +1,9 @@
 // This is a generated file; do not edit or check into version control.
-<<<<<<< HEAD
-FLUTTER_ROOT=C:\Users\saugatpc\Desktop\flutter
-FLUTTER_APPLICATION_PATH=C:\Users\saugatpc\Desktop\Officeprj-1
+FLUTTER_ROOT=D:\cdrive\flutter
+FLUTTER_APPLICATION_PATH=F:\practise_flutter\office_prj
 FLUTTER_TARGET=lib\main.dart
 FLUTTER_BUILD_DIR=build
 SYMROOT=${SOURCE_ROOT}/../build\ios
-FLUTTER_FRAMEWORK_DIR=C:\Users\saugatpc\Desktop\flutter\bin\cache\artifacts\engine\ios
-=======
-FLUTTER_ROOT=E:\Flutter\flutter
-FLUTTER_APPLICATION_PATH=C:\Users\Acer\Desktop\gitclone\Officeprj
-FLUTTER_TARGET=lib\main.dart
-FLUTTER_BUILD_DIR=build
-SYMROOT=${SOURCE_ROOT}/../build\ios
-FLUTTER_FRAMEWORK_DIR=E:\Flutter\flutter\bin\cache\artifacts\engine\ios
->>>>>>> b6a4ef1d4c45a173cc3f26f1a3edf724aa638fb3
+FLUTTER_FRAMEWORK_DIR=D:\cdrive\flutter\bin\cache\artifacts\engine\ios
 FLUTTER_BUILD_NAME=1.0.0
 FLUTTER_BUILD_NUMBER=1

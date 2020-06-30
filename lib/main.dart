@@ -401,33 +401,6 @@ import 'package:office_prj/registrationPage.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'dart:convert';
 
-import 'main.dart';
-
-// void main() {
-//   runApp(Main());
-//   SystemChrome.setSystemUIOverlayStyle(SystemUiOverlayStyle(
-//     systemNavigationBarColor: Colors.blue[900], // navigation bar color
-//     statusBarColor: Colors.blue[900], // status bar color
-//   ));
-// }
-
-// class Main extends StatelessWidget {
-
-//   @override
-//   Widget build(BuildContext context) {
-//     print("hello");
-//     return MaterialApp(
-//       debugShowCheckedModeBanner: false,
-//       title: 'Chart',
-//       theme: ThemeData(
-//         primarySwatch: Colors.blue,
-//       ),
-//       home: Scaffold(
-//         body: LoginPage(),
-//       ),
-//     );
-//   }
-// }
 
 /*
  * Starting of flutter application

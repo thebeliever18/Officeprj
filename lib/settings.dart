@@ -75,7 +75,7 @@ class SettingState extends State<Setting> {
                   "Enable Notification so that you will be notified when your order status changed"),
               activeColor: Colors.green,
               /**
-               * Called when the user initiates the change
+               * Called when the user initiates the
                */
               onChanged: (bool value2) {
                 _onChanged2(value2);

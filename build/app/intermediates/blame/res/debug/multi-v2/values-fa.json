@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\saugatpc\\Desktop\\Officeprj-1\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fa\\values-fa.xml",
+            "outputFile": "F:\\practise_flutter\\office_prj\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-fa\\values-fa.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\saugatpc\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\8f0fb28123a294d5d0c201a5a7f658c8\\res\\values-fa\\values-fa.xml",
+                    "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\d37bd2fccb58a6931d19862773fc0950\\res\\values-fa\\values-fa.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",

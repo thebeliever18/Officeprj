@@ -2,11 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:office_prj/orientation.dart';
 import 'package:office_prj/pageAfterCont.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-
-
 import 'package:keyboard_avoider/keyboard_avoider.dart';
 import 'package:office_prj/registrationapi.dart';
-
 import 'otpPage.dart';
 
 /*
@@ -125,23 +122,6 @@ class FormsState extends State<Forms> {
               style: TextStyle(fontSize: 25.0, color: Colors.white),
             ),
             onPressed: () {
-              /**
-               * Importing otpPage
-               */
-              // if (a == 1) {
-              //   a = 2;
-              //   setState(() {
-              //     PageAfterContState.errorMesg = false;
-              //   });
-              //   Navigator.push(context, MaterialPageRoute(builder: (context) {
-              //     return OtpPage();
-              //   }));
-              /**
-               * Importing Login Page
-               */
-              // } else if (a == 2) {
-                // a = 1;
-
                 /**
                  * Checking if any field is null or not in registration page
                  */

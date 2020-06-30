@@ -7,7 +7,7 @@ import 'package:office_prj/orientation.dart';
 
 class ErrorContent extends StatefulWidget {
   NetworkErrorAnimation animation; /** when no internet is connected calling the networkerror page */
-  String accessToken;/**  */
+  String accessToken;
   ErrorContent({@required AnimationController controller})
       : animation = new NetworkErrorAnimation(controller);
 
@@ -91,7 +91,9 @@ class _ErrorContentState extends State<ErrorContent> {
                         ),
                       ),
                     )),
-                            
+                /*
+                 * A widget that controls where a child of a stack is positioned
+                 */       
                 Positioned(
                     top: 30.0,
                     left: 120.0,
@@ -101,11 +103,11 @@ class _ErrorContentState extends State<ErrorContent> {
                         80.0,
                         20.0
                       ),
-                      child: SafeArea(
+                      child: SafeArea( /**A widget that insets its child by sufficient padding to avoid intrusions by the  operating systems. */
                         child: Icon(
                           Icons.cloud,
                           color: Colors.white,
-                          size: MediaQuery.of(context).size.width * 0.17,
+                          size: MediaQuery.of(context).size.width * 0.17, /**Establishes a subtree in which media queries resolve to the given data */
                         ),
                       ),
                     )),
@@ -114,7 +116,9 @@ class _ErrorContentState extends State<ErrorContent> {
             
           )),
           
-      
+          /**
+           * A widget that expands a child of a row,column, or flex so that the child fills available spaces.
+           */
           Expanded(
               child: Column(
               
@@ -126,6 +130,9 @@ class _ErrorContentState extends State<ErrorContent> {
                 height: 30,
               ),
               Transform(
+                /**
+                 * A widget that applies a transformation before  paintaing its child
+                 */
                 transform: new Matrix4.diagonal3Values(
                   widget.animation.sizeTranslation.value * 2,
                   widget.animation.sizeTranslation.value * 2,
@@ -140,9 +147,11 @@ class _ErrorContentState extends State<ErrorContent> {
                   textAlign: TextAlign.center,
                 ),
               ),
-              SizedBox(
+              /**The sized box size itself as close to the specified height and widht as possible given parents constraints */
+              SizedBox( 
                 height: 30,
               ),
+
               AutoSizeText(
                 'No internet connection found!\nTurn on wifi/mobile data',
                 textAlign: TextAlign.center,
@@ -151,11 +160,12 @@ class _ErrorContentState extends State<ErrorContent> {
               SizedBox(
                 height: 30,
               ),
-
+              /**A raised button is based on a Material widget whose Material.elevation increases when the button is pressed. */
               RaisedButton(
                 color: Colors.blue[900],
                 highlightColor: Colors.pink,
                 onPressed: (){
+                   /**By using the Navigator.push() method. The pop() method removes the current Route from the stack of routes managed by the Navigator. */
                   //Navigator.of(context).pop();
                   Navigator.push(
                         context,

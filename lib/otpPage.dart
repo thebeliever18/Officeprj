@@ -14,7 +14,7 @@ final FocusNode secondFocus = FocusNode();
 final FocusNode thirdFocus = FocusNode();
 final FocusNode fourthFocus = FocusNode();
 class OtpPage extends StatefulWidget {
-  
+  /*It is a compile-time error for a class to attempt to extend or implement bool. */
   bool boolValue;
   OtpPage({this.boolValue});
   _OtpPageState createState() => _OtpPageState(this.boolValue);
@@ -31,10 +31,13 @@ class _OtpPageState extends State<OtpPage> {
           body: ListView(
             children: <Widget>[
               Stack(
+                /**
+                 * This class is useful if you want to overlap several children in a simple way, for example having some text and an image, overlaid with a gradient and a button attached to the bottom.
+                 */
                 children: <Widget>[
                   Padding(
                     padding: const EdgeInsets.only(top: 10.0),
-                    child: Column(
+                    child: Column( /**This widget allows its children in vertical array */
                       children: <Widget>[
                         Center(
                           child: Text(
@@ -69,6 +72,7 @@ class _OtpPageState extends State<OtpPage> {
                         ),
                         Center(
                             child: Row(
+                              /**This widget displays its children to display in horizontal array */
                           mainAxisAlignment: MainAxisAlignment.center,
                           children: <Widget>[
                             txtfld(false,firstFieldController,firstFocus,context,TextInputAction.next,secondFocus),
@@ -212,9 +216,9 @@ txtfld(boolVal,getController,getFocus,context,nextordone,nextFocus) {
         fontSize: 23,
         fontWeight: FontWeight.bold,
       ),
-      maxLength: 1,
+      maxLength: 1, /** This allows only one number to be entered at a time */
       maxLengthEnforced: true,
-      keyboardType: TextInputType.number,
+      keyboardType: TextInputType.number, /**This allows keyboard to enter number only */
       decoration: new InputDecoration(
          counterText: '',
           fillColor: Colors.grey[200],
@@ -246,6 +250,7 @@ showMessage(BuildContext context, var message) {
             style: TextStyle(color: Colors.white),
           ),
           onPressed: () {
+            /**By using the Navigator.pop() method. The pop() method removes the current Route from the stack of routes managed by the Navigator. */
             Navigator.of(context).pop();
           })
     ],
