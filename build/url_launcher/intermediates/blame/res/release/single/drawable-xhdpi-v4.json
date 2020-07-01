@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\url_launcher\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e142ae014fe9d3f2c2a46c7831de01f\\res\\drawable-xhdpi-v4\\notification_bg_low_pressed.9.png"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\url_launcher\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e142ae014fe9d3f2c2a46c7831de01f\\res\\drawable-xhdpi-v4\\notification_bg_normal_pressed.9.png"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\url_launcher\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e142ae014fe9d3f2c2a46c7831de01f\\res\\drawable-xhdpi-v4\\notification_bg_low_normal.9.png"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\url_launcher\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notification_bg_normal.9.png",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e142ae014fe9d3f2c2a46c7831de01f\\res\\drawable-xhdpi-v4\\notification_bg_normal.9.png"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\url_launcher\\intermediates\\res\\merged\\release\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.0.aar\\2e142ae014fe9d3f2c2a46c7831de01f\\res\\drawable-xhdpi-v4\\notify_panel_notification_icon_bg.png"
+    }
+]

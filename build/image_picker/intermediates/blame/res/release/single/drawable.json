@@ -1,0 +1,18 @@
+[
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_bg.xml",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\d37bd2fccb58a6931d19862773fc0950\\res\\drawable\\notification_bg.xml"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_bg_low.xml",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\d37bd2fccb58a6931d19862773fc0950\\res\\drawable\\notification_bg_low.xml"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_icon_background.xml",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\d37bd2fccb58a6931d19862773fc0950\\res\\drawable\\notification_icon_background.xml"
+    },
+    {
+        "merged": "F:\\practise_flutter\\office_prj\\build\\image_picker\\intermediates\\res\\merged\\release\\drawable\\notification_tile_bg.xml",
+        "source": "C:\\Users\\spann\\.gradle\\caches\\transforms-1\\files-1.1\\core-1.0.2.aar\\d37bd2fccb58a6931d19862773fc0950\\res\\drawable\\notification_tile_bg.xml"
+    }
+]
